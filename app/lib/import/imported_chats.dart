@@ -157,6 +157,8 @@ final importedChatsProvider = AsyncNotifierProvider<ImportedChatsController, Lis
 );
 
 class ImportedChatsController extends AsyncNotifier<List<ImportedChat>> {
+  bool _backfilling = false;
+
   @override
   Future<List<ImportedChat>> build() async {
     final index = await _readIndex();
@@ -165,8 +167,68 @@ class ImportedChatsController extends AsyncNotifier<List<ImportedChat>> {
     for (final entry in index) {
       if (await File('${dir.path}/${entry.sessionId}.json').exists()) known.add(entry);
     }
-    known.sort((a, b) => b.importedAt.compareTo(a.importedAt));
+    known.sort((a, b) => b.shownUpdatedAt.compareTo(a.shownUpdatedAt));
+    // An index written before the times were recorded is repaired in the
+    // background from the transcripts it already has (no re-import needed).
+    unawaited(_backfillTimes(known));
     return known;
+  }
+
+  /// Fills [ImportedChat.sourceCreatedAt] / [ImportedChat.sourceUpdatedAt] for
+  /// entries that were written without them, from the first and last message of
+  /// the transcript on disk. Runs once per launch, off the drawer's path.
+  Future<void> _backfillTimes(List<ImportedChat> chats) async {
+    if (_backfilling) return;
+    final stale = [
+      for (final chat in chats)
+        if (chat.sourceCreatedAt == null && chat.sourceUpdatedAt == null) chat,
+    ];
+    if (stale.isEmpty) return;
+    _backfilling = true;
+    try {
+      final dir = await _dir();
+      final patched = <String, ImportedChat>{};
+      for (final chat in stale) {
+        final times = <DateTime>[];
+        try {
+          final file = File('${dir.path}/${chat.sessionId}.json');
+          if (!await file.exists()) continue;
+          final json = jsonDecode(await file.readAsString());
+          final raw = json is Map ? json['messages'] : null;
+          if (raw is List) {
+            for (final item in raw) {
+              final at = _messageFromJson(item)?.at;
+              if (at != null) times.add(at);
+            }
+          }
+        } on Object {
+          continue;
+        }
+        if (times.isEmpty) continue;
+        times.sort();
+        patched[chat.sessionId] = ImportedChat(
+          sessionId: chat.sessionId,
+          title: chat.title,
+          messageCount: chat.messageCount,
+          importedAt: chat.importedAt,
+          seeded: chat.seeded,
+          account: chat.account,
+          sourceId: chat.sourceId,
+          sourceCreatedAt: times.first,
+          sourceUpdatedAt: times.last,
+        );
+      }
+      if (patched.isEmpty) return;
+      final next = [for (final chat in state.value ?? chats) patched[chat.sessionId] ?? chat]
+        ..sort((a, b) => b.shownUpdatedAt.compareTo(a.shownUpdatedAt));
+      state = AsyncValue.data(next);
+      await _writeIndex(next);
+    } on Object {
+      // The times are cosmetic: a failure here leaves the rows dated as the host
+      // has them, and the next launch tries again.
+    } finally {
+      _backfilling = false;
+    }
   }
 
   Future<Directory> _dir() => ref.read(importedChatsDirProvider.future);
