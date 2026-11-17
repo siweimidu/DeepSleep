@@ -37,6 +37,9 @@ fun buildMinuteVersionCode(): Int {
 android {
     namespace = "io.github.ccch1mneyyy.dsh_app"
     compileSdk = flutter.compileSdkVersion
+    // Pinned to the build-tools this machine actually has, so a build never stops
+    // to fetch the default version mid-way.
+    buildToolsVersion = "36.1.0"
     // The device tests under src/androidTest are AndroidTestCase tests; these platform libraries
     // carry that API (no longer in android.jar). Device-test classpath only.
     useLibrary("android.test.base")
@@ -49,7 +52,9 @@ android {
     }
 
     defaultConfig {
-        applicationId = "io.github.ccch1mneyyy.dsh_app"
+        // A fork with its own name, icon and signing key: a different id keeps it
+        // installable beside an existing DSH Go instead of colliding with it.
+        applicationId = "com.deepsleep.app"
         // java.nio.file (symlinks while unpacking the rootfs) needs API 26.
         minSdk = 26
         // Target 28 like Termux, so the API 29+ exec restriction on app-private
