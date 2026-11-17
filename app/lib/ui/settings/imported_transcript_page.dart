@@ -1,8 +1,13 @@
-// One imported conversation, read-only: what was said on the phone before this
-// app ever saw it.
+// One imported conversation: what was said on the phone before this app ever saw
+// it.
 //
-// The session that carries it holds the turns from here; this page is the part
-// the host never received, so it is drawn plainly (speaker, words, the sources
+// Two ways in: [ImportedTranscriptPage] is the read-only page (from the drawer of
+// imported chats in 设置), and [ImportedHistoryInline] is the same bubbles drawn
+// inside an otherwise empty chat, so opening an imported conversation shows the
+// history instead of a blank page.
+//
+// The session that carries it holds the turns from here; this is the part the
+// host never received, so it is drawn plainly (speaker, words, the sources
 // DeepSeek cited, the files that were attached) and is not editable.
 
 import 'dart:async';
@@ -59,7 +64,7 @@ class _ImportedTranscriptPageState extends ConsumerState<ImportedTranscriptPage>
             }
             return SliverList.builder(
               itemCount: messages.length,
-              itemBuilder: (context, index) => _MessageBubble(message: messages[index]),
+              itemBuilder: (context, index) => ImportedMessageBubble(message: messages[index]),
             );
           },
         ),
@@ -68,8 +73,82 @@ class _ImportedTranscriptPageState extends ConsumerState<ImportedTranscriptPage>
   }
 }
 
-class _MessageBubble extends StatelessWidget {
-  const _MessageBubble({required this.message});
+/// The history of one imported conversation, drawn as a column: the chat page
+/// puts it under the header of a session that has no turns of its own yet.
+class ImportedHistoryInline extends ConsumerStatefulWidget {
+  const ImportedHistoryInline({super.key, required this.sessionId});
+
+  final String sessionId;
+
+  @override
+  ConsumerState<ImportedHistoryInline> createState() => _ImportedHistoryInlineState();
+}
+
+class _ImportedHistoryInlineState extends ConsumerState<ImportedHistoryInline> {
+  late Future<List<DeepSeekMessage>?> _transcript;
+
+  @override
+  void initState() {
+    super.initState();
+    _transcript = ref.read(importedChatsProvider.notifier).transcript(widget.sessionId);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    final theme = Theme.of(context);
+    final colors = theme.colorScheme;
+    return FutureBuilder<List<DeepSeekMessage>?>(
+      future: _transcript,
+      builder: (context, snapshot) {
+        final messages = snapshot.data ?? const <DeepSeekMessage>[];
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 8, 20, 4),
+              child: Row(
+                children: [
+                  Icon(AppIcons.history, size: 16, color: colors.onSurfaceVariant),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(
+                      '${l10n.hubDeepSeekRecordTitle} · ${messages.length} ${l10n.hubDeepSeekImportMessages}',
+                      style: theme.textTheme.labelMedium?.copyWith(color: colors.onSurfaceVariant),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            if (snapshot.connectionState != ConnectionState.done)
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 24),
+                child: Center(child: CircularProgressIndicator()),
+              )
+            else if (messages.isEmpty)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 24),
+                child: Center(child: Text(l10n.hubDeepSeekRecordEmpty)),
+              )
+            else
+              for (final message in messages) ImportedMessageBubble(message: message),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 10, 20, 16),
+              child: Text(
+                l10n.hubDeepSeekImportCarryNote,
+                style: theme.textTheme.bodySmall?.copyWith(color: colors.onSurfaceVariant),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+/// One message of an imported conversation.
+class ImportedMessageBubble extends StatelessWidget {
+  const ImportedMessageBubble({super.key, required this.message});
 
   final DeepSeekMessage message;
 

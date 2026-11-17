@@ -273,5 +273,7 @@
         "type": "String"
       }
     }
-  }
+  },
+  "shellSortAscending": "Oldest first",
+  "shellSortDescending": "Newest first"
 }

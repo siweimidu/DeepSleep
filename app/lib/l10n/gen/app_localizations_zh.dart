@@ -18598,6 +18598,12 @@ class L10nZh extends L10n {
   }
 
   @override
+  String get shellSortAscending => '正序（旧→新）';
+
+  @override
+  String get shellSortDescending => '倒序（新→旧）';
+
+  @override
   String get speechReadAloud => '朗读';
 
   @override

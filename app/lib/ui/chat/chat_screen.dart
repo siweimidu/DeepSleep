@@ -14,6 +14,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../l10n/l10n.dart';
+import '../../import/imported_chats.dart';
 import '../../notify/chat_alerts.dart' show approvalText, questionText;
 import '../../runtime/local_footprint.dart' show RuntimeMissing;
 import '../../runtime/runtime_bridge.dart' show RuntimePhase;
@@ -79,6 +80,7 @@ import '../plugins/seats/plugin_overlay_layer.dart';
 import '../safe_mode/engine_failure_card.dart';
 import '../safe_mode/safe_mode_banner.dart';
 import '../session/session_detail_page.dart';
+import '../settings/imported_transcript_page.dart';
 import '../settings/media_settings_page.dart' show MediaSettingsPage, showMediaInstallSheet, showMediaUnavailableSheet;
 import '../settings/settings_widgets.dart' show SettingsTile;
 import '../shell/adaptive/adaptive_layout.dart' show WindowClass;
@@ -96,7 +98,6 @@ import 'composer_toast.dart';
 import 'dock/chat_dock.dart';
 import 'dock/dock_stack.dart';
 import 'empty_state.dart';
-import 'imported_history_card.dart';
 import 'new_chat_options.dart';
 import 'media/generate_mode.dart';
 import 'media/generate_sheet.dart';
@@ -1631,6 +1632,11 @@ class _ChatScreenState extends ConsumerState<ChatScreen> with WidgetsBindingObse
     // one fix rather than a blank list.
     final idleBlank =
         idle != null && sessionId != null && ref.watch(chatProvider(sessionId).select((s) => s.items.isEmpty));
+    // 从 DeepSeek App 导入的会话:主机里还没有任何轮次,但手机这边有整段历史 ——
+    // 打开它要看到历史,而不是一张白纸。
+    final importedBlank = sessionId != null &&
+        ref.watch(importedIndexProvider).containsKey(sessionId) &&
+        ref.watch(chatProvider(sessionId).select((s) => s.items.isEmpty));
 
     // 只盯顶栏 / 输入条需要的几个字段:流式增量不重建整页。
     final chat = sessionId == null
@@ -1825,7 +1831,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> with WidgetsBindingObse
                 children: [
                   LayoutId(
                     id: _Slot.body,
-                    child: sessionId == null || idleBlank
+                    child: sessionId == null || idleBlank || importedBlank
                         ? Padding(
                             padding: EdgeInsets.only(top: headerHeight, bottom: _ChatLayout.overlap),
                             child: Align(
@@ -1838,9 +1844,10 @@ class _ChatScreenState extends ConsumerState<ChatScreen> with WidgetsBindingObse
                                     // own (a remote host has its own errors).
                                     if (failureCard)
                                       const EngineFailureCard(padding: EdgeInsets.fromLTRB(16, 0, 16, 20)),
-                                    if (sessionId != null && !failureCard)
-                                      ImportedHistoryCard(sessionId: sessionId),
-                                    ChatEmptyState(
+                                    if (importedBlank)
+                                      ImportedHistoryInline(sessionId: sessionId)
+                                    else
+                                      ChatEmptyState(
                                       connected: connected,
                                       suggestions: ref.watch(settingsProvider.select((s) => s.chatSuggestions))
                                           ? defaultSuggestions

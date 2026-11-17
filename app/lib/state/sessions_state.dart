@@ -200,7 +200,7 @@ class SessionsController extends AsyncNotifier<List<SessionSummary>> {
     });
     // 导入的 DeepSeek 会话在主机看来是「还没有对话轮次」的空白会话,列表默认
     // 不显示它们;它们是我们的,所以存储一变就重新筛一遍。
-    ref.listen(importedTitlesProvider, (_, _) {
+    ref.listen(importedIndexProvider, (_, _) {
       if (state.hasValue && !state.isLoading) state = AsyncData(_visible());
     });
     final seq = ++_loadSeq;
@@ -341,7 +341,7 @@ class SessionsController extends AsyncNotifier<List<SessionSummary>> {
     final pendingIds = {for (final pending in _archives) ...pending.ids};
     // 从 DeepSeek App 导入的会话还没有对话轮次,主机把它们当空白会话(blank),
     // 但它们确实在对话列表里:按我们自己的存储放行。
-    final importedIds = ref.read(importedTitlesProvider).keys.toSet();
+    final importedIds = ref.read(importedIndexProvider).keys.toSet();
     // Her conversation lives in 伙伴小屋, not the drawer.
     final companion = ref.read(companionSessionFilterProvider);
     final host = ref.read(activeHostProvider);
@@ -363,24 +363,29 @@ class SessionsController extends AsyncNotifier<List<SessionSummary>> {
         );
   }
 
-  /// The last `session/list`, with the titles read since ([_readTitles]) and the
-  /// titles the imported conversations came with.
+  /// The last `session/list`, with the titles read since ([_readTitles]) and what
+  /// the imported conversations carry that the host doesn't know.
   List<SessionSummary> _rows() {
     if (_all.isEmpty) return _all;
-    final imported = ref.read(importedTitlesProvider);
+    final imported = ref.read(importedIndexProvider);
     return [
       for (final s in _all)
-        if (imported[s.sessionId] case final title?) _withTitle(_withImportedTitle(s, title)) else _withTitle(s),
+        if (imported[s.sessionId] case final chat?) _withTitle(_withImportedRow(s, chat)) else _withTitle(s),
     ];
   }
 
-  /// [s] carrying the title its DeepSeek conversation had: a session with no turn
-  /// yet comes back from the host without one, and the drawer would say 「未命名」.
-  SessionSummary _withImportedTitle(SessionSummary s, String title) {
-    final trimmed = title.trim();
-    if (trimmed.isEmpty || !(s.title?.trim().isEmpty ?? true)) return s;
+  /// [s] carrying what its DeepSeek conversation had: the title (a session with
+  /// no turn yet comes back without one, and the drawer would say 「未命名」) and
+  /// the time it really moved (the host dates it the moment it was created, which
+  /// would put a year of imported chats in 今天 and sort them as one day).
+  SessionSummary _withImportedRow(SessionSummary s, ImportedChat chat) {
+    final trimmed = chat.title.trim();
+    final title = trimmed.isEmpty || !(s.title?.trim().isEmpty ?? true) ? s.title : trimmed;
     return s.copyWith(
-      projections: SessionProjections(s.projections.asOfSeq, {...s.projections.values, 'title': trimmed}),
+      updatedAt: chat.shownUpdatedAt,
+      projections: title == s.title
+          ? s.projections
+          : SessionProjections(s.projections.asOfSeq, {...s.projections.values, 'title': title}),
     );
   }
 

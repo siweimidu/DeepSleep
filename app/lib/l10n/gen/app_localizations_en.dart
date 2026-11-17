@@ -19628,6 +19628,12 @@ class L10nEn extends L10n {
   }
 
   @override
+  String get shellSortAscending => 'Oldest first';
+
+  @override
+  String get shellSortDescending => 'Newest first';
+
+  @override
   String get speechReadAloud => 'Read aloud';
 
   @override

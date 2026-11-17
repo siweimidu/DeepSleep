@@ -16,6 +16,7 @@ import 'package:flutter/widgets.dart' show StringCharacters;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../import/imported_chats.dart';
 import '../l10n/l10n.dart';
 import 'bots_state.dart';
 import 'hosts_state.dart';
@@ -106,7 +107,12 @@ enum DrawerSort {
 
 /// The drawer's view of one host: folders in display order and the sort.
 class DrawerView {
-  const DrawerView({this.loaded = false, this.folders = const [], this.sort = DrawerSort.activity});
+  const DrawerView({
+    this.loaded = false,
+    this.folders = const [],
+    this.sort = DrawerSort.activity,
+    this.ascending = false,
+  });
 
   factory DrawerView.fromJson(Object? json) {
     final map = json is Map ? json : const {};
@@ -120,6 +126,7 @@ class DrawerView {
             if (DrawerFolder.fromJson(raw) case final f? when seen.add(f.id)) f,
       ],
       sort: map['sort'] == 'created' ? DrawerSort.created : DrawerSort.activity,
+      ascending: map['ascending'] == true,
     );
   }
 
@@ -127,9 +134,14 @@ class DrawerView {
   final List<DrawerFolder> folders;
   final DrawerSort sort;
 
+  /// Oldest first. Applies to whichever sort is on: 最近活动 counts each
+  /// conversation's latest turn, 创建时间 its first.
+  final bool ascending;
+
   Map<String, Object?> toJson() => {
     'folders': [for (final f in folders) f.toJson()],
     'sort': sort.name,
+    if (ascending) 'ascending': true,
   };
 
   DrawerFolder? byId(String? id) {
@@ -146,8 +158,12 @@ class DrawerView {
       for (final id in f.sessionIds) id: f.id,
   };
 
-  DrawerView copyWith({List<DrawerFolder>? folders, DrawerSort? sort}) =>
-      DrawerView(loaded: loaded, folders: folders ?? this.folders, sort: sort ?? this.sort);
+  DrawerView copyWith({List<DrawerFolder>? folders, DrawerSort? sort, bool? ascending}) => DrawerView(
+    loaded: loaded,
+    folders: folders ?? this.folders,
+    sort: sort ?? this.sort,
+    ascending: ascending ?? this.ascending,
+  );
 }
 
 /// [DrawerView] of the active host, in shared preferences.
@@ -354,6 +370,11 @@ class DrawerViewController extends Notifier<DrawerView> {
   });
 
   Future<void> setSort(DrawerSort sort) => _update((view) => view.copyWith(sort: sort));
+
+  /// 正序 / 倒序 for whichever sort is on.
+  Future<void> setAscending(bool ascending) => _update((view) => view.copyWith(ascending: ascending));
+
+  Future<void> toggleAscending() => _update((view) => view.copyWith(ascending: !view.ascending));
 
   /// Drops only confirmed deleted members, including the last session in a
   /// folder; unlike a guessed empty inventory this is authoritative.
@@ -678,7 +699,7 @@ List<DrawerBlock> drawerBlocks({
       view.sort == DrawerSort.created ? (createdAt[s.sessionId] ?? s.updatedAt) : s.updatedAt;
   final sorted = [...sessions]
     ..sort((a, b) {
-      final byKey = keyOf(b).compareTo(keyOf(a));
+      final byKey = view.ascending ? keyOf(a).compareTo(keyOf(b)) : keyOf(b).compareTo(keyOf(a));
       return byKey != 0 ? byKey : a.sessionId.compareTo(b.sessionId);
     });
   if (filter != DrawerFilter.all) {
@@ -726,7 +747,8 @@ List<DrawerBlock> drawerBlocks({
     if (folderOf.containsKey(s.sessionId) || pinnedSet.contains(s.sessionId)) continue;
     days.putIfAbsent(sessionDayOf(keyOf(s), now), () => []).add(s);
   }
-  for (final day in SessionDay.values) {
+  final dayOrder = view.ascending ? SessionDay.values.reversed : SessionDay.values;
+  for (final day in dayOrder) {
     if (days[day] case final items?) blocks.add(DayBlock(day, items));
   }
   return blocks;
@@ -748,6 +770,14 @@ List<DrawerBlock>? watchDrawerBlocks(WidgetRef ref, {DateTime? now}) {
   final scope = ref.watch(drawerScopeProvider);
   if (scope == null) return null;
   final view = ref.watch(drawerViewProvider);
+  // 导入的 DeepSeek 会话按它们在 DeepSeek 里的时间排,不是导入这一刻。
+  final imported = ref.watch(importedIndexProvider);
+  final created = view.sort == DrawerSort.created
+      ? {
+          ...ref.watch(sessionCreatedProvider),
+          for (final entry in imported.entries) entry.key: entry.value.shownCreatedAt,
+        }
+      : const <String, DateTime>{};
   return drawerBlocks(
     sessions: scope.sessions,
     pinnedIds: ref.watch(workspacesProvider.select((s) => s.pinnedSessionIds)),
@@ -755,7 +785,7 @@ List<DrawerBlock>? watchDrawerBlocks(WidgetRef ref, {DateTime? now}) {
     filter: ref.watch(drawerFilterProvider),
     pending: scope.readOnly ? const {} : ref.watch(pendingInteractionsProvider),
     unread: scope.readOnly ? const {} : ref.watch(unreadSessionIdsProvider),
-    createdAt: view.sort == DrawerSort.created ? ref.watch(sessionCreatedProvider) : const {},
+    createdAt: created,
     now: now ?? ref.watch(drawerClockProvider)(),
     scoped: scope.scoped,
   );

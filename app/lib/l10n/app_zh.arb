@@ -11114,6 +11114,8 @@
       }
     }
   },
+  "shellSortAscending": "正序（旧→新）",
+  "shellSortDescending": "倒序（新→旧）",
   "speechReadAloud": "朗读",
   "speechReadAloudStop": "停止朗读",
   "speechReadSection": "朗读",

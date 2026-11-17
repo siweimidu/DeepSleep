@@ -33,6 +33,7 @@ class DrawerViewSheet extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = context.l10n;
     final sort = ref.watch(drawerViewProvider.select((v) => v.sort));
+    final ascending = ref.watch(drawerViewProvider.select((v) => v.ascending));
     final hasFolders = ref.watch(drawerViewProvider.select((v) => v.folders.isNotEmpty));
     return SafeArea(
       top: false,
@@ -47,13 +48,45 @@ class DrawerViewSheet extends ConsumerWidget {
           ),
           Padding(
             padding: _groupMargin.copyWith(bottom: 16),
-            child: SegmentedPill<DrawerSort>(
-              segments: [
-                PillSegment(DrawerSort.activity, l10n.shellRecentActivity),
-                PillSegment(DrawerSort.created, l10n.shellCreatedTime),
+            child: Row(
+              children: [
+                Expanded(
+                  child: SegmentedPill<DrawerSort>(
+                    segments: [
+                      PillSegment(DrawerSort.activity, l10n.shellRecentActivity),
+                      PillSegment(DrawerSort.created, l10n.shellCreatedTime),
+                    ],
+                    selected: sort,
+                    onChanged: (value) => ref.read(drawerViewProvider.notifier).setSort(value),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                // 正序 / 倒序: whichever sort is on, oldest first or newest first.
+                Tooltip(
+                  message: ascending ? l10n.shellSortAscending : l10n.shellSortDescending,
+                  child: Material(
+                    color: Colors.transparent,
+                    shape: const CircleBorder(),
+                    child: InkWell(
+                      customBorder: const CircleBorder(),
+                      onTap: () => ref.read(drawerViewProvider.notifier).toggleAscending(),
+                      child: Semantics(
+                        button: true,
+                        label: ascending ? l10n.shellSortAscending : l10n.shellSortDescending,
+                        child: SizedBox(
+                          width: 44,
+                          height: 44,
+                          child: Icon(
+                            ascending ? AppIcons.scrollToTop : AppIcons.scrollToBottom,
+                            size: 20,
+                            color: Theme.of(context).colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ],
-              selected: sort,
-              onChanged: (value) => ref.read(drawerViewProvider.notifier).setSort(value),
             ),
           ),
           SheetGroup(

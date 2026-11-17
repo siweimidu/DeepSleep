@@ -34154,6 +34154,18 @@ abstract class L10n {
   /// **'在「{path}」里调整'**
   String shellQuickPanelHint(String path);
 
+  /// No description provided for @shellSortAscending.
+  ///
+  /// In zh, this message translates to:
+  /// **'正序（旧→新）'**
+  String get shellSortAscending;
+
+  /// No description provided for @shellSortDescending.
+  ///
+  /// In zh, this message translates to:
+  /// **'倒序（新→旧）'**
+  String get shellSortDescending;
+
   /// No description provided for @speechReadAloud.
   ///
   /// In zh, this message translates to:

@@ -601,5 +601,7 @@
         "type": "String"
       }
     }
-  }
+  },
+  "shellSortAscending": "正序（旧→新）",
+  "shellSortDescending": "倒序（新→旧）"
 }

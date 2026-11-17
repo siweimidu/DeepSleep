@@ -138,6 +138,8 @@ Future<DeepSeekImportOutcome> runDeepSeekImport({
           messages: chat.messages,
           sourceId: chat.id.isEmpty ? null : chat.id,
           account: export.account,
+          sourceCreatedAt: chat.createdAt,
+          sourceUpdatedAt: chat.updatedAt,
         ));
         created++;
         messages += chat.messages.length;

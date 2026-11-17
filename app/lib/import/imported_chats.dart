@@ -35,6 +35,8 @@ class ImportedChat {
     this.seeded = false,
     this.account,
     this.sourceId,
+    this.sourceCreatedAt,
+    this.sourceUpdatedAt,
   });
 
   final String sessionId;
@@ -52,6 +54,16 @@ class ImportedChat {
   /// twice skips these, so a second run costs the conversations it adds only.
   final String? sourceId;
 
+  /// When the conversation started and when it last moved, in DeepSeek. The host
+  /// dates a session the moment it was created, which would put every imported
+  /// conversation in 今天 and sort a year of chats as if it were one day.
+  final DateTime? sourceCreatedAt;
+  final DateTime? sourceUpdatedAt;
+
+  /// What the drawer sorts and stamps this row with.
+  DateTime get shownUpdatedAt => sourceUpdatedAt ?? sourceCreatedAt ?? importedAt;
+  DateTime get shownCreatedAt => sourceCreatedAt ?? sourceUpdatedAt ?? importedAt;
+
   ImportedChat copyWith({bool? seeded, String? title, int? messageCount}) => ImportedChat(
     sessionId: sessionId,
     title: title ?? this.title,
@@ -60,6 +72,8 @@ class ImportedChat {
     seeded: seeded ?? this.seeded,
     account: account,
     sourceId: sourceId,
+    sourceCreatedAt: sourceCreatedAt,
+    sourceUpdatedAt: sourceUpdatedAt,
   );
 
   Map<String, Object?> toJson() => {
@@ -70,21 +84,25 @@ class ImportedChat {
     'seeded': seeded,
     'account': account,
     if (sourceId != null) 'sourceId': sourceId,
+    if (sourceCreatedAt != null) 'sourceCreatedAt': sourceCreatedAt!.toIso8601String(),
+    if (sourceUpdatedAt != null) 'sourceUpdatedAt': sourceUpdatedAt!.toIso8601String(),
   };
 
   static ImportedChat? fromJson(Object? json) {
     if (json is! Map) return null;
     final sessionId = json['sessionId'];
     if (sessionId is! String || sessionId.isEmpty) return null;
+    DateTime? time(Object? value) => value is String ? DateTime.tryParse(value) : null;
     return ImportedChat(
       sessionId: sessionId,
       title: json['title'] is String ? json['title'] as String : '',
       messageCount: json['messageCount'] is int ? json['messageCount'] as int : 0,
-      importedAt: DateTime.tryParse(json['importedAt'] is String ? json['importedAt'] as String : '') ??
-          DateTime.fromMillisecondsSinceEpoch(0),
+      importedAt: time(json['importedAt']) ?? DateTime.fromMillisecondsSinceEpoch(0),
       seeded: json['seeded'] == true,
       account: json['account'] is String ? json['account'] as String : null,
       sourceId: json['sourceId'] is String ? json['sourceId'] as String : null,
+      sourceCreatedAt: time(json['sourceCreatedAt']),
+      sourceUpdatedAt: time(json['sourceUpdatedAt']),
     );
   }
 }
@@ -97,6 +115,8 @@ class ImportedChatDraft {
     required this.messages,
     this.sourceId,
     this.account,
+    this.sourceCreatedAt,
+    this.sourceUpdatedAt,
   });
 
   final String sessionId;
@@ -104,6 +124,8 @@ class ImportedChatDraft {
   final List<DeepSeekMessage> messages;
   final String? sourceId;
   final String? account;
+  final DateTime? sourceCreatedAt;
+  final DateTime? sourceUpdatedAt;
 }
 
 /// Where the imported transcripts live.
@@ -114,13 +136,20 @@ final importedChatsDirProvider = FutureProvider<Directory>((ref) async {
   return dir;
 });
 
-/// Session id → the title its conversation had in DeepSeek.
+/// Every imported conversation, by the session it became.
 ///
-/// The drawer reads this for two things a blank host row can't answer by itself:
-/// the row is one of ours (so it is shown at all) and what to call it.
-final importedTitlesProvider = Provider<Map<String, String>>((ref) {
+/// The drawer reads this for the three things a blank host row can't answer by
+/// itself: the row is one of ours (so it is shown at all), what it is called, and
+/// when it really happened (the host dates it the moment it was created).
+final importedIndexProvider = Provider<Map<String, ImportedChat>>((ref) {
   final chats = ref.watch(importedChatsProvider).value ?? const <ImportedChat>[];
-  return {for (final chat in chats) chat.sessionId: chat.title};
+  return {for (final chat in chats) chat.sessionId: chat};
+});
+
+/// Session id → the title its conversation had in DeepSeek.
+final importedTitlesProvider = Provider<Map<String, String>>((ref) {
+  final index = ref.watch(importedIndexProvider);
+  return {for (final entry in index.entries) entry.key: entry.value.title};
 });
 
 final importedChatsProvider = AsyncNotifierProvider<ImportedChatsController, List<ImportedChat>>(
@@ -200,9 +229,12 @@ class ImportedChatsController extends AsyncNotifier<List<ImportedChat>> {
         importedAt: now,
         account: draft.account,
         sourceId: draft.sourceId,
+        sourceCreatedAt: draft.sourceCreatedAt,
+        sourceUpdatedAt: draft.sourceUpdatedAt,
       ));
     }
-    final next = [...?state.value, ...entries]..sort((a, b) => b.importedAt.compareTo(a.importedAt));
+    final next = [...?state.value, ...entries]
+      ..sort((a, b) => b.shownUpdatedAt.compareTo(a.shownUpdatedAt));
     state = AsyncValue.data(next);
     await _writeIndex(next);
   }

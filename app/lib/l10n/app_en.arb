@@ -5677,6 +5677,8 @@
   "shellPanelNoPlugins": "No plugin panels for this chat yet",
   "shellQuickPanel": "Shortcuts",
   "shellQuickPanelHint": "Change these in {path}",
+  "shellSortAscending": "Oldest first",
+  "shellSortDescending": "Newest first",
   "speechReadAloud": "Read aloud",
   "speechReadAloudStop": "Stop reading",
   "speechReadSection": "Read aloud",
