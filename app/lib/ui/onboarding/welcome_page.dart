@@ -145,7 +145,16 @@ class _BrandArrivalState extends State<_BrandArrival> with SingleTickerProviderS
                 ),
               ),
             ),
-            const BrandMark(size: _mark),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(_mark * 0.24),
+              child: Image.asset(
+                'assets/brand/deepsleep.png',
+                width: _mark,
+                height: _mark,
+                fit: BoxFit.cover,
+                filterQuality: FilterQuality.medium,
+              ),
+            ),
           ],
         ),
       ),

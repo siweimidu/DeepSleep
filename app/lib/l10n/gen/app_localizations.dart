@@ -17402,6 +17402,24 @@ abstract class L10n {
   /// **'这段对话没有可显示的内容'**
   String get hubDeepSeekRecordEmpty;
 
+  /// No description provided for @hubDeepSeekImportSkipped.
+  ///
+  /// In zh, this message translates to:
+  /// **'已存在，跳过：'**
+  String get hubDeepSeekImportSkipped;
+
+  /// No description provided for @hubDeepSeekImportWhere.
+  ///
+  /// In zh, this message translates to:
+  /// **'导入的会话就在对话列表里；第一次在这里发言时会把那段历史一起带给模型。'**
+  String get hubDeepSeekImportWhere;
+
+  /// No description provided for @hubDeepSeekRecordOpen.
+  ///
+  /// In zh, this message translates to:
+  /// **'查看'**
+  String get hubDeepSeekRecordOpen;
+
   /// No description provided for @iosSaveToFiles.
   ///
   /// In zh, this message translates to:

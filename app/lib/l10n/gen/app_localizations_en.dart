@@ -9923,6 +9923,16 @@ class L10nEn extends L10n {
   String get hubDeepSeekRecordEmpty => 'This conversation has nothing to show';
 
   @override
+  String get hubDeepSeekImportSkipped => 'Already here, skipped:';
+
+  @override
+  String get hubDeepSeekImportWhere =>
+      'The imported sessions are in the chat list; the first message you send there carries their history.';
+
+  @override
+  String get hubDeepSeekRecordOpen => 'Open';
+
+  @override
   String get iosSaveToFiles => 'Save to Files';
 
   @override

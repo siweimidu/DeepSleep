@@ -16,7 +16,6 @@ import '../../import/deepseek_importer.dart';
 import '../../import/imported_chats.dart';
 import '../../l10n/l10n.dart';
 import '../../state/connection_state.dart';
-import '../../state/sessions_state.dart';
 import '../shell/page_frame.dart';
 import '../theme/app_icons.dart';
 import 'imported_transcript_page.dart';
@@ -47,6 +46,7 @@ class _DeepSeekImportPageState extends ConsumerState<DeepSeekImportPage> {
   int _done = 0;
   int _total = 0;
   bool _cancelRequested = false;
+  DateTime _lastPaint = DateTime.fromMillisecondsSinceEpoch(0);
 
   bool get _busy => _stage == _Stage.reading || _stage == _Stage.creating;
 
@@ -105,14 +105,15 @@ class _DeepSeekImportPageState extends ConsumerState<DeepSeekImportPage> {
         ref: ref,
         export: export,
         onProgress: (done, total) {
+          // 几百个会话时每完成一个都重建整页会把导入拖慢:按时间节流。
+          final now = DateTime.now();
+          if (now.difference(_lastPaint) < const Duration(milliseconds: 120) && done < total) return;
+          _lastPaint = now;
           if (mounted) setState(() => _done = done);
         },
         isCancelled: () => _cancelRequested,
       );
       if (!mounted) return;
-      if (outcome.imported > 0) {
-        ref.invalidate(sessionsProvider);
-      }
       setState(() {
         _stage = _Stage.finished;
         _outcome = outcome;
@@ -247,9 +248,21 @@ class _OutcomeCard extends StatelessWidget {
       children: [
         Padding(
           padding: _gutter,
-          child: Text(
-            '${outcome.imported} / $total · ${outcome.messages} ${l10n.hubDeepSeekImportMessages}',
-            style: theme.textTheme.bodyMedium,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '${outcome.imported} / $total · ${outcome.messages} ${l10n.hubDeepSeekImportMessages}',
+                style: theme.textTheme.bodyMedium,
+              ),
+              if (outcome.skipped > 0)
+                Text(
+                  '${l10n.hubDeepSeekImportSkipped} ${outcome.skipped}',
+                  style: theme.textTheme.bodySmall,
+                ),
+              if (outcome.imported > 0)
+                Text(l10n.hubDeepSeekImportWhere, style: theme.textTheme.bodySmall),
+            ],
           ),
         ),
         if (outcome.problems.isNotEmpty)

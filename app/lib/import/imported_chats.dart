@@ -10,6 +10,11 @@
 // The transcript is what the first message in the imported session carries to
 // the model (`takePreamble`), and what 查看记录 shows; once that preamble has
 // gone out, `seeded` records it so a later message does not repeat it.
+//
+// A host session with no turn yet is *blank*, and the drawer hides blank rows —
+// so an imported conversation is visible only because the drawer consults
+// [importedTitlesProvider] (see SessionsController._visible): its id is here and
+// its title is here, both without asking the host again.
 
 import 'dart:async';
 import 'dart:convert';
@@ -29,6 +34,7 @@ class ImportedChat {
     required this.importedAt,
     this.seeded = false,
     this.account,
+    this.sourceId,
   });
 
   final String sessionId;
@@ -42,6 +48,10 @@ class ImportedChat {
   /// The masked DeepSeek account the export came from, when it said so.
   final String? account;
 
+  /// The conversation's id inside the DeepSeek export. Importing the same export
+  /// twice skips these, so a second run costs the conversations it adds only.
+  final String? sourceId;
+
   ImportedChat copyWith({bool? seeded, String? title, int? messageCount}) => ImportedChat(
     sessionId: sessionId,
     title: title ?? this.title,
@@ -49,6 +59,7 @@ class ImportedChat {
     importedAt: importedAt,
     seeded: seeded ?? this.seeded,
     account: account,
+    sourceId: sourceId,
   );
 
   Map<String, Object?> toJson() => {
@@ -58,6 +69,7 @@ class ImportedChat {
     'importedAt': importedAt.toIso8601String(),
     'seeded': seeded,
     'account': account,
+    if (sourceId != null) 'sourceId': sourceId,
   };
 
   static ImportedChat? fromJson(Object? json) {
@@ -72,8 +84,26 @@ class ImportedChat {
           DateTime.fromMillisecondsSinceEpoch(0),
       seeded: json['seeded'] == true,
       account: json['account'] is String ? json['account'] as String : null,
+      sourceId: json['sourceId'] is String ? json['sourceId'] as String : null,
     );
   }
+}
+
+/// One conversation about to be recorded: what the importer hands over in a batch.
+class ImportedChatDraft {
+  const ImportedChatDraft({
+    required this.sessionId,
+    required this.title,
+    required this.messages,
+    this.sourceId,
+    this.account,
+  });
+
+  final String sessionId;
+  final String title;
+  final List<DeepSeekMessage> messages;
+  final String? sourceId;
+  final String? account;
 }
 
 /// Where the imported transcripts live.
@@ -84,6 +114,15 @@ final importedChatsDirProvider = FutureProvider<Directory>((ref) async {
   return dir;
 });
 
+/// Session id → the title its conversation had in DeepSeek.
+///
+/// The drawer reads this for two things a blank host row can't answer by itself:
+/// the row is one of ours (so it is shown at all) and what to call it.
+final importedTitlesProvider = Provider<Map<String, String>>((ref) {
+  final chats = ref.watch(importedChatsProvider).value ?? const <ImportedChat>[];
+  return {for (final chat in chats) chat.sessionId: chat.title};
+});
+
 final importedChatsProvider = AsyncNotifierProvider<ImportedChatsController, List<ImportedChat>>(
   ImportedChatsController.new,
 );
@@ -92,9 +131,10 @@ class ImportedChatsController extends AsyncNotifier<List<ImportedChat>> {
   @override
   Future<List<ImportedChat>> build() async {
     final index = await _readIndex();
+    final dir = await _dir();
     final known = <ImportedChat>[];
     for (final entry in index) {
-      if (await File('${(await _dir()).path}/${entry.sessionId}.json').exists()) known.add(entry);
+      if (await File('${dir.path}/${entry.sessionId}.json').exists()) known.add(entry);
     }
     known.sort((a, b) => b.importedAt.compareTo(a.importedAt));
     return known;
@@ -119,32 +159,50 @@ class ImportedChatsController extends AsyncNotifier<List<ImportedChat>> {
     final dir = await _dir();
     final file = File('${dir.path}/index.json');
     await file.writeAsString(jsonEncode({
-      'version': 1,
+      'version': 2,
       'chats': [for (final chat in chats) chat.toJson()],
     }), flush: true);
   }
 
-  /// Keeps [messages] for [sessionId] and adds it to the index.
-  Future<void> record({
-    required String sessionId,
-    required String title,
-    required List<DeepSeekMessage> messages,
-    String? account,
-  }) async {
-    final dir = await _dir();
-    await File('${dir.path}/$sessionId.json').writeAsString(jsonEncode({
-      'version': 1,
-      'title': title,
-      'messages': [for (final message in messages) _messageToJson(message)],
-    }), flush: true);
-    final entry = ImportedChat(
-      sessionId: sessionId,
-      title: title,
-      messageCount: messages.length,
-      importedAt: DateTime.now(),
-      account: account,
+  /// The DeepSeek conversation ids already imported, plus their titles (an
+  /// index written before [ImportedChat.sourceId] existed has only the title,
+  /// and a re-import of the same export must not double it).
+  Future<({Set<String> ids, Set<String> titles})> alreadyImported() async {
+    final chats = state.value ?? await future;
+    return (
+      ids: {for (final chat in chats) if (chat.sourceId != null) chat.sourceId!},
+      titles: {for (final chat in chats) chat.title},
     );
-    final next = [...?state.value, entry]..sort((a, b) => b.importedAt.compareTo(a.importedAt));
+  }
+
+  /// Records one chunk of a running import: every transcript, then one index
+  /// write and one state update for the whole chunk.
+  ///
+  /// The import page shows the list as it grows and the drawer picks the rows up
+  /// from [importedTitlesProvider], so a chunk of a few dozen keeps both cheap;
+  /// writing the index per conversation would make a five-hundred-conversation
+  /// import a quadratic amount of JSON.
+  Future<void> recordAll(List<ImportedChatDraft> drafts) async {
+    if (drafts.isEmpty) return;
+    final dir = await _dir();
+    final now = DateTime.now();
+    final entries = <ImportedChat>[];
+    for (final draft in drafts) {
+      await File('${dir.path}/${draft.sessionId}.json').writeAsString(jsonEncode({
+        'version': 1,
+        'title': draft.title,
+        'messages': [for (final message in draft.messages) _messageToJson(message)],
+      }), flush: true);
+      entries.add(ImportedChat(
+        sessionId: draft.sessionId,
+        title: draft.title,
+        messageCount: draft.messages.length,
+        importedAt: now,
+        account: draft.account,
+        sourceId: draft.sourceId,
+      ));
+    }
+    final next = [...?state.value, ...entries]..sort((a, b) => b.importedAt.compareTo(a.importedAt));
     state = AsyncValue.data(next);
     await _writeIndex(next);
   }

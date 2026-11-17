@@ -9400,6 +9400,15 @@ class L10nZh extends L10n {
   String get hubDeepSeekRecordEmpty => '这段对话没有可显示的内容';
 
   @override
+  String get hubDeepSeekImportSkipped => '已存在，跳过：';
+
+  @override
+  String get hubDeepSeekImportWhere => '导入的会话就在对话列表里；第一次在这里发言时会把那段历史一起带给模型。';
+
+  @override
+  String get hubDeepSeekRecordOpen => '查看';
+
+  @override
   String get iosSaveToFiles => '存到「文件」';
 
   @override

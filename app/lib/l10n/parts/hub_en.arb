@@ -206,5 +206,8 @@
   "hubDeepSeekRecordStopped": "This answer was cut off",
   "hubDeepSeekRecordYou": "Me",
   "hubDeepSeekRecordDeepSeek": "DeepSeek",
-  "hubDeepSeekRecordEmpty": "This conversation has nothing to show"
+  "hubDeepSeekRecordEmpty": "This conversation has nothing to show",
+  "hubDeepSeekImportSkipped": "Already here, skipped:",
+  "hubDeepSeekImportWhere": "The imported sessions are in the chat list; the first message you send there carries their history.",
+  "hubDeepSeekRecordOpen": "Open"
 }

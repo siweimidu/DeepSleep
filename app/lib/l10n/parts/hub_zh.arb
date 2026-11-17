@@ -361,5 +361,8 @@
   "hubDeepSeekRecordStopped": "这条没有说完",
   "hubDeepSeekRecordYou": "我",
   "hubDeepSeekRecordDeepSeek": "DeepSeek",
-  "hubDeepSeekRecordEmpty": "这段对话没有可显示的内容"
+  "hubDeepSeekRecordEmpty": "这段对话没有可显示的内容",
+  "hubDeepSeekImportSkipped": "已存在，跳过：",
+  "hubDeepSeekImportWhere": "导入的会话就在对话列表里；第一次在这里发言时会把那段历史一起带给模型。",
+  "hubDeepSeekRecordOpen": "查看"
 }

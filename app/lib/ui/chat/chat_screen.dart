@@ -96,6 +96,7 @@ import 'composer_toast.dart';
 import 'dock/chat_dock.dart';
 import 'dock/dock_stack.dart';
 import 'empty_state.dart';
+import 'imported_history_card.dart';
 import 'new_chat_options.dart';
 import 'media/generate_mode.dart';
 import 'media/generate_sheet.dart';
@@ -1837,6 +1838,8 @@ class _ChatScreenState extends ConsumerState<ChatScreen> with WidgetsBindingObse
                                     // own (a remote host has its own errors).
                                     if (failureCard)
                                       const EngineFailureCard(padding: EdgeInsets.fromLTRB(16, 0, 16, 20)),
+                                    if (sessionId != null && !failureCard)
+                                      ImportedHistoryCard(sessionId: sessionId),
                                     ChatEmptyState(
                                       connected: connected,
                                       suggestions: ref.watch(settingsProvider.select((s) => s.chatSuggestions))
