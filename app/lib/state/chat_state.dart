@@ -1568,7 +1568,13 @@ class ChatController extends Notifier<ChatState> {
   }) async {
     final client = operation.client;
     // 导入的 DeepSeek 会话:第一次在这里发言时,把那段历史一起交给模型,让它接着聊。
-    final carried = await ref.read(importedChatsProvider.notifier).takePreamble(sessionId);
+    // 读取失败不能挡住发言,所以这里兜住。
+    String? carried;
+    try {
+      carried = await ref.read(importedChatsProvider.notifier).takePreamble(sessionId);
+    } on Object catch (error, stack) {
+      appErrorLog.record(AppErrorSource.session, error, stack);
+    }
     final words = carried == null ? text : '$carried\n\n$text';
     final images = [
       for (final a in attachments)
