@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Status-bar icon for all DSH notifications: the launcher glyph silhouette
+<!-- Status-bar icon for all DeepSleep notifications: the launcher glyph silhouette
      (ic_launcher_monochrome), cropped to fill the 22dp live area of the 24dp slot.
      Small icons are drawn from alpha only. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"

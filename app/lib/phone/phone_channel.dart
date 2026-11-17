@@ -938,7 +938,7 @@ enum PhoneUnlock {
   /// Password, verification-code and payment-code inputs.
   secretFields,
 
-  /// DSH Go's own screens.
+  /// DeepSleep's own screens.
   ownApp,
 }
 

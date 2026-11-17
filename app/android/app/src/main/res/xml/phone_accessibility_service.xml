@@ -2,7 +2,7 @@
 <!-- SPDX-FileCopyrightText: 2026 CikeSeven -->
 <!-- SPDX-License-Identifier: MIT -->
 <!-- See THIRD_PARTY_NOTICES.md. -->
-<!-- DSH 手机操控 (phone/a11y/PhoneA11yService).
+<!-- DeepSleep 手机操控 (phone/a11y/PhoneA11yService).
      Not an accessibility tool (isAccessibilityTool=false): Play / Play Protect rules, and
      accessibilityDataSensitive views stay hidden from us, which is the safe side. -->
 <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"

@@ -52,7 +52,7 @@
          TODO(targetSdk >= 31): also configure dataExtractionRules. -->
     <application
         android:allowBackup="false"
-        android:label="DSH Go"
+        android:label="DeepSleep"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -246,7 +246,7 @@
             <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE" android:value="false" />
         </service>
 
-        <!-- Keeps the local DSH process alive while the app is in the background. -->
+        <!-- Keeps the local DeepSleep process alive while the app is in the background. -->
         <service
             android:name=".runtime.DshService"
             android:exported="false"

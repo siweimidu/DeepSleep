@@ -395,7 +395,7 @@ String uiSkillShellScript(UiSkillBundle bundle) {
   out.writeln('mkdir -p "\$d"${dirs.map((d) => ' "\$d/$d"').join()}');
   var n = 0;
   for (final MapEntry(key: path, value: text) in bundle.writeOrder) {
-    var tag = 'DSHGO_EOF_$n';
+    var tag = 'DeepSleep_EOF_$n';
     while (text.split('\n').contains(tag)) {
       tag = '${tag}_';
     }

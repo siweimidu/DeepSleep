@@ -38,8 +38,8 @@ abstract interface class GoalBackend {
   Stream<void> get hostReady;
 }
 
-class DshGoalBackend implements GoalBackend {
-  DshGoalBackend(this.client);
+class DeepSleepalBackend implements GoalBackend {
+  DeepSleepalBackend(this.client);
 
   final DshClient client;
 
@@ -74,7 +74,7 @@ class DshGoalBackend implements GoalBackend {
 
 final goalBackendProvider = Provider<GoalBackend?>((ref) {
   final client = ref.watch(activeConnectionProvider.select((c) => c.value?.client));
-  return client == null ? null : DshGoalBackend(client);
+  return client == null ? null : DeepSleepalBackend(client);
 });
 
 /// What the goal bar shows.

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 import '../../state/app_info.dart';
 import '../theme/theme.dart';
@@ -167,62 +166,14 @@ class BrandLockup extends StatelessWidget {
 
   double get _size => fontSize ?? height * 0.95;
 
+  // The word alone: the fork carries no glyph beside it, so 侧边栏, the share
+  // card and the welcome line all read as plain text.
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    // The word's drawn size: the glyph and the gap scale with the text.
-    final drawn = MediaQuery.textScalerOf(context).scale(_size);
-    final glyph = drawn * glyphScale;
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.baseline,
-      textBaseline: TextBaseline.alphabetic,
-      children: [
-        _GlyphBaseline(
-          // A baseline this far below the glyph's top puts its visual centre on the
-          // word's x-height (or cap-height) centre when the row aligns baselines.
-          baseline: glyph * BrandMark.visualCentre.dy + centreRise(label, drawn),
-          child: BrandMark(size: glyph, color: glyphColor),
-        ),
-        SizedBox(width: drawn * gapScale),
-        Text(
-          label,
-          style: AppType.wordmark(size: _size, color: color ?? scheme.onSurface),
-        ),
-      ],
+    return Text(
+      label,
+      style: AppType.wordmark(size: _size, color: color ?? scheme.onSurface),
     );
   }
-}
-
-/// Reports [baseline] as its child's alphabetic baseline.
-class _GlyphBaseline extends SingleChildRenderObjectWidget {
-  const _GlyphBaseline({required this.baseline, required super.child});
-
-  final double baseline;
-
-  @override
-  RenderObject createRenderObject(BuildContext context) => _RenderGlyphBaseline(baseline);
-
-  @override
-  void updateRenderObject(BuildContext context, _RenderGlyphBaseline renderObject) {
-    renderObject.baseline = baseline;
-  }
-}
-
-class _RenderGlyphBaseline extends RenderProxyBox {
-  _RenderGlyphBaseline(this._baseline);
-
-  double _baseline;
-
-  set baseline(double value) {
-    if (value == _baseline) return;
-    _baseline = value;
-    markNeedsLayout();
-  }
-
-  @override
-  double? computeDistanceToActualBaseline(TextBaseline baseline) => _baseline;
-
-  @override
-  double? computeDryBaseline(BoxConstraints constraints, TextBaseline baseline) => _baseline;
 }

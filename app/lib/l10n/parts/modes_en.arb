@@ -2,7 +2,7 @@
   "modeSheetTitle": "Mode",
   "modeKeyTooltip": "Switch mode",
   "modeWork": "Work",
-  "modeWorkSubtitle": "Get things done with DSH",
+  "modeWorkSubtitle": "Get things done with DeepSleep",
   "modeCompanionShort": "Companion",
   "modeTavernSubtitle": "Import a character card and start a story",
   "modeStartup": "Open on launch"

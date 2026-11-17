@@ -19,10 +19,10 @@ class L10nZh extends L10n {
   String get a11yRestoreNeedsGrant => '需要授权';
 
   @override
-  String get a11yRestoreNotice => '开启后，在系统设置里关掉无障碍会被自动打开；要关闭手机操控，请在 DSH Go 里关。';
+  String get a11yRestoreNotice => '开启后，在系统设置里关掉无障碍会被自动打开；要关闭手机操控，请在 DeepSleep 里关。';
 
   @override
-  String get a11yRestoreForceStop => '被强制停止后，重新打开 DSH Go 才能恢复。';
+  String get a11yRestoreForceStop => '被强制停止后，重新打开 DeepSleep 才能恢复。';
 
   @override
   String get a11yRestoreGrant => '授权并开启';
@@ -58,7 +58,7 @@ class L10nZh extends L10n {
   String get a11yRestoreCopied => '授权命令已复制';
 
   @override
-  String get accessPickTitle => '想让 DSH Go 帮你做哪些事';
+  String get accessPickTitle => '想让 DeepSleep 帮你做哪些事';
 
   @override
   String get accessPickMessage => '选好后逐项开启';
@@ -203,7 +203,7 @@ class L10nZh extends L10n {
   String get accessPopupTitle => '允许后台弹出界面';
 
   @override
-  String get accessPopupWhy => '手机操控做完能回到 DSH Go';
+  String get accessPopupWhy => '手机操控做完能回到 DeepSleep';
 
   @override
   String accessVivoPopupPath(String app) {
@@ -228,7 +228,7 @@ class L10nZh extends L10n {
   String get accessRestrictedTitle => '先允许受限制的设置';
 
   @override
-  String get accessRestrictedTap => '在无障碍里点一下「DSH 手机操控」，出现「受限制的设置」时点确定';
+  String get accessRestrictedTap => '在无障碍里点一下「DeepSleep 手机操控」，出现「受限制的设置」时点确定';
 
   @override
   String get accessRestrictedMenu => '在应用信息里点右上角的三个点，选「允许受限制的设置」';
@@ -237,7 +237,7 @@ class L10nZh extends L10n {
   String get accessRestrictedAdvanced => '在应用信息的「高级设置」里打开「允许受限制的设置」';
 
   @override
-  String get accessRestrictedBack => '回到无障碍，打开「DSH 手机操控」';
+  String get accessRestrictedBack => '回到无障碍，打开「DeepSleep 手机操控」';
 
   @override
   String get accessRestrictedHelp => '看图示';
@@ -1695,7 +1695,7 @@ class L10nZh extends L10n {
   String get androidShellAuthorize => '申请 Shizuku 授权';
 
   @override
-  String get androidShellAuthorizeHint => '先安装并启动 Shizuku，再点此按钮允许 dsh-Go。打开本页或刷新不会申请授权。';
+  String get androidShellAuthorizeHint => '先安装并启动 Shizuku，再点此按钮允许 DeepSleep。打开本页或刷新不会申请授权。';
 
   @override
   String get androidShellStatus => '执行状态';
@@ -2694,7 +2694,7 @@ class L10nZh extends L10n {
   String get botsForumSubtitle => '提问、分享、找同好';
 
   @override
-  String get botsProjectHome => 'DSH Go 项目主页';
+  String get botsProjectHome => 'DeepSleep 项目主页';
 
   @override
   String get botsOpenSource => '开源项目';
@@ -2888,7 +2888,7 @@ class L10nZh extends L10n {
   String get botsPets => '宠物';
 
   @override
-  String get botsPetSource => '来自 DSH-TUI';
+  String get botsPetSource => '来自 DeepSleep-TUI';
 
   @override
   String get botsPetImport => '导入';
@@ -2943,7 +2943,7 @@ class L10nZh extends L10n {
   String get botsPetCodexFps => '帧率换算成毫秒时取了整';
 
   @override
-  String get botsPetCodexOneShot => '只播一次的动作，播完回到哪里由 DSH 决定';
+  String get botsPetCodexOneShot => '只播一次的动作，播完回到哪里由 DeepSleep 决定';
 
   @override
   String get botsPetCodexMissingAuthor => '包里没写作者';
@@ -3557,7 +3557,7 @@ class L10nZh extends L10n {
   String get catalogDiagnosticsSummary => '导出诊断包';
 
   @override
-  String get catalogWebSummary => 'DSH 官方界面';
+  String get catalogWebSummary => 'DeepSleep 官方界面';
 
   @override
   String get catalogPluginPanel => '插件面板';
@@ -3850,7 +3850,7 @@ class L10nZh extends L10n {
   String get chatGeneratingSteerHint => '生成中 · 可直接插话';
 
   @override
-  String get chatComposerHint => '给 DSH 发消息…';
+  String get chatComposerHint => '给 DeepSleep 发消息…';
 
   @override
   String get chatStopGenerating => '停止生成';
@@ -4040,7 +4040,7 @@ class L10nZh extends L10n {
   String get chatImageNotFound => '找不到图片';
 
   @override
-  String get chatImageOffline => '未连接 DSH';
+  String get chatImageOffline => '未连接 DeepSleep';
 
   @override
   String get chatImageTooLarge => '图片过大';
@@ -4182,7 +4182,7 @@ class L10nZh extends L10n {
   String get chatOpenInDefaultApp => '用默认应用打开';
 
   @override
-  String get chatDownloadsFolderHint => '下载/DSH-Go 文件夹';
+  String get chatDownloadsFolderHint => '下载/DeepSleep 文件夹';
 
   @override
   String chatSavedToDownloadsPath(String path) {
@@ -5224,7 +5224,7 @@ class L10nZh extends L10n {
   String get companionMemoryUnsupported => '这台主机还不能保存她的记忆';
 
   @override
-  String get companionMemoryUnsupportedHint => '经 DSH Remote 中继连接时用不了，或者这台主机的 dsh-go 桥接比较旧。';
+  String get companionMemoryUnsupportedHint => '经 DSH Remote 中继连接时用不了，或者这台主机的 DeepSleep 桥接比较旧。';
 
   @override
   String get companionMemoryLoadFailed => '没读到';
@@ -5290,7 +5290,7 @@ class L10nZh extends L10n {
   String get companionModeFull => '完整';
 
   @override
-  String get companionModeFullHint => '主机上的 DSH 引擎，带工具和手机操控';
+  String get companionModeFullHint => '主机上的 DeepSleep 引擎，带工具和手机操控';
 
   @override
   String get companionLightNoKey => '轻量模式要用 DeepSeek API Key，在设置里填上就能和我聊啦。';
@@ -6075,7 +6075,7 @@ class L10nZh extends L10n {
   String get engineAccountFinishInBrowser => '在浏览器中完成登录';
 
   @override
-  String get engineAccountReturnToDsh => '登录完成后回到 DSH Go';
+  String get engineAccountReturnToDsh => '登录完成后回到 DeepSleep';
 
   @override
   String get engineAccountFinishingSignIn => '正在完成登录';
@@ -6108,7 +6108,7 @@ class L10nZh extends L10n {
   String get engineAccountUsageFact => '用量从账号余额中扣除';
 
   @override
-  String get engineAccountBrowserFact => '在浏览器中登录，密码不经过 DSH';
+  String get engineAccountBrowserFact => '在浏览器中登录，密码不经过 DeepSleep';
 
   @override
   String get engineAccountCredentialsFact => '登录凭据只保存在本机';
@@ -6198,7 +6198,7 @@ class L10nZh extends L10n {
   String get engineGeneralMissing => '这台主机没有通用设置';
 
   @override
-  String get engineSettingsVersionRequired => '需要 DSH 0.2.1 或更新版本';
+  String get engineSettingsVersionRequired => '需要 DeepSleep 0.2.1 或更新版本';
 
   @override
   String get engineGeneralWebDisplay => '网页版显示';
@@ -7301,7 +7301,7 @@ class L10nZh extends L10n {
   String get featuresPresetMinimalDescription => '只用终端和读图，适合测试对比';
 
   @override
-  String get featuresPresetCreatorDescription => '让 Agent 写插件，定制 DSH 本身';
+  String get featuresPresetCreatorDescription => '让 Agent 写插件，定制 DeepSleep 本身';
 
   @override
   String featuresHostUnreachable(String name) {
@@ -7354,7 +7354,7 @@ class L10nZh extends L10n {
   }
 
   @override
-  String get featuresJobOutputSubject => 'DSH 任务输出';
+  String get featuresJobOutputSubject => 'DeepSleep 任务输出';
 
   @override
   String get featuresJobOutputReadFailed => '没能读取输出';
@@ -8220,7 +8220,7 @@ class L10nZh extends L10n {
   String get featuresExportSaveDownloads => '存到「下载」';
 
   @override
-  String get featuresExportDownloadsHint => '存进 下载/DSH-Go';
+  String get featuresExportDownloadsHint => '存进 下载/DeepSleep';
 
   @override
   String get featuresExportContents => '含这个对话和子代理的全部记录与附件';
@@ -8494,7 +8494,7 @@ class L10nZh extends L10n {
   String get harmonyPageUnavailable => '这个版本没有这个页面';
 
   @override
-  String get harmonyNotificationSettingsFailed => '没能打开系统设置。到「设置 → 通知和状态栏 → DSH Go」里开启';
+  String get harmonyNotificationSettingsFailed => '没能打开系统设置。到「设置 → 通知和状态栏 → DeepSleep」里开启';
 
   @override
   String get harmonySearchUnavailable => '这个版本没有这项功能';
@@ -8627,7 +8627,7 @@ class L10nZh extends L10n {
   String get harmonyLiveBlockedTitle => '系统没有允许进度通知';
 
   @override
-  String get harmonyLiveBlockedText => '在系统设置里为 DSH Go 打开通知';
+  String get harmonyLiveBlockedText => '在系统设置里为 DeepSleep 打开通知';
 
   @override
   String get harmonyAlertsOffTitle => '提醒通知已关闭';
@@ -8742,7 +8742,7 @@ class L10nZh extends L10n {
 
   @override
   String harmonySafeRepairPrompt(String what) {
-    return '我的 DSH 正常模式出了问题（$what）。现在是安全模式，用的是随包的默认配置，我原来的配置没有动。请帮我找原因，动手改之前先告诉我要改什么。';
+    return '我的 DeepSleep 正常模式出了问题（$what）。现在是安全模式，用的是随包的默认配置，我原来的配置没有动。请帮我找原因，动手改之前先告诉我要改什么。';
   }
 
   @override
@@ -8884,7 +8884,7 @@ class L10nZh extends L10n {
   String get hubSettingsStorageAllow => '允许读写';
 
   @override
-  String get hubSettingsStorageDenied => '没有拿到存储权限。到系统设置里给 DSH Go 开启「所有文件访问」后再试';
+  String get hubSettingsStorageDenied => '没有拿到存储权限。到系统设置里给 DeepSleep 开启「所有文件访问」后再试';
 
   @override
   String get hubSettingsRestartRequired => '重启引擎后生效';
@@ -9010,7 +9010,7 @@ class L10nZh extends L10n {
   String get hubPluginInstalledVersion => '已装版本';
 
   @override
-  String get hubPluginRequiresDsh => '需要 DSH';
+  String get hubPluginRequiresDsh => '需要 DeepSleep';
 
   @override
   String get hubPluginPackageName => '包名';
@@ -9046,7 +9046,7 @@ class L10nZh extends L10n {
   String get hubPluginRetryInstall => '重试安装';
 
   @override
-  String get hubPluginOfficial => 'DSH 官方';
+  String get hubPluginOfficial => 'DeepSleep 官方';
 
   @override
   String get hubPluginNotLoaded => '没有正常加载';
@@ -9191,7 +9191,7 @@ class L10nZh extends L10n {
   String get hubGroupHosts => '主机';
 
   @override
-  String get hubGroupHelp => '帮助与关于';
+  String get hubGroupHelp => '诊断';
 
   @override
   String get hubPersonalization => '个性化';
@@ -9215,7 +9215,7 @@ class L10nZh extends L10n {
   String get hubInterfaceHome => '首页';
 
   @override
-  String get hubInterfaceWebHint => 'DSH 官方网页版';
+  String get hubInterfaceWebHint => 'DeepSleep 官方网页版';
 
   @override
   String get hubInterfaceOpenWeb => '打开网页版';
@@ -9245,10 +9245,10 @@ class L10nZh extends L10n {
   String get hubTableTintNoneHint => '只剩网格线，最轻';
 
   @override
-  String get hubAbout => '关于 DSH Go';
+  String get hubAbout => '关于 DeepSleep';
 
   @override
-  String get hubAboutAuthor => 'DSH Go 原作者';
+  String get hubAboutAuthor => 'DeepSleep 原作者';
 
   @override
   String get hubAboutBilibili => 'B站主页';
@@ -9324,10 +9324,86 @@ class L10nZh extends L10n {
   String get hubQuickPanelItemsNone => '没有选择，左滑不会打开';
 
   @override
+  String get hubDeepSeekImport => '导入 DeepSeek APP 端聊天记录';
+
+  @override
+  String get hubDeepSeekImportHint =>
+      '在 DeepSeek App 里「设置 → 数据导出」拿到 deepseek_data-…zip，选进来即可。每个对话都会变成一个会话，标题照旧，历史记录留在本机；第一次在这里发言时会把那段历史一起带给模型。';
+
+  @override
+  String get hubDeepSeekImportPick => '选择导出文件（.zip）';
+
+  @override
+  String get hubDeepSeekImportParsing => '正在读取压缩包…';
+
+  @override
+  String get hubDeepSeekImportCreating => '正在创建会话…';
+
+  @override
+  String get hubDeepSeekImportCancel => '取消';
+
+  @override
+  String get hubDeepSeekImportNoHost => '先连上引擎再导入。';
+
+  @override
+  String get hubDeepSeekImportBadZip => '这不是 DeepSeek App 导出的压缩包。';
+
+  @override
+  String get hubDeepSeekImportNoChatsZip => '这个压缩包里没有对话。';
+
+  @override
+  String get hubDeepSeekImportUnreadable => '读不了这个文件。';
+
+  @override
+  String get hubDeepSeekImportSummary => '导入完成';
+
+  @override
+  String get hubDeepSeekImportCancelled => '已取消';
+
+  @override
+  String get hubDeepSeekImportImportedSection => '已导入的对话';
+
+  @override
+  String get hubDeepSeekImportNone => '还没有导入过对话。';
+
+  @override
+  String get hubDeepSeekImportCarryNote => '接着聊时，第一次发言会把这段历史作为上下文一起发给模型，之后照常在会话里聊。';
+
+  @override
+  String get hubDeepSeekImportFailed => '有会话没能创建：';
+
+  @override
+  String get hubDeepSeekImportMessages => '条消息';
+
+  @override
+  String get hubDeepSeekRecordTitle => '聊天记录';
+
+  @override
+  String get hubDeepSeekRecordThinking => '思考';
+
+  @override
+  String get hubDeepSeekRecordSources => '参考';
+
+  @override
+  String get hubDeepSeekRecordAttachments => '附件';
+
+  @override
+  String get hubDeepSeekRecordStopped => '这条没有说完';
+
+  @override
+  String get hubDeepSeekRecordYou => '我';
+
+  @override
+  String get hubDeepSeekRecordDeepSeek => 'DeepSeek';
+
+  @override
+  String get hubDeepSeekRecordEmpty => '这段对话没有可显示的内容';
+
+  @override
   String get iosSaveToFiles => '存到「文件」';
 
   @override
-  String get iosFilesFolderHint => '文件 App 的 DSH Go 文件夹';
+  String get iosFilesFolderHint => '文件 App 的 DeepSleep 文件夹';
 
   @override
   String get iosSavingToFiles => '正在存到「文件」…';
@@ -9339,7 +9415,7 @@ class L10nZh extends L10n {
   String get iosEnableBanners => '横幅不弹时，到系统设置打开「横幅」';
 
   @override
-  String get iosNotificationSettingsFailed => '没能打开系统设置。到「设置 → DSH Go → 通知」里开启';
+  String get iosNotificationSettingsFailed => '没能打开系统设置。到「设置 → DeepSleep → 通知」里开启';
 
   @override
   String get iosVoiceSystemHint => '使用系统的语音识别';
@@ -9348,10 +9424,11 @@ class L10nZh extends L10n {
   String get iosVoiceAllowSystem => '请在系统设置里允许语音识别';
 
   @override
-  String get iosPluginsPermissionLocalThirdParty => '插件以 DSH 的权限运行：能读写文件、执行命令、读取 API Key，不受工作区沙箱限制。由第三方提供，DSH 官方未审核。';
+  String get iosPluginsPermissionLocalThirdParty =>
+      '插件以 DeepSleep 的权限运行：能读写文件、执行命令、读取 API Key，不受工作区沙箱限制。由第三方提供，DeepSleep 官方未审核。';
 
   @override
-  String get iosPluginsPermissionLocalTrusted => '插件以 DSH 的权限运行：能读写文件、执行命令、读取 API Key，不受工作区沙箱限制。只装你信任的插件。';
+  String get iosPluginsPermissionLocalTrusted => '插件以 DeepSleep 的权限运行：能读写文件、执行命令、读取 API Key，不受工作区沙箱限制。只装你信任的插件。';
 
   @override
   String get iosIconChanged => '桌面图标已更换';
@@ -9785,7 +9862,7 @@ class L10nZh extends L10n {
   String get iconShortcutAdd => '添加到桌面';
 
   @override
-  String get iconShortcutNote => '系统不允许把桌面图标换成任意图片，这里会另放一个打开 DSH Go 的快捷方式；部分桌面会在它的角上加一个小标';
+  String get iconShortcutNote => '系统不允许把桌面图标换成任意图片，这里会另放一个打开 DeepSleep 的快捷方式；部分桌面会在它的角上加一个小标';
 
   @override
   String get iconShortcutAdded => '已添加到桌面';
@@ -9794,7 +9871,7 @@ class L10nZh extends L10n {
   String get iconShortcutConfirm => '在弹出的窗口里确认';
 
   @override
-  String get iconShortcutNoDialog => '没有弹窗？在系统设置里允许 DSH Go 创建桌面快捷方式';
+  String get iconShortcutNoDialog => '没有弹窗？在系统设置里允许 DeepSleep 创建桌面快捷方式';
 
   @override
   String get iconShortcutSettings => '去设置';
@@ -9992,16 +10069,16 @@ class L10nZh extends L10n {
   String get liveChipFailed => '出错';
 
   @override
-  String get livePublicRunning => 'DSH 正在干活';
+  String get livePublicRunning => 'DeepSleep 正在干活';
 
   @override
-  String get livePublicWaiting => 'DSH 在等你处理';
+  String get livePublicWaiting => 'DeepSleep 在等你处理';
 
   @override
-  String get livePublicDone => 'DSH 做完了';
+  String get livePublicDone => 'DeepSleep 做完了';
 
   @override
-  String get livePublicFailed => 'DSH 出错了';
+  String get livePublicFailed => 'DeepSleep 出错了';
 
   @override
   String get liveSettingsTitle => '实时活动';
@@ -10023,7 +10100,7 @@ class L10nZh extends L10n {
   String get liveBlockedTitle => '系统没有允许实时活动';
 
   @override
-  String get liveBlockedText => '在系统设置里为 DSH Go 打开「实时活动」（有的手机叫「在流体云中显示」）';
+  String get liveBlockedText => '在系统设置里为 DeepSleep 打开「实时活动」（有的手机叫「在流体云中显示」）';
 
   @override
   String get localeTitle => '语言';
@@ -10038,7 +10115,7 @@ class L10nZh extends L10n {
   String get localeEn => 'English';
 
   @override
-  String get localEnvChooseTitle => 'DSH 在哪里运行？';
+  String get localEnvChooseTitle => 'DeepSleep 在哪里运行？';
 
   @override
   String get localEnvChooseMessage => '之后可以在设置里更改';
@@ -10059,10 +10136,10 @@ class L10nZh extends L10n {
   }
 
   @override
-  String get localEnvRemoteDetail => '连接电脑或服务器上的 DSH';
+  String get localEnvRemoteDetail => '连接电脑或服务器上的 DeepSleep';
 
   @override
-  String get localEnvUnavailable => '这台设备暂时不能在本机运行 DSH';
+  String get localEnvUnavailable => '这台设备暂时不能在本机运行 DeepSleep';
 
   @override
   String get localEnvUnsupported => '暂不支持';
@@ -10074,7 +10151,7 @@ class L10nZh extends L10n {
   String get localEnvInstallTitle => '安装本机运行环境';
 
   @override
-  String get localEnvInstallMessage => '在这台手机上运行 DSH';
+  String get localEnvInstallMessage => '在这台手机上运行 DeepSleep';
 
   @override
   String localEnvFactStorage(int storage) {
@@ -10161,7 +10238,7 @@ class L10nZh extends L10n {
   String get marketInstallRefused => '这个引擎不能安装市场插件';
 
   @override
-  String get localEnvChooseUseTitle => '想怎么用 dsh-Go？';
+  String get localEnvChooseUseTitle => '想怎么用 DeepSleep？';
 
   @override
   String get localEnvTavernTitle => '和角色聊天';
@@ -10173,7 +10250,7 @@ class L10nZh extends L10n {
   String get marketSectionOfficial => '官方';
 
   @override
-  String get marketSectionAdapted => '适配 DSH Go';
+  String get marketSectionAdapted => '适配 DeepSleep';
 
   @override
   String get marketSectionAll => '全部';
@@ -10191,7 +10268,7 @@ class L10nZh extends L10n {
   String get marketTierOfficial => '官方';
 
   @override
-  String get marketTierAdapted => '适配 DSH Go';
+  String get marketTierAdapted => '适配 DeepSleep';
 
   @override
   String get marketRiskMedium => '中风险';
@@ -10236,10 +10313,10 @@ class L10nZh extends L10n {
   String get marketFlagObfuscatedBody => '有压缩或混淆过的大文件，看不出它做什么';
 
   @override
-  String get marketFlagNotAdapted => '未适配 DSH Go';
+  String get marketFlagNotAdapted => '未适配 DeepSleep';
 
   @override
-  String get marketFlagNotAdaptedBody => '没有声明 DSH Go 原生协议，在 App 里没有原生界面';
+  String get marketFlagNotAdaptedBody => '没有声明 DeepSleep 原生协议，在 App 里没有原生界面';
 
   @override
   String get marketFlagOtherBody => '自动检查报告的其他特征';
@@ -10275,11 +10352,11 @@ class L10nZh extends L10n {
   String get marketPinnedVersion => '锁定版本';
 
   @override
-  String get marketRequiresApp => '需要 DSH Go';
+  String get marketRequiresApp => '需要 DeepSleep';
 
   @override
   String marketNeedsApp(String version) {
-    return '需要 DSH Go $version 或更高版本';
+    return '需要 DeepSleep $version 或更高版本';
   }
 
   @override
@@ -10897,7 +10974,7 @@ class L10nZh extends L10n {
   String get modeWork => '工作';
 
   @override
-  String get modeWorkSubtitle => '和 DSH 一起干活';
+  String get modeWorkSubtitle => '和 DeepSleep 一起干活';
 
   @override
   String get modeCompanionShort => '伙伴';
@@ -11057,7 +11134,7 @@ class L10nZh extends L10n {
   String get phoneDiagnosticsSave => '存到「下载」';
 
   @override
-  String get phoneDiagnosticsSaveHint => '存进 下载/DSH-Go';
+  String get phoneDiagnosticsSaveHint => '存进 下载/DeepSleep';
 
   @override
   String get phoneDiagnosticsNote => '含版本、设备、日志和最近一次崩溃，不含 Key 和令牌';
@@ -11216,7 +11293,7 @@ class L10nZh extends L10n {
   String get phoneLogEmpty => '还没有日志';
 
   @override
-  String get phoneLogShareTitle => 'DSH 引擎日志';
+  String get phoneLogShareTitle => 'DeepSleep 引擎日志';
 
   @override
   String get phoneLogCopyAll => '复制全部';
@@ -11306,7 +11383,7 @@ class L10nZh extends L10n {
   String get phoneActionLogEmpty => '还没有记录';
 
   @override
-  String get phoneActionLogEmptyHint => 'DSH 在手机上的每一步都会记在这里';
+  String get phoneActionLogEmptyHint => 'DeepSleep 在手机上的每一步都会记在这里';
 
   @override
   String get phoneAppRuleDeny => '不碰';
@@ -11377,7 +11454,7 @@ class L10nZh extends L10n {
   String get phoneAlwaysAllowSwitchHint => '不再询问就把内容发到你选的应用';
 
   @override
-  String get phoneAlwaysAllowWarning => '开启后 DSH 可不再询问就把内容发到这些应用，发出后无法撤回。';
+  String get phoneAlwaysAllowWarning => '开启后 DeepSleep 可不再询问就把内容发到这些应用，发出后无法撤回。';
 
   @override
   String get phoneAlwaysAllowConfirm => '确认开启';
@@ -11413,7 +11490,7 @@ class L10nZh extends L10n {
   String get phoneDndEnabled => '不打扰模式已启用';
 
   @override
-  String get phoneDndShizukuPermissionFailed => '没有拿到授权。可以在 Shizuku 的「应用管理」里给 DSH Go 授权';
+  String get phoneDndShizukuPermissionFailed => '没有拿到授权。可以在 Shizuku 的「应用管理」里给 DeepSleep 授权';
 
   @override
   String get phoneDndPairedConnect => '配对成功，点「连接」';
@@ -11515,10 +11592,10 @@ class L10nZh extends L10n {
   String get phoneDndRootWaiting => '正在等待 root 授权，请在 root 管理器的弹窗里选择。';
 
   @override
-  String get phoneDndRootConnected => 'root 已连接。断开后要回到这里再选一次；打开「更多设置」中的「保持 root 通道」，DSH Go 才会自己再去申请。';
+  String get phoneDndRootConnected => 'root 已连接。断开后要回到这里再选一次；打开「更多设置」中的「保持 root 通道」，DeepSleep 才会自己再去申请。';
 
   @override
-  String get phoneDndRootConnectedKept => 'root 已连接。断开后 DSH Go 会自己向 root 管理器再次申请。';
+  String get phoneDndRootConnectedKept => 'root 已连接。断开后 DeepSleep 会自己向 root 管理器再次申请。';
 
   @override
   String get phoneDndRootRetry => '重新申请 root 授权';
@@ -11533,10 +11610,10 @@ class L10nZh extends L10n {
   String get phoneDndStartShizuku => '打开 Shizuku，按里面「通过无线调试启动」的说明做一遍（要连 Wi‑Fi）。回到这里会自动刷新。';
 
   @override
-  String get phoneDndGrantShizukuHint => 'Shizuku 已在运行，还要给 DSH Go 授权。';
+  String get phoneDndGrantShizukuHint => 'Shizuku 已在运行，还要给 DeepSleep 授权。';
 
   @override
-  String get phoneDndGrantShizuku => '授权给 DSH Go';
+  String get phoneDndGrantShizuku => '授权给 DeepSleep';
 
   @override
   String get phoneDndShizukuAllSet => 'Shizuku 已启动并授权，接下来连接后台屏。';
@@ -11548,7 +11625,7 @@ class L10nZh extends L10n {
   String get phoneDndShizukuRunning => 'Shizuku 正在运行';
 
   @override
-  String get phoneDndShizukuGranted => '已授权给 DSH Go';
+  String get phoneDndShizukuGranted => '已授权给 DeepSleep';
 
   @override
   String get phoneDndShizukuCompatibility => '这版 Android 与官方版 Shizuku 存在兼容问题。';
@@ -11569,13 +11646,13 @@ class L10nZh extends L10n {
   String get phoneDndWirelessDebuggingStep => '在开发者选项里打开「无线调试」，要连着 Wi‑Fi。开发者选项一般在「系统」或「其他设置」里。';
 
   @override
-  String get phoneDndStartPairingStep => '回到这里点「开始配对」，DSH 会发一条通知。';
+  String get phoneDndStartPairingStep => '回到这里点「开始配对」，DeepSleep 会发一条通知。';
 
   @override
   String get phoneDndGetPairingCodeStep => '在「无线调试」里点「使用配对码配对设备」，屏幕上会出现 6 位配对码。';
 
   @override
-  String get phoneDndEnterPairingCodeStep => '下拉通知栏，把配对码填进 DSH 的通知。配对成功后点「连接」。';
+  String get phoneDndEnterPairingCodeStep => '下拉通知栏，把配对码填进 DeepSleep 的通知。配对成功后点「连接」。';
 
   @override
   String get phoneDndStartPairing => '开始配对';
@@ -11653,10 +11730,10 @@ class L10nZh extends L10n {
   String get phoneDisabled => '已关闭';
 
   @override
-  String get phoneOpenAccessibilityFailed => '打不开系统设置，请到「设置 → 无障碍」里找到 DSH';
+  String get phoneOpenAccessibilityFailed => '打不开系统设置，请到「设置 → 无障碍」里找到 DeepSleep';
 
   @override
-  String get phoneOpenAppInfoFailed => '打不开应用信息，请到「设置 → 应用」里找到 DSH Go';
+  String get phoneOpenAppInfoFailed => '打不开应用信息，请到「设置 → 应用」里找到 DeepSleep';
 
   @override
   String get phoneStopFailed => '没能停止，可以点悬浮条或通知上的「停止」';
@@ -11770,7 +11847,7 @@ class L10nZh extends L10n {
   String get phoneControlReadScreen => '读一下当前屏幕';
 
   @override
-  String get phoneControlReadScreenHint => '看看 DSH 读到了什么，不发给模型';
+  String get phoneControlReadScreenHint => '看看 DeepSleep 读到了什么，不发给模型';
 
   @override
   String get phoneControlEnableAccessibilityFirst => '先打开无障碍服务';
@@ -11857,7 +11934,7 @@ class L10nZh extends L10n {
   String get phoneDisclosureTitle => '开启手机操控前';
 
   @override
-  String get phoneDisclosureIntro => 'DSH 会像你一样看屏幕、点按，帮你把事办完。开启前，先了解这几点：';
+  String get phoneDisclosureIntro => 'DeepSleep 会像你一样看屏幕、点按，帮你把事办完。开启前，先了解这几点：';
 
   @override
   String get phoneDisclosureRestartNote => '开启后引擎会重启一次，进行中的回复会中断';
@@ -11893,28 +11970,28 @@ class L10nZh extends L10n {
   String get phoneRestrictedOpenOverlay => '去开悬浮窗';
 
   @override
-  String get phoneRestrictedTryAccessibility => '先去「无障碍」里点一次 DSH 的开关，看到「受限制的设置」提示后点「确定」。做过这一步，下面的选项才会出现。';
+  String get phoneRestrictedTryAccessibility => '先去「无障碍」里点一次 DeepSleep 的开关，看到「受限制的设置」提示后点「确定」。做过这一步，下面的选项才会出现。';
 
   @override
   String get phoneRestrictedOpenInfoStep => '回到这里，点「打开应用信息」。';
 
   @override
-  String get phoneRestrictedBackAccessibility => '回到「无障碍」，打开 DSH。';
+  String get phoneRestrictedBackAccessibility => '回到「无障碍」，打开 DeepSleep。';
 
   @override
   String get phoneRestrictedMenuStep => '点右上角的三个点，选「允许受限制的设置」，按提示验证锁屏密码。';
 
   @override
-  String get phoneRestrictedTryOverlay => '先去「悬浮窗」设置里点一次 DSH Go 的开关，看到「受限制的设置」提示后点「确定」。做过这一步，下面的选项才会出现。';
+  String get phoneRestrictedTryOverlay => '先去「悬浮窗」设置里点一次 DeepSleep 的开关，看到「受限制的设置」提示后点「确定」。做过这一步，下面的选项才会出现。';
 
   @override
-  String get phoneRestrictedBackOverlay => '回到「悬浮窗」设置，打开 DSH Go。';
+  String get phoneRestrictedBackOverlay => '回到「悬浮窗」设置，打开 DeepSleep。';
 
   @override
-  String get phoneRestrictedHuaweiOverlay => '华为 HarmonyOS 4 及更早的系统大多没有这一步，直接去「悬浮窗」设置打开 DSH Go。';
+  String get phoneRestrictedHuaweiOverlay => '华为 HarmonyOS 4 及更早的系统大多没有这一步，直接去「悬浮窗」设置打开 DeepSleep。';
 
   @override
-  String get phoneRestrictedHuaweiAccessibility => '华为 HarmonyOS 4 及更早的系统大多没有这一步，直接去「无障碍」打开 DSH。';
+  String get phoneRestrictedHuaweiAccessibility => '华为 HarmonyOS 4 及更早的系统大多没有这一步，直接去「无障碍」打开 DeepSleep。';
 
   @override
   String get phoneRestrictedVivoNote => '不同 OriginOS 版本位置可能不同。右上角没有三个点时，把应用信息页往下翻到底找一找。';
@@ -11923,7 +12000,8 @@ class L10nZh extends L10n {
   String get phoneRestrictedAdvancedStep => '在「高级设置」里找到「允许受限制的设置」，打开它。';
 
   @override
-  String get phoneRestrictedOppoNote => 'ColorOS 有时找不到这个选项。这时用系统自带的「文件管理」找到 DSH 的安装包，点它覆盖安装一次（不用卸载，对话和设置都在），再去开无障碍。';
+  String get phoneRestrictedOppoNote =>
+      'ColorOS 有时找不到这个选项。这时用系统自带的「文件管理」找到 DeepSleep 的安装包，点它覆盖安装一次（不用卸载，对话和设置都在），再去开无障碍。';
 
   @override
   String get phoneRestrictedHuaweiNote => '如果在无障碍里看到「受限制的设置」提示，按「原生 / 其他」的步骤做。';
@@ -12025,13 +12103,13 @@ class L10nZh extends L10n {
   String get phoneFailureNoSpaceHint => '清理一些空间后重试';
 
   @override
-  String get phoneFailureStartup => 'DSH 启动失败';
+  String get phoneFailureStartup => 'DeepSleep 启动失败';
 
   @override
-  String get phoneFailureCrashedEarly => 'DSH 启动后很快崩溃了';
+  String get phoneFailureCrashedEarly => 'DeepSleep 启动后很快崩溃了';
 
   @override
-  String get phoneFailureCrashedLate => 'DSH 运行中崩溃了';
+  String get phoneFailureCrashedLate => 'DeepSleep 运行中崩溃了';
 
   @override
   String get phoneFailureFatal => '引擎报告了致命错误';
@@ -12091,7 +12169,7 @@ class L10nZh extends L10n {
   String get phoneSafeRestartIncomplete => '配置操作已完成，但引擎还未停止，暂未重启。请等待停止完成后再启动。';
 
   @override
-  String get phoneSafeRestoreIntro => 'DSH 会回到上次正常运行时的配置：';
+  String get phoneSafeRestoreIntro => 'DeepSleep 会回到上次正常运行时的配置：';
 
   @override
   String get phoneSafeRestoreSettings => '• 设置恢复到当时的版本（现在的另存为备份）';
@@ -12213,7 +12291,7 @@ class L10nZh extends L10n {
 
   @override
   String phoneAppRulesLoosenTitle(String app) {
-    return '让 DSH 操作「$app」？';
+    return '让 DeepSleep 操作「$app」？';
   }
 
   @override
@@ -12277,7 +12355,7 @@ class L10nZh extends L10n {
 
   @override
   String phoneControlRemoteHint(String host) {
-    return '「$host」上的 DSH 操作不了这台手机，切回「本机」后可用';
+    return '「$host」上的 DeepSleep 操作不了这台手机，切回「本机」后可用';
   }
 
   @override
@@ -12302,7 +12380,7 @@ class L10nZh extends L10n {
 
   @override
   String phoneSafeRestoreAt(String when) {
-    return 'DSH 会回到 $when 正常运行时的配置：';
+    return 'DeepSleep 会回到 $when 正常运行时的配置：';
   }
 
   @override
@@ -12347,7 +12425,7 @@ class L10nZh extends L10n {
   }
 
   @override
-  String get phoneAppRulesLoosenBody => '银行、支付类 App 会检测自动操作，可能限制登录甚至冻结账号；DSH 默认不输密码、不付款。';
+  String get phoneAppRulesLoosenBody => '银行、支付类 App 会检测自动操作，可能限制登录甚至冻结账号；DeepSleep 默认不输密码、不付款。';
 
   @override
   String get phoneAppRulesSkipStepsBody => '微信这类 App 有风控，曾有手机助手操作后账号被强制下线。改成照常后，只有发消息这类操作还会先问你。';
@@ -12391,7 +12469,7 @@ class L10nZh extends L10n {
   String get phoneControlEnabledPending => '已开启，引擎启动后生效';
 
   @override
-  String get phoneReturnAfterDone => '完成后返回 DSH Go';
+  String get phoneReturnAfterDone => '完成后返回 DeepSleep';
 
   @override
   String get phoneReturnAfterDoneHint => '收起悬浮条，回到对话看结果';
@@ -12613,7 +12691,7 @@ class L10nZh extends L10n {
   String get phoneSelfCheckSaving => '保存中…';
 
   @override
-  String get phoneSelfCheckSaved => '报告已存入下载/DSH-Go。';
+  String get phoneSelfCheckSaved => '报告已存入下载/DeepSleep。';
 
   @override
   String get phoneSelfCheckSaveFailed => '报告保存失败。';
@@ -12905,13 +12983,13 @@ class L10nZh extends L10n {
   String get phoneBackgroundGuideSubtitle => '让确认卡和任务结果及时出现';
 
   @override
-  String get phoneBackgroundGuideBody => '需要你确认时，会显示 DSH Go 卡片。卡片不可用时会尝试通知或回到 App。请在系统设置中允许手机操控通知和弹出提醒。';
+  String get phoneBackgroundGuideBody => '需要你确认时，会显示 DeepSleep 卡片。卡片不可用时会尝试通知或回到 App。请在系统设置中允许手机操控通知和弹出提醒。';
 
   @override
-  String get phoneBackgroundOemHint => '在 DSH Go 的系统权限页检查「后台弹出界面」（若提供）。允许后可改善自动返回；菜单名称随系统版本变化。';
+  String get phoneBackgroundOemHint => '在 DeepSleep 的系统权限页检查「后台弹出界面」（若提供）。允许后可改善自动返回；菜单名称随系统版本变化。';
 
   @override
-  String get phoneBackgroundReturnHint => '如果任务完成后没有自动返回，可点通知「任务完成 · 查看结果」。系统关闭通知或限制后台弹出时，可能需要手动打开 DSH Go。';
+  String get phoneBackgroundReturnHint => '如果任务完成后没有自动返回，可点通知「任务完成 · 查看结果」。系统关闭通知或限制后台弹出时，可能需要手动打开 DeepSleep。';
 
   @override
   String get phoneBackgroundGotIt => '知道了';
@@ -12923,7 +13001,7 @@ class L10nZh extends L10n {
   String get phoneBackgroundNotificationBlocked => '请允许手机操控通知的弹出提醒';
 
   @override
-  String get phonePrivilegedUpgrade => '此版本尚不支持该特权通道，请更新 DSH Go 后使用。';
+  String get phonePrivilegedUpgrade => '此版本尚不支持该特权通道，请更新 DeepSleep 后使用。';
 
   @override
   String get phonePrivilegedSui => 'Sui';
@@ -12956,11 +13034,11 @@ class L10nZh extends L10n {
   String get phonePrivilegedSuggested => '建议';
 
   @override
-  String get phonePrivilegedRootRiskTitle => '给 DSH Go root 权限？';
+  String get phonePrivilegedRootRiskTitle => '给 DeepSleep root 权限？';
 
   @override
   String get phonePrivilegedRootRiskBody =>
-      'root 管理器（Magisk、KernelSU 或 APatch）会弹窗问你。允许后，DSH Go 以 root 运行自己的后台服务；只有打开「保持 root 通道」，断开或重启后才会自己再去申请。';
+      'root 管理器（Magisk、KernelSU 或 APatch）会弹窗问你。允许后，DeepSleep 以 root 运行自己的后台服务；只有打开「保持 root 通道」，断开或重启后才会自己再去申请。';
 
   @override
   String phoneKeepTitle(String mode) {
@@ -12975,13 +13053,13 @@ class L10nZh extends L10n {
   }
 
   @override
-  String get phoneKeepRootDescription => '断开、重开 App 或重启手机后，DSH Go 会自己再向 root 管理器申请；给不给仍由管理器决定。';
+  String get phoneKeepRootDescription => '断开、重开 App 或重启手机后，DeepSleep 会自己再向 root 管理器申请；给不给仍由管理器决定。';
 
   @override
-  String get phoneKeepSharedDescription => '断开、重开 App 或重启手机后，DSH Go 用已有的授权自己连回去，不会替你申请授权。';
+  String get phoneKeepSharedDescription => '断开、重开 App 或重启手机后，DeepSleep 用已有的授权自己连回去，不会替你申请授权。';
 
   @override
-  String get phoneKeepAdbDescription => '断开、重开 App 或重启手机后，DSH Go 用已有的配对在 Wi‑Fi 下自己连回去；有「自动恢复无障碍」的权限时，还会试着打开一次无线调试。';
+  String get phoneKeepAdbDescription => '断开、重开 App 或重启手机后，DeepSleep 用已有的配对在 Wi‑Fi 下自己连回去；有「自动恢复无障碍」的权限时，还会试着打开一次无线调试。';
 
   @override
   String get phoneKeepRestoring => '正在重新连接';
@@ -13120,7 +13198,7 @@ class L10nZh extends L10n {
   String get phoneModeAutoNoteTitle => '这些仍由你来操作';
 
   @override
-  String get phoneModeAutoNote => '系统设置和权限页面、密码和验证码、DSH Go 自身仍由你来操作；银行、支付类 App 默认不碰，可在设置里调整。';
+  String get phoneModeAutoNote => '系统设置和权限页面、密码和验证码、DeepSleep 自身仍由你来操作；银行、支付类 App 默认不碰，可在设置里调整。';
 
   @override
   String get phoneModeAutoUnlockNote => '如需让 AI 操作系统设置、密码等，可在 设置 › 手机操控 › 解除限制 中开启。';
@@ -13138,7 +13216,7 @@ class L10nZh extends L10n {
   String get phoneYoursSecrets => '密码和验证码';
 
   @override
-  String get phoneYoursOwnApp => 'DSH Go 自身';
+  String get phoneYoursOwnApp => 'DeepSleep 自身';
 
   @override
   String get phoneYoursDenyList => '应用名单里「不碰」的 App，默认含银行、支付类';
@@ -13162,10 +13240,10 @@ class L10nZh extends L10n {
   String get phoneUnlockSecretsHint => '填写密码、验证码和支付密码';
 
   @override
-  String get phoneUnlockOwnApp => 'DSH Go 自身';
+  String get phoneUnlockOwnApp => 'DeepSleep 自身';
 
   @override
-  String get phoneUnlockOwnAppHint => '在 DSH Go 里点按和输入';
+  String get phoneUnlockOwnAppHint => '在 DeepSleep 里点按和输入';
 
   @override
   String get phoneUnlockBusy => '任务进行中，结束后才能开启';
@@ -13198,7 +13276,7 @@ class L10nZh extends L10n {
   String get phoneUnlockConfirmSecretsTitle => '允许 AI 填写密码和验证码？';
 
   @override
-  String get phoneUnlockConfirmOwnAppTitle => '允许 AI 操作 DSH Go 自身？';
+  String get phoneUnlockConfirmOwnAppTitle => '允许 AI 操作 DeepSleep 自身？';
 
   @override
   String get phoneUnlockCanTitle => '开启后，AI 可以';
@@ -13240,10 +13318,10 @@ class L10nZh extends L10n {
   String get phoneUnlockSecretsRisk2 => '可能完成你并不想要的付款或转账';
 
   @override
-  String get phoneUnlockOwnAppCan1 => '在 DSH Go 里点按和输入，包括修改设置';
+  String get phoneUnlockOwnAppCan1 => '在 DeepSleep 里点按和输入，包括修改设置';
 
   @override
-  String get phoneUnlockOwnAppCan2 => '读取 DSH Go 界面上的对话和设置';
+  String get phoneUnlockOwnAppCan2 => '读取 DeepSleep 界面上的对话和设置';
 
   @override
   String get phoneUnlockOwnAppRisk1 => '恶意指令可能诱导 AI 批准它自己发起的操作，或关掉确认';
@@ -13258,7 +13336,7 @@ class L10nZh extends L10n {
   String get phoneUnlockDisclaimer2 => 'AI 可能被网页、消息或文件中的内容误导。';
 
   @override
-  String get phoneUnlockDisclaimer3 => '由此造成的账号、资金、数据或设备损失由你自行承担，DSH Go 及其开发者不承担责任。';
+  String get phoneUnlockDisclaimer3 => '由此造成的账号、资金、数据或设备损失由你自行承担，DeepSleep 及其开发者不承担责任。';
 
   @override
   String get phoneUnlockDisclaimer4 => '建议只在需要时临时开启，用完关闭。';
@@ -13757,7 +13835,7 @@ class L10nZh extends L10n {
   String get pluginsFileWriteFailed => '没能写入文件';
 
   @override
-  String get pluginsProfileTitle => 'DSH Go 配置';
+  String get pluginsProfileTitle => 'DeepSleep 配置';
 
   @override
   String get pluginsGistTokenInvalid => 'GitHub 令牌无效或没有 Gist 权限';
@@ -13792,7 +13870,7 @@ class L10nZh extends L10n {
   String get pluginsReadingPlugins => '正在读取插件…';
 
   @override
-  String get pluginsDshOfficial => 'DSH 官方';
+  String get pluginsDshOfficial => 'DeepSleep 官方';
 
   @override
   String get pluginsOfficialToggleOnly => '官方组件只能开关，不能卸载；对这台主机上的所有对话生效';
@@ -13804,7 +13882,7 @@ class L10nZh extends L10n {
   String get pluginsNoThirdParty => '还没装第三方插件';
 
   @override
-  String get pluginsPluginsDescription => '插件能给 DSH 加工具、记忆和模型';
+  String get pluginsPluginsDescription => '插件能给 DeepSleep 加工具、记忆和模型';
 
   @override
   String get pluginsBrowseMarket => '逛逛插件市场';
@@ -13869,7 +13947,7 @@ class L10nZh extends L10n {
 
   @override
   String pluginsInstalledRemoteRestart(String name, String host) {
-    return '已安装「$name」，重启$host上的 DSH 后生效';
+    return '已安装「$name」，重启$host上的 DeepSleep 后生效';
   }
 
   @override
@@ -13904,7 +13982,7 @@ class L10nZh extends L10n {
 
   @override
   String pluginsBuildScriptWarning(String host) {
-    return '脚本会以 DSH 的权限在$host上执行，能读写文件、联网。只在你信任这个插件时允许。';
+    return '脚本会以 DeepSleep 的权限在$host上执行，能读写文件、联网。只在你信任这个插件时允许。';
   }
 
   @override
@@ -13949,7 +14027,7 @@ class L10nZh extends L10n {
   String get pluginsThatComputer => '那台电脑';
 
   @override
-  String get pluginsCommandAfterInstall => '装好后重启那台电脑上的 DSH，再回来刷新';
+  String get pluginsCommandAfterInstall => '装好后重启那台电脑上的 DeepSleep，再回来刷新';
 
   @override
   String get pluginsError => '出错';
@@ -14057,14 +14135,14 @@ class L10nZh extends L10n {
   String get pluginsMissingFiles => '插件文件缺失，重新安装可修复';
 
   @override
-  String get pluginsNotDshPlugin => '不是 DSH 插件，无法加载';
+  String get pluginsNotDshPlugin => '不是 DeepSleep 插件，无法加载';
 
   @override
-  String get pluginsIncompatible => '与当前 DSH 版本不兼容，未加载';
+  String get pluginsIncompatible => '与当前 DeepSleep 版本不兼容，未加载';
 
   @override
   String pluginsRequiresDshVersion(String requiredVersion, String currentVersion) {
-    return '需要 DSH $requiredVersion，当前 $currentVersion，未加载';
+    return '需要 DeepSleep $requiredVersion，当前 $currentVersion，未加载';
   }
 
   @override
@@ -14341,7 +14419,7 @@ class L10nZh extends L10n {
   String get pluginsNotifications => '通知';
 
   @override
-  String get pluginsNotificationSettingsFailed => '没能打开系统设置。到「设置 → 应用 → DSH Go → 通知」里开启';
+  String get pluginsNotificationSettingsFailed => '没能打开系统设置。到「设置 → 应用 → DeepSleep → 通知」里开启';
 
   @override
   String get pluginsSystemNotificationsOff => '系统通知已关闭';
@@ -14525,7 +14603,7 @@ class L10nZh extends L10n {
 
   @override
   String pluginsRemoteRestartToApply(String host) {
-    return '重启$host上的 DSH 后生效';
+    return '重启$host上的 DeepSleep 后生效';
   }
 
   @override
@@ -14595,7 +14673,7 @@ class L10nZh extends L10n {
   String get pluginsShareOpenFailed => '没能打开这个分享码';
 
   @override
-  String get pluginsPluginShareTitle => 'DSH Go 插件';
+  String get pluginsPluginShareTitle => 'DeepSleep 插件';
 
   @override
   String get pluginsShareSheetOpenFailed => '没能打开分享';
@@ -14647,7 +14725,7 @@ class L10nZh extends L10n {
 
   @override
   String pluginsUninstalledRestartRemote(String title, String host) {
-    return '已卸载「$title」，重启$host上的 DSH 后完全移除';
+    return '已卸载「$title」，重启$host上的 DeepSleep 后完全移除';
   }
 
   @override
@@ -14661,7 +14739,7 @@ class L10nZh extends L10n {
 
   @override
   String pluginsEnabledRestartRemote(String host) {
-    return '已启用，重启$host上的 DSH 后生效';
+    return '已启用，重启$host上的 DeepSleep 后生效';
   }
 
   @override
@@ -14669,7 +14747,7 @@ class L10nZh extends L10n {
 
   @override
   String pluginsDisabledRestartRemote(String host) {
-    return '已停用，重启$host上的 DSH 后生效';
+    return '已停用，重启$host上的 DeepSleep 后生效';
   }
 
   @override
@@ -14679,16 +14757,17 @@ class L10nZh extends L10n {
 
   @override
   String get pluginsPermissionLocalThirdParty =>
-      '插件以 DSH 的权限运行：能读写文件、执行命令、读取 API Key 和已授权的手机存储，不受工作区沙箱限制。由第三方提供，DSH 官方未审核。';
+      '插件以 DeepSleep 的权限运行：能读写文件、执行命令、读取 API Key 和已授权的手机存储，不受工作区沙箱限制。由第三方提供，DeepSleep 官方未审核。';
 
   @override
-  String get pluginsPermissionLocalTrusted => '插件以 DSH 的权限运行：能读写文件、执行命令、读取 API Key 和已授权的手机存储，不受工作区沙箱限制。只装你信任的插件。';
+  String get pluginsPermissionLocalTrusted => '插件以 DeepSleep 的权限运行：能读写文件、执行命令、读取 API Key 和已授权的手机存储，不受工作区沙箱限制。只装你信任的插件。';
 
   @override
-  String get pluginsPermissionRemoteThirdParty => '插件以 DSH 的权限运行：能读写文件、执行命令、读取 API Key，不受工作区沙箱限制。由第三方提供，DSH 官方未审核。';
+  String get pluginsPermissionRemoteThirdParty =>
+      '插件以 DeepSleep 的权限运行：能读写文件、执行命令、读取 API Key，不受工作区沙箱限制。由第三方提供，DeepSleep 官方未审核。';
 
   @override
-  String get pluginsPermissionRemoteTrusted => '插件以 DSH 的权限运行：能读写文件、执行命令、读取 API Key，不受工作区沙箱限制。只装你信任的插件。';
+  String get pluginsPermissionRemoteTrusted => '插件以 DeepSleep 的权限运行：能读写文件、执行命令、读取 API Key，不受工作区沙箱限制。只装你信任的插件。';
 
   @override
   String pluginsSelectedQrCount(int count) {
@@ -14855,7 +14934,7 @@ class L10nZh extends L10n {
 
   @override
   String plugslotsIssueNeedsApp(String version) {
-    return '需要 DSH Go $version 或更新版本';
+    return '需要 DeepSleep $version 或更新版本';
   }
 
   @override
@@ -15225,22 +15304,22 @@ class L10nZh extends L10n {
   String get remoteAttachOnly => '只连接';
 
   @override
-  String get remoteManagedHelp => '自动启动或复用 App 托管的 DSH；不会自动替换存活但无法复用的实例。';
+  String get remoteManagedHelp => '自动启动或复用 App 托管的 DeepSleep；不会自动替换存活但无法复用的实例。';
 
   @override
-  String get remoteAttachOnlyHelp => '只转发到远端 127.0.0.1 的固定端口；不启动、停止或重启 DSH。';
+  String get remoteAttachOnlyHelp => '只转发到远端 127.0.0.1 的固定端口；不启动、停止或重启 DeepSleep。';
 
   @override
-  String get remoteDshPort => '远端 DSH 端口';
+  String get remoteDshPort => '远端 DeepSleep 端口';
 
   @override
-  String get remoteDshToken => 'DSH 登录令牌';
+  String get remoteDshToken => 'DeepSleep 登录令牌';
 
   @override
   String get remoteDshTokenHelp => '填写既有实例启动链接中的 token，仅保存在这台手机的安全存储中。';
 
   @override
-  String get remoteAttachWorkingDirectoryHelp => '既有实例不执行目录探测；请填写远端绝对路径，留空使用 DSH 默认目录。';
+  String get remoteAttachWorkingDirectoryHelp => '既有实例不执行目录探测；请填写远端绝对路径，留空使用 DeepSleep 默认目录。';
 
   @override
   String get remoteSshCompression => 'SSH 压缩';
@@ -15249,20 +15328,21 @@ class L10nZh extends L10n {
   String get remoteSshCompressionHelp => '默认开启；与服务器协商认证后压缩，不支持时使用未压缩传输。';
 
   @override
-  String get remoteRestartManaged => '重启托管 DSH';
+  String get remoteRestartManaged => '重启托管 DeepSleep';
 
   @override
-  String get remoteRestartManagedWarning => '这会停止 App 记录的远端 DSH 并重新启动，可能中断其他客户端和进行中的对话。确认没有其他人在使用后再继续。普通测试连接不会执行此操作。';
+  String get remoteRestartManagedWarning =>
+      '这会停止 App 记录的远端 DeepSleep 并重新启动，可能中断其他客户端和进行中的对话。确认没有其他人在使用后再继续。普通测试连接不会执行此操作。';
 
   @override
   String get remoteErrSharedInstance =>
-      '远端托管 DSH 仍在运行，但启动命令不同或缺少有效启动日志。为保护共享实例，未自动重启；请检查配置，改用“只连接”，或在编辑主机中明确选择“重启托管 DSH”。';
+      '远端托管 DeepSleep 仍在运行，但启动命令不同或缺少有效启动日志。为保护共享实例，未自动重启；请检查配置，改用“只连接”，或在编辑主机中明确选择“重启托管 DeepSleep”。';
 
   @override
-  String get remoteErrAttachSettings => '请填写有效的远端 DSH 端口和登录令牌';
+  String get remoteErrAttachSettings => '请填写有效的远端 DeepSleep 端口和登录令牌';
 
   @override
-  String get remoteDshAttached => '已连接既有 DSH';
+  String get remoteDshAttached => '已连接既有 DeepSleep';
 
   @override
   String get remoteStartupSection => '启动';
@@ -15280,7 +15360,7 @@ class L10nZh extends L10n {
   String get remoteStepVerifyHostKey => '验证主机指纹';
 
   @override
-  String get remoteStepStartDsh => '启动 DSH';
+  String get remoteStepStartDsh => '启动 DeepSleep';
 
   @override
   String get remoteStepTunnel => '建立隧道';
@@ -15338,10 +15418,10 @@ class L10nZh extends L10n {
   String get remoteErrHostNotOwned => '主机不在你的 DSH Remote 账号下';
 
   @override
-  String get remoteErrUpdateNeeded => '版本不匹配，请更新 DSH Go 和主机上的远程插件';
+  String get remoteErrUpdateNeeded => '版本不匹配，请更新 DeepSleep 和主机上的远程插件';
 
   @override
-  String get remoteErrVersionIncompatible => '主机上的 DSH 或远程插件需要更新';
+  String get remoteErrVersionIncompatible => '主机上的 DeepSleep 或远程插件需要更新';
 
   @override
   String get remoteErrSignInTimeout => '登录超时';
@@ -15378,11 +15458,11 @@ class L10nZh extends L10n {
 
   @override
   String remoteBootstrapReusePort(int port) {
-    return '复用已在运行的 DSH（端口 $port）';
+    return '复用已在运行的 DeepSleep（端口 $port）';
   }
 
   @override
-  String get remoteBootstrapStarting => '正在远端启动 DSH…';
+  String get remoteBootstrapStarting => '正在远端启动 DeepSleep…';
 
   @override
   String remoteErrCommandNotFound(String command) {
@@ -15396,13 +15476,13 @@ class L10nZh extends L10n {
   String get remoteStartCommandExample => '启动命令示例：~/.nvm/versions/node/v22.0.0/bin/dsh web';
 
   @override
-  String get remoteErrDshStartTimeout => '远端 DSH 启动超时';
+  String get remoteErrDshStartTimeout => '远端 DeepSleep 启动超时';
 
   @override
-  String get remoteErrDshExited => '远端 DSH 启动后立即退出';
+  String get remoteErrDshExited => '远端 DeepSleep 启动后立即退出';
 
   @override
-  String get remoteErrDshStart => '没能在远端启动 DSH';
+  String get remoteErrDshStart => '没能在远端启动 DeepSleep';
 
   @override
   String remoteExitCode(int code) {
@@ -15422,31 +15502,31 @@ class L10nZh extends L10n {
   String get remoteHostTrustCancelled => '已取消信任主机';
 
   @override
-  String get remoteCheckingDsh => '检查远端的 DSH…';
+  String get remoteCheckingDsh => '检查远端的 DeepSleep…';
 
   @override
-  String get remoteErrDshPort => '远端 DSH 端口连不上';
+  String get remoteErrDshPort => '远端 DeepSleep 端口连不上';
 
   @override
-  String get remoteDshReused => '复用了远端已在运行的 DSH';
+  String get remoteDshReused => '复用了远端已在运行的 DeepSleep';
 
   @override
-  String get remoteDshStarted => '已在远端启动 DSH';
+  String get remoteDshStarted => '已在远端启动 DeepSleep';
 
   @override
-  String get remoteErrDshTokenRejected => '远端 DSH 拒绝了登录令牌，未自动重启；请检查令牌，或在编辑主机中明确重启托管实例';
+  String get remoteErrDshTokenRejected => '远端 DeepSleep 拒绝了登录令牌，未自动重启；请检查令牌，或在编辑主机中明确重启托管实例';
 
   @override
-  String get remoteErrDshSignIn => '没能登录远端 DSH';
+  String get remoteErrDshSignIn => '没能登录远端 DeepSleep';
 
   @override
-  String get remoteErrDshTunnel => '没能通过隧道连接 DSH';
+  String get remoteErrDshTunnel => '没能通过隧道连接 DeepSleep';
 
   @override
-  String get remoteErrDshSignInExpired => '远端 DSH 登录已失效';
+  String get remoteErrDshSignInExpired => '远端 DeepSleep 登录已失效';
 
   @override
-  String get remoteErrDshStopped => '远端 DSH 已停止运行';
+  String get remoteErrDshStopped => '远端 DeepSleep 已停止运行';
 
   @override
   String get remoteErrSshDisconnected => 'SSH 连接已断开';
@@ -16003,7 +16083,7 @@ class L10nZh extends L10n {
   String get remoteSwitchHost => '切换主机';
 
   @override
-  String get remoteThisPhoneDsh => '这台手机上的 DSH';
+  String get remoteThisPhoneDsh => '这台手机上的 DeepSleep';
 
   @override
   String get remoteRemoteLabel => '远程';
@@ -16056,13 +16136,13 @@ class L10nZh extends L10n {
   String get remoteConsole => '远程控制台';
 
   @override
-  String get remoteHostsIntro => '在手机上接着用电脑或服务器上的 DSH';
+  String get remoteHostsIntro => '在手机上接着用电脑或服务器上的 DeepSleep';
 
   @override
   String get remoteSshHosts => 'SSH 主机';
 
   @override
-  String get remoteSshRequirements => '需要那台主机开着 SSH，并装好 DSH';
+  String get remoteSshRequirements => '需要那台主机开着 SSH，并装好 DeepSleep';
 
   @override
   String get remoteAddSshHost => '添加 SSH 主机';
@@ -16145,13 +16225,13 @@ class L10nZh extends L10n {
   String get remoteNoHosts => '还没有主机';
 
   @override
-  String get remoteRelaySetupHelp => '在主机的 DSH 里装好远程插件并登录';
+  String get remoteRelaySetupHelp => '在主机的 DeepSleep 里装好远程插件并登录';
 
   @override
   String get remoteRelaySignOutTitle => '退出 DSH Remote？';
 
   @override
-  String get remoteRelaySignOutBody => '这台手机会从账号中移除。主机上的 DSH 和对话不受影响，随时可以重新登录。';
+  String get remoteRelaySignOutBody => '这台手机会从账号中移除。主机上的 DeepSleep 和对话不受影响，随时可以重新登录。';
 
   @override
   String get remoteRelaySignInTitle => '登录 DSH Remote';
@@ -16206,7 +16286,7 @@ class L10nZh extends L10n {
   }
 
   @override
-  String get remoteDeleteHostBody => '这台主机的设置和保存在手机上的密码、私钥都会删除。主机上的 DSH 和对话不受影响。';
+  String get remoteDeleteHostBody => '这台主机的设置和保存在手机上的密码、私钥都会删除。主机上的 DeepSleep 和对话不受影响。';
 
   @override
   String remoteErrReadKey(String error) {
@@ -16223,7 +16303,7 @@ class L10nZh extends L10n {
   String get remoteEditHost => '编辑主机';
 
   @override
-  String get remoteSshHostIntro => '连接你电脑或服务器上的 DSH';
+  String get remoteSshHostIntro => '连接你电脑或服务器上的 DeepSleep';
 
   @override
   String get remoteHostBasicInfo => '基本信息';
@@ -16605,7 +16685,7 @@ class L10nZh extends L10n {
 
   @override
   String remoteSshInstallCommand(String command) {
-    return '还没装 DSH？在主机上运行 $command';
+    return '还没装 DeepSleep？在主机上运行 $command';
   }
 
   @override
@@ -16772,7 +16852,8 @@ class L10nZh extends L10n {
   String get remotePairNeedsDeepSeek => '先登录 DeepSeek 账号';
 
   @override
-  String get remotePairNeedsDeepSeekBody => '扫码配对要先在 DSH Go 里登录 DeepSeek 账号。配对时只附带账号 ID 用来标记这台手机，不传密码、Cookie 或 Token。';
+  String get remotePairNeedsDeepSeekBody =>
+      '扫码配对要先在 DeepSleep 里登录 DeepSeek 账号。配对时只附带账号 ID 用来标记这台手机，不传密码、Cookie 或 Token。';
 
   @override
   String get remotePairScanHint => '对准电脑上 Remote 插件显示的配对二维码';
@@ -16866,7 +16947,7 @@ class L10nZh extends L10n {
 
   @override
   String remotePairOtherServerBody(String server) {
-    return '这个二维码来自 $server，和 DSH Go 现在用的 Remote 服务器不同。切换过去继续吗？两个服务器的登录各自保留。';
+    return '这个二维码来自 $server，和 DeepSleep 现在用的 Remote 服务器不同。切换过去继续吗？两个服务器的登录各自保留。';
   }
 
   @override
@@ -16876,7 +16957,7 @@ class L10nZh extends L10n {
   String get remotePairScanAgain => '重新扫码';
 
   @override
-  String get remotePairErrInvalidCode => '这不是 DSH Go 的配对二维码';
+  String get remotePairErrInvalidCode => '这不是 DeepSleep 的配对二维码';
 
   @override
   String get remotePairErrOtherServer => '这个二维码来自另一个 Remote 服务器';
@@ -16971,7 +17052,7 @@ class L10nZh extends L10n {
   String get riskPetOverlayTitle => '显示在其他应用上层？';
 
   @override
-  String get riskPetOverlayBody => '要在系统设置里为 DSH Go 打开「显示在其他应用上层」，宠物才能出现在别的 App 上。';
+  String get riskPetOverlayBody => '要在系统设置里为 DeepSleep 打开「显示在其他应用上层」，宠物才能出现在别的 App 上。';
 
   @override
   String get riskPetOverlayAction => '去设置';
@@ -16987,19 +17068,19 @@ class L10nZh extends L10n {
 
   @override
   String askAiAboutApp(String question) {
-    return '关于 DSH Go App：$question';
+    return '关于 DeepSleep App：$question';
   }
 
   @override
   String askAiWithGuide(String question) {
-    return '关于 DSH Go App：$question\n请按附件里的使用说明回答。';
+    return '关于 DeepSleep App：$question\n请按附件里的使用说明回答。';
   }
 
   @override
-  String get askAiNoGuide => '这台主机没有 DSH Go 使用说明，回答可能不准确';
+  String get askAiNoGuide => '这台主机没有 DeepSleep 使用说明，回答可能不准确';
 
   @override
-  String get askAiQuestionOverview => 'DSH Go 能做什么？我该从哪里开始？';
+  String get askAiQuestionOverview => 'DeepSleep 能做什么？我该从哪里开始？';
 
   @override
   String get askAiQuestionPhoneControl => '手机操控是怎么工作的？有什么风险？';
@@ -17117,7 +17198,7 @@ class L10nZh extends L10n {
   String get searchKwDnd => '免打扰,Shizuku,Sui,root,ADB,后台操作';
 
   @override
-  String get searchKwEngine => '引擎,运行环境,启动,停止,重启,DSH';
+  String get searchKwEngine => '引擎,运行环境,启动,停止,重启,DeepSleep';
 
   @override
   String get searchKwBackground => '后台保活,保活,后台,电池优化,自启动,被杀,杀后台,省电';
@@ -17389,7 +17470,7 @@ class L10nZh extends L10n {
   String get searchKwPrivacy => '隐私,数据,日志,分享,统计';
 
   @override
-  String get searchKwAbout => '关于,版本,更新,许可,dsh-go';
+  String get searchKwAbout => '关于,版本,更新,许可,DeepSleep';
 
   @override
   String get searchKwPhoneConfirmEntry => '确认方式,手机操控,免确认';
@@ -18298,7 +18379,7 @@ class L10nZh extends L10n {
   String get shellConfigSlotName => 'slot 名格式不对';
 
   @override
-  String get shellConfigUnknownSlot => '当前 DSH 没有这个 slot，先保留';
+  String get shellConfigUnknownSlot => '当前 DeepSleep 没有这个 slot，先保留';
 
   @override
   String get shellConfigUnseatableSlot => '这个位置不放插件';
@@ -18389,7 +18470,7 @@ class L10nZh extends L10n {
 
   @override
   String shellSkillInstallPrompt(String skill) {
-    return '请在这台主机上安装 DSH Go 的界面技能 $skill：';
+    return '请在这台主机上安装 DeepSleep 的界面技能 $skill：';
   }
 
   @override
@@ -18560,7 +18641,7 @@ class L10nZh extends L10n {
 
   @override
   String get speechAccountUnusable =>
-      '已登录的账号在这里付不了 DeepSeek 语音：当前连接的 DSH 版本较旧（更新后就行），或正经 DSH Remote 中继连接。在设置里填 DeepSeek API Key 就能用';
+      '已登录的账号在这里付不了 DeepSeek 语音：当前连接的 DeepSleep 版本较旧（更新后就行），或正经 DSH Remote 中继连接。在设置里填 DeepSeek API Key 就能用';
 
   @override
   String get speechSignIn => 'DeepSeek 账号用不了语音（可能登录过期，或语音只认 API Key）。重新登录，或在设置里填上 API Key';
@@ -18725,7 +18806,7 @@ class L10nZh extends L10n {
 
   @override
   String get speechCallEndNoRecognizerSignedIn =>
-      '通话要能识别录音。已登录的账号在这里付不了 DeepSeek 语音（当前连接的 DSH 版本较旧，或经 DSH Remote 中继）：在设置里填 DeepSeek API Key，或在设置 › 语音里下载语音模型';
+      '通话要能识别录音。已登录的账号在这里付不了 DeepSeek 语音（当前连接的 DeepSleep 版本较旧，或经 DSH Remote 中继）：在设置里填 DeepSeek API Key，或在设置 › 语音里下载语音模型';
 
   @override
   String get speechCallEndNoRecognizer => '通话需要能识别录音的方式：登录 DeepSeek 账号、填 API Key，或下载语音模型';
@@ -18846,9 +18927,9 @@ class L10nZh extends L10n {
     String _temp0 = intl.Intl.pluralLogic(
       hours,
       locale: localeName,
-      other: '本鱼已经在 DSH Go 里陪你 $hours 个小时啦⁠~',
-      one: '本鱼已经在 DSH Go 里陪你一个小时啦⁠~',
-      zero: '本鱼已经在 DSH Go 里陪你半个小时啦⁠~',
+      other: '本鱼已经在 DeepSleep 里陪你 $hours 个小时啦⁠~',
+      one: '本鱼已经在 DeepSleep 里陪你一个小时啦⁠~',
+      zero: '本鱼已经在 DeepSleep 里陪你半个小时啦⁠~',
     );
     return '$_temp0';
   }
@@ -18869,7 +18950,7 @@ class L10nZh extends L10n {
   String get starPromptLater => '下次再说';
 
   @override
-  String get starSettingsTitle => '给 DSH Go 点个 star';
+  String get starSettingsTitle => '给 DeepSleep 点个 star';
 
   @override
   String get hubStartPage => '起始页';
@@ -18898,7 +18979,7 @@ class L10nZh extends L10n {
   String get phoneStartupPortNotReady => '已收到启动标记，但本机服务端口尚未就绪，请查看日志';
 
   @override
-  String get stateDiagnosticsSubject => 'DSH Go 诊断包';
+  String get stateDiagnosticsSubject => 'DeepSleep 诊断包';
 
   @override
   String get stateStoragePermission => '没有存储权限，存不进「下载」';
@@ -19180,7 +19261,7 @@ class L10nZh extends L10n {
   String get statePrivateKeyTooLarge => '文件太大，不像是私钥';
 
   @override
-  String get stateBotTeamBusy => '另一个 DSH 正在使用这个团队';
+  String get stateBotTeamBusy => '另一个 DeepSleep 正在使用这个团队';
 
   @override
   String get stateBotOperationFailed => '没能完成操作，再试一次';
@@ -19465,7 +19546,7 @@ class L10nZh extends L10n {
   String get stateInventoryConditional => '条件启用';
 
   @override
-  String get stateBundleBuiltIn => 'DSH 内置';
+  String get stateBundleBuiltIn => 'DeepSleep 内置';
 
   @override
   String get stateBundleHeadless => '无界面运行';
@@ -19537,7 +19618,7 @@ class L10nZh extends L10n {
   String get stateRegistryMirror => 'npmmirror 镜像';
 
   @override
-  String get statePluginIncompatible => '这个插件不支持当前的 DSH 版本。';
+  String get statePluginIncompatible => '这个插件不支持当前的 DeepSleep 版本。';
 
   @override
   String get statePluginInstallCancelled => '已取消安装';
@@ -19546,7 +19627,7 @@ class L10nZh extends L10n {
   String get statePluginNoChanges => '没有改动任何东西';
 
   @override
-  String get statePluginIncompatibleTitle => '和当前 DSH 不兼容';
+  String get statePluginIncompatibleTitle => '和当前 DeepSleep 不兼容';
 
   @override
   String get statePluginNetworkFailed => '网络连不上';
@@ -19615,7 +19696,7 @@ class L10nZh extends L10n {
   String get statePluginUninstallFirst => '换版本需先卸载';
 
   @override
-  String get statePluginInvalid => '这不是 DSH 插件';
+  String get statePluginInvalid => '这不是 DeepSleep 插件';
 
   @override
   String get statePluginNoEntry => '这个包没有插件入口，已撤销安装';
@@ -20026,12 +20107,12 @@ class L10nZh extends L10n {
 
   @override
   String statePluginRuntimeIncompatible(String version) {
-    return '这个插件不支持当前的 DSH 版本（$version）。';
+    return '这个插件不支持当前的 DeepSleep 版本（$version）。';
   }
 
   @override
   String statePluginRequiredVersion(String wanted, String current) {
-    return '这个插件要求 DSH $wanted，当前是 $current。';
+    return '这个插件要求 DeepSleep $wanted，当前是 $current。';
   }
 
   @override
@@ -20082,7 +20163,7 @@ class L10nZh extends L10n {
 
   @override
   String stateSafeRepairPrompt(String what) {
-    return '我的 DSH 正常模式出了问题（$what）。请按「安全模式」说明排查原因，先用可逆的办法修好 web 配置，修完用 dsh-app-plugins trial 试启动验证，再告诉我改了什么。';
+    return '我的 DeepSleep 正常模式出了问题（$what）。请按「安全模式」说明排查原因，先用可逆的办法修好 web 配置，修完用 dsh-app-plugins trial 试启动验证，再告诉我改了什么。';
   }
 
   @override
@@ -20159,7 +20240,7 @@ class L10nZh extends L10n {
   String get systemActionsWaitingEngine => '已开启，等本机引擎启动';
 
   @override
-  String get systemActionsOffScreen => '已开启，回到 DSH Go 才能用';
+  String get systemActionsOffScreen => '已开启，回到 DeepSleep 才能用';
 
   @override
   String get systemActionsConnecting => '正在连接';
@@ -20180,10 +20261,10 @@ class L10nZh extends L10n {
   String get systemActionsRemoteHint => '系统操作只在本机引擎的对话里有效';
 
   @override
-  String get systemActionsOnScreenTitle => '只在 DSH Go 在屏幕上时有效';
+  String get systemActionsOnScreenTitle => '只在 DeepSleep 在屏幕上时有效';
 
   @override
-  String get systemActionsOnScreenBody => '系统不让后台应用做这些。AI 打开别的应用后，要等你回到 DSH Go 才能接着做。';
+  String get systemActionsOnScreenBody => '系统不让后台应用做这些。AI 打开别的应用后，要等你回到 DeepSleep 才能接着做。';
 
   @override
   String get systemActionsCanTitle => '能做的';
@@ -20285,7 +20366,7 @@ class L10nZh extends L10n {
   String get systemActionsDisclosureWhenTitle => '什么时候做';
 
   @override
-  String get systemActionsDisclosureWhenBody => '只在对话用到、DSH Go 在屏幕上时。默认每次先问你，选了完全权限的对话不问。';
+  String get systemActionsDisclosureWhenBody => '只在对话用到、DeepSleep 在屏幕上时。默认每次先问你，选了完全权限的对话不问。';
 
   @override
   String get systemActionsDisclosureWhoTitle => '发给谁';
@@ -20309,7 +20390,7 @@ class L10nZh extends L10n {
   String get systemActionsHandoffTitle => '轮到你来操作';
 
   @override
-  String get systemActionsHandoffNote => '做完回到 DSH Go 点继续。继续只表示你确认了，AI 看不到其他应用里发生了什么。';
+  String get systemActionsHandoffNote => '做完回到 DeepSleep 点继续。继续只表示你确认了，AI 看不到其他应用里发生了什么。';
 
   @override
   String get systemActionsHandoffFailed => '这次没算上，提示如果还在可以再点一次';
@@ -20336,7 +20417,7 @@ class L10nZh extends L10n {
   String get systemActionsResultUnsupported => '鸿蒙版不支持这个动作，没有执行。';
 
   @override
-  String get systemActionsResultOffScreen => 'DSH Go 不在屏幕上，没有执行。';
+  String get systemActionsResultOffScreen => 'DeepSleep 不在屏幕上，没有执行。';
 
   @override
   String get systemActionsResultUnavailable => '系统操作没开或暂时连不上，没有执行。到「设置 → 系统操作」看看。';
@@ -21440,7 +21521,7 @@ class L10nZh extends L10n {
   }
 
   @override
-  String get tavernStorybookMadeWith => '用 DSH Go 酒馆写成';
+  String get tavernStorybookMadeWith => '用 DeepSleep 酒馆写成';
 
   @override
   String get tavernStorybookContents => '目录';
@@ -24200,7 +24281,7 @@ class L10nZh extends L10n {
   String get updateSettingsOpenFailed => '没能打开系统设置';
 
   @override
-  String get updateSettingsOpenFailedMessage => '到「设置 → 应用 → DSH Go」里允许「安装未知应用」，再回来安装。';
+  String get updateSettingsOpenFailedMessage => '到「设置 → 应用 → DeepSleep」里允许「安装未知应用」，再回来安装。';
 
   @override
   String get updateInstallCancelled => '已取消安装';
@@ -24218,10 +24299,10 @@ class L10nZh extends L10n {
   String get updateSignatureMismatch => '签名不一致，不能直接覆盖';
 
   @override
-  String get updateSignatureMismatchMessage => '手机上的 DSH Go 签名不同（多半是测试包），需要先卸载旧版再装新版。卸载会清空对话、Linux 环境和设置。';
+  String get updateSignatureMismatchMessage => '手机上的 DeepSleep 签名不同（多半是测试包），需要先卸载旧版再装新版。卸载会清空对话、Linux 环境和设置。';
 
   @override
-  String get updateWrongPackage => '不是 DSH 的安装包';
+  String get updateWrongPackage => '不是 DeepSleep 的安装包';
 
   @override
   String get updateWrongPackageMessage => '下载到的文件不对，已删除，请稍后重试。';
@@ -24230,7 +24311,7 @@ class L10nZh extends L10n {
   String get updateDowngradeBlocked => '不能降级安装';
 
   @override
-  String get updateDowngradeBlockedMessage => '手机上的 DSH 比这个安装包还新。';
+  String get updateDowngradeBlockedMessage => '手机上的 DeepSleep 比这个安装包还新。';
 
   @override
   String get updateIncompatible => '和这台手机不兼容';
@@ -24281,7 +24362,7 @@ class L10nZh extends L10n {
   String get updateNoReleaseNotes => '这个版本没有写更新说明。';
 
   @override
-  String get updateInstallKeepsData => '安装时 DSH Go 会退出，对话和设置都会保留';
+  String get updateInstallKeepsData => '安装时 DeepSleep 会退出，对话和设置都会保留';
 
   @override
   String get updateNoCompatiblePackage => '没有适合本机的安装包';
@@ -24316,7 +24397,7 @@ class L10nZh extends L10n {
   String get updateReadyToInstall => '校验通过，可以安装了。';
 
   @override
-  String get updateAllowInstall => '允许 DSH Go 安装应用';
+  String get updateAllowInstall => '允许 DeepSleep 安装应用';
 
   @override
   String get updateAllowInstallMessage => '在系统设置里打开「安装未知应用」，回来后自动继续。';
@@ -24344,7 +24425,7 @@ class L10nZh extends L10n {
 
   @override
   String get updateExportApkMessage =>
-      '会把这次下载并校验过的安装包复制到「下载/DSH-Go」，可以用 MT 管理器之类的工具重新签名后再装。\n\n重新签名后，手机上的签名和官方包不同，App 内更新会一直提示「签名不一致」，以后每次更新都要这样手动重签安装。\n\n如果只是系统拦着装不上（小米等机型），先试「安装路线」里的 Shizuku 或本机 ADB，那条路不用重新签名。';
+      '会把这次下载并校验过的安装包复制到「下载/DeepSleep」，可以用 MT 管理器之类的工具重新签名后再装。\n\n重新签名后，手机上的签名和官方包不同，App 内更新会一直提示「签名不一致」，以后每次更新都要这样手动重签安装。\n\n如果只是系统拦着装不上（小米等机型），先试「安装路线」里的 Shizuku 或本机 ADB，那条路不用重新签名。';
 
   @override
   String updateExportApkDone(String path) {
@@ -24389,17 +24470,17 @@ class L10nZh extends L10n {
   String get usageStatsTitle => '发送匿名使用统计';
 
   @override
-  String get usageStatsSection => '改进 DSH Go';
+  String get usageStatsSection => '改进 DeepSleep';
 
   @override
   String get usageStatsFooter =>
-      '这个开关只控制 dsh-go 自身的统计：各功能使用次数（含酒馆消息、伙伴小屋、语音通话）、模型回复报告的 token 数、版本、手机品牌和型号、系统版本，不含对话、角色卡、文件和账号；它不控制 Google ML Kit SDK 的统计。';
+      '这个开关只控制 DeepSleep 自身的统计：各功能使用次数（含酒馆消息、伙伴小屋、语音通话）、模型回复报告的 token 数、版本、手机品牌和型号、系统版本，不含对话、角色卡、文件和账号；它不控制 Google ML Kit SDK 的统计。';
 
   @override
   String get usageNoticeBody => '不含对话和个人信息，可随时关闭';
 
   @override
-  String get usageUpgradeNotice => '新增匿名使用统计，帮助改进 DSH Go。\n不含对话和个人信息';
+  String get usageUpgradeNotice => '新增匿名使用统计，帮助改进 DeepSleep。\n不含对话和个人信息';
 
   @override
   String get usageUpgradeLearn => '了解';
@@ -25054,7 +25135,7 @@ class L10nZh extends L10n {
   String get viewTipFolderNewChat => '长按侧栏的文件夹，可以直接在里面开新对话';
 
   @override
-  String get viewTipSwitchHost => '点侧栏底部的主机名，可以切到电脑上的 DSH';
+  String get viewTipSwitchHost => '点侧栏底部的主机名，可以切到电脑上的 DeepSleep';
 
   @override
   String get viewTipPasteImage => '输入法里的截图和贴图，可以直接贴进输入框';
@@ -25081,7 +25162,7 @@ class L10nZh extends L10n {
   String get viewTipKeyboard => '接了键盘：Ctrl+Enter 发送，连按两次 Esc 停止';
 
   @override
-  String get viewTipShareIn => '在别的 App 里分享文字或图片给 DSH Go，会填进新对话';
+  String get viewTipShareIn => '在别的 App 里分享文字或图片给 DeepSleep，会填进新对话';
 
   @override
   String get viewTipShareSelect => '分享对话时长按再滑动，可以一次选中多条消息';
@@ -25318,7 +25399,7 @@ class L10nZh extends L10n {
 
   @override
   String viewContinueHeader(String value) {
-    return '> 分享的 DSH Go 对话 · $value\n';
+    return '> 分享的 DeepSleep 对话 · $value\n';
   }
 
   @override
@@ -25372,7 +25453,7 @@ class L10nZh extends L10n {
 
   @override
   String viewShareLinkText(String first, String second) {
-    return '「$first」· DSH Go 对话\n$second';
+    return '「$first」· DeepSleep 对话\n$second';
   }
 
   @override
@@ -25389,7 +25470,7 @@ class L10nZh extends L10n {
   }
 
   @override
-  String get viewShareFileHint => '在 DSH Go 里回放、接着聊';
+  String get viewShareFileHint => '在 DeepSleep 里回放、接着聊';
 
   @override
   String get viewShareWebHint => '任何浏览器都能打开，不用联网';
@@ -25515,10 +25596,10 @@ class L10nZh extends L10n {
   String get viewShareProjectQr => '项目主页二维码';
 
   @override
-  String get viewShareBrandLine => '手机上的 DSH · 扫码获取';
+  String get viewShareBrandLine => '手机上的 DeepSleep · 扫码获取';
 
   @override
-  String get viewShareBrandLineNoQr => '手机上的 DSH';
+  String get viewShareBrandLineNoQr => '手机上的 DeepSleep';
 
   @override
   String viewShareSteps(int count) {
@@ -25560,7 +25641,7 @@ class L10nZh extends L10n {
 
   @override
   String viewSharePluginTitle(String value) {
-    return 'DSH 插件「$value」';
+    return 'DeepSleep 插件「$value」';
   }
 
   @override
@@ -26203,7 +26284,7 @@ class L10nZh extends L10n {
   String get searchKwWallpaper => '背景,背景图,聊天背景,自定义背景,换背景,模糊,壁纸图片';
 
   @override
-  String get webTitle => 'DSH 网页版';
+  String get webTitle => 'DeepSleep 网页版';
 
   @override
   String get webSshAppOnly => '经 SSH 隧道的地址只能在 App 内打开';
@@ -26414,7 +26495,7 @@ class L10nZh extends L10n {
 
   @override
   String workshopMinApp(String version) {
-    return '需要 DSH Go $version 或更新的版本。';
+    return '需要 DeepSleep $version 或更新的版本。';
   }
 
   @override

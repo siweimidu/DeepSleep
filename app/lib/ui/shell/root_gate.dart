@@ -1,4 +1,4 @@
-import 'dart:async';
+﻿import 'dart:async';
 import 'dart:io' show Platform;
 
 import 'package:flutter/material.dart';
@@ -28,7 +28,6 @@ import '../onboarding/setup_progress.dart';
 import '../remote/remote_screen.dart';
 import '../theme/theme.dart';
 import '../web/mode_home.dart';
-import 'brand_mark.dart';
 import 'usage_upgrade_notice.dart';
 
 /// Where a launch should start, given what is installed and configured.
@@ -467,13 +466,25 @@ class _SplashState extends State<_Splash> {
           child: AnimatedOpacity(
             opacity: _visible ? 1 : 0,
             duration: AppMotion.of(context, AppMotion.slow),
-            child: const Column(
+            child: Column(
               mainAxisSize: MainAxisSize.min,
-              children: [BrandMark(size: 64, tile: true), _ResetFinishing()],
+              children: const [_LaunchIcon(), _ResetFinishing()],
             ),
           ),
         ),
       ),
     );
   }
+}
+
+/// The launcher art on the cold-start screen: the same picture the home screen
+/// shows, rounded the way a launcher draws it.
+class _LaunchIcon extends StatelessWidget {
+  const _LaunchIcon();
+
+  @override
+  Widget build(BuildContext context) => ClipRRect(
+    borderRadius: BorderRadius.circular(16),
+    child: Image.asset('assets/brand/deepsleep.png', width: 64, height: 64, fit: BoxFit.cover),
+  );
 }

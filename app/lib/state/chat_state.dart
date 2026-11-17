@@ -6,6 +6,7 @@ import 'package:dsh_client/dsh_client.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../diagnostics/app_error_log.dart';
+import '../import/imported_chats.dart';
 import '../l10n/l10n.dart';
 import '../usage/usage_stats.dart';
 import 'attachments.dart';
@@ -1566,6 +1567,9 @@ class ChatController extends Notifier<ChatState> {
     bool Function()? deliveryAllowed,
   }) async {
     final client = operation.client;
+    // 导入的 DeepSeek 会话:第一次在这里发言时,把那段历史一起交给模型,让它接着聊。
+    final carried = await ref.read(importedChatsProvider.notifier).takePreamble(sessionId);
+    final words = carried == null ? text : '$carried\n\n$text';
     final images = [
       for (final a in attachments)
         if (a.isImage) PromptImage.fromBytes(a.bytes, mediaType: a.mediaType!, name: a.name),
@@ -1577,8 +1581,8 @@ class ChatController extends Notifier<ChatState> {
       }
       final paths = files.paths.map((path) => '- ${jsonEncode(path)}').join('\n');
       final content = paths.isEmpty
-          ? text
-          : [if (text.isNotEmpty) text, '${appL10n.stateWorkspaceFilesHint}\n$paths'].join('\n\n');
+          ? words
+          : [if (words.isNotEmpty) words, '${appL10n.stateWorkspaceFilesHint}\n$paths'].join('\n\n');
       return client.prompt(
         sessionId,
         content,

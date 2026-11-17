@@ -1,6 +1,6 @@
 {
   "@@locale": "zh",
-  "accessPickTitle": "想让 DSH Go 帮你做哪些事",
+  "accessPickTitle": "想让 DeepSleep 帮你做哪些事",
   "accessPickMessage": "选好后逐项开启",
   "accessPickConfirm": "开启所选",
   "accessSkip": "跳过",
@@ -83,7 +83,7 @@
   "accessA11yTitle": "打开无障碍",
   "accessA11yWhy": "手机操控靠它看屏幕、点按",
   "accessPopupTitle": "允许后台弹出界面",
-  "accessPopupWhy": "手机操控做完能回到 DSH Go",
+  "accessPopupWhy": "手机操控做完能回到 DeepSleep",
   "accessVivoPopupPath": "权限管理 › {app} › 后台弹出界面",
   "@accessVivoPopupPath": {
     "placeholders": {
@@ -104,10 +104,10 @@
   "accessOverlayWhy": "宠物才能出现在别的 App 上",
   "accessOverlayGreyed": "开关是灰的？",
   "accessRestrictedTitle": "先允许受限制的设置",
-  "accessRestrictedTap": "在无障碍里点一下「DSH 手机操控」，出现「受限制的设置」时点确定",
+  "accessRestrictedTap": "在无障碍里点一下「DeepSleep 手机操控」，出现「受限制的设置」时点确定",
   "accessRestrictedMenu": "在应用信息里点右上角的三个点，选「允许受限制的设置」",
   "accessRestrictedAdvanced": "在应用信息的「高级设置」里打开「允许受限制的设置」",
-  "accessRestrictedBack": "回到无障碍，打开「DSH 手机操控」",
+  "accessRestrictedBack": "回到无障碍，打开「DeepSleep 手机操控」",
   "accessRestrictedHelp": "看图示",
   "accessOpenA11y": "去无障碍",
   "accessOpenAppInfo": "去应用信息",

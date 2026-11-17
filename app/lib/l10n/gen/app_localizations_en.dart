@@ -21,10 +21,10 @@ class L10nEn extends L10n {
 
   @override
   String get a11yRestoreNotice =>
-      'Once authorized, accessibility will be turned back on if disabled in system settings. To stop phone control, turn it off in DSH Go.';
+      'Once authorized, accessibility will be turned back on if disabled in system settings. To stop phone control, turn it off in DeepSleep.';
 
   @override
-  String get a11yRestoreForceStop => 'After a force stop, reopen DSH Go to restore the service.';
+  String get a11yRestoreForceStop => 'After a force stop, reopen DeepSleep to restore the service.';
 
   @override
   String get a11yRestoreGrant => 'Authorize and enable';
@@ -60,7 +60,7 @@ class L10nEn extends L10n {
   String get a11yRestoreCopied => 'Command copied';
 
   @override
-  String get accessPickTitle => 'What should DSH Go help with?';
+  String get accessPickTitle => 'What should DeepSleep help with?';
 
   @override
   String get accessPickMessage => 'Pick any, then turn each one on';
@@ -183,7 +183,7 @@ class L10nEn extends L10n {
   String get accessAutostartTitle => 'Allow auto-start';
 
   @override
-  String get accessAutostartWhy => 'Lets DSH Go come back after the system clears it';
+  String get accessAutostartWhy => 'Lets DeepSleep come back after the system clears it';
 
   @override
   String accessVivoAutostartPath(String app) {
@@ -205,7 +205,7 @@ class L10nEn extends L10n {
   String get accessPopupTitle => 'Allow pop-ups in background';
 
   @override
-  String get accessPopupWhy => 'Brings you back to DSH Go when phone control is done';
+  String get accessPopupWhy => 'Brings you back to DeepSleep when phone control is done';
 
   @override
   String accessVivoPopupPath(String app) {
@@ -231,7 +231,7 @@ class L10nEn extends L10n {
 
   @override
   String get accessRestrictedTap =>
-      'In Accessibility, tap “DSH Phone Control”; when “Restricted setting” appears, tap OK';
+      'In Accessibility, tap “DeepSleep Phone Control”; when “Restricted setting” appears, tap OK';
 
   @override
   String get accessRestrictedMenu =>
@@ -242,7 +242,7 @@ class L10nEn extends L10n {
       'In App info, open “Advanced settings” and turn on “Allow restricted settings”';
 
   @override
-  String get accessRestrictedBack => 'Back in Accessibility, turn on “DSH Phone Control”';
+  String get accessRestrictedBack => 'Back in Accessibility, turn on “DeepSleep Phone Control”';
 
   @override
   String get accessRestrictedHelp => 'See how';
@@ -1781,7 +1781,7 @@ class L10nEn extends L10n {
 
   @override
   String get androidShellAuthorizeHint =>
-      'Install and start Shizuku, then press this button to authorize dsh-Go. Opening or refreshing this page never requests permission.';
+      'Install and start Shizuku, then press this button to authorize DeepSleep. Opening or refreshing this page never requests permission.';
 
   @override
   String get androidShellStatus => 'Execution status';
@@ -2843,7 +2843,7 @@ class L10nEn extends L10n {
   String get botsForumSubtitle => 'Ask, share, connect';
 
   @override
-  String get botsProjectHome => 'DSH Go project home';
+  String get botsProjectHome => 'DeepSleep project home';
 
   @override
   String get botsOpenSource => 'Open-source project';
@@ -3060,7 +3060,7 @@ class L10nEn extends L10n {
   String get botsPets => 'Pets';
 
   @override
-  String get botsPetSource => 'From DSH-TUI';
+  String get botsPetSource => 'From DeepSleep-TUI';
 
   @override
   String get botsPetImport => 'Import';
@@ -3117,7 +3117,7 @@ class L10nEn extends L10n {
   String get botsPetCodexFps => 'Frame rates were rounded to whole milliseconds';
 
   @override
-  String get botsPetCodexOneShot => 'Where a play-once motion returns to is decided by DSH';
+  String get botsPetCodexOneShot => 'Where a play-once motion returns to is decided by DeepSleep';
 
   @override
   String get botsPetCodexMissingAuthor => 'The pack names no author';
@@ -3462,10 +3462,10 @@ class L10nEn extends L10n {
   String get botsMobileUnsupportedTitle => 'DS Bot isn\'t on mobile yet';
 
   @override
-  String get botsMobileApiRequired => 'Use it in DSH Web for now';
+  String get botsMobileApiRequired => 'Use it in DeepSleep Web for now';
 
   @override
-  String get botsMobileApiMissing => 'Not on mobile yet. Use it in DSH Web for now';
+  String get botsMobileApiMissing => 'Not on mobile yet. Use it in DeepSleep Web for now';
 
   @override
   String get botsCreationConnectionChanged => 'The connection changed. Reopen this form to create on the current host.';
@@ -3732,7 +3732,7 @@ class L10nEn extends L10n {
   String get catalogDiagnosticsSummary => 'Export diagnostics bundle';
 
   @override
-  String get catalogWebSummary => 'Official DSH interface';
+  String get catalogWebSummary => 'Official DeepSleep interface';
 
   @override
   String get catalogPluginPanel => 'Plugin panel';
@@ -3744,7 +3744,7 @@ class L10nEn extends L10n {
   String get catalogAllFeatures => 'All features';
 
   @override
-  String get catalogAllFeaturesSubtitle => 'DSH Web features, all here';
+  String get catalogAllFeaturesSubtitle => 'DeepSleep Web features, all here';
 
   @override
   String get catalogOpenChatFirst => 'Open a chat first';
@@ -4057,7 +4057,7 @@ class L10nEn extends L10n {
   String get chatGeneratingSteerHint => 'Generating · Type to steer';
 
   @override
-  String get chatComposerHint => 'Message DSH…';
+  String get chatComposerHint => 'Message DeepSleep…';
 
   @override
   String get chatStopGenerating => 'Stop generating';
@@ -4258,7 +4258,7 @@ class L10nEn extends L10n {
   String get chatImageNotFound => 'Image not found';
 
   @override
-  String get chatImageOffline => 'Not connected to DSH';
+  String get chatImageOffline => 'Not connected to DeepSleep';
 
   @override
   String get chatImageTooLarge => 'Image too large';
@@ -4406,7 +4406,7 @@ class L10nEn extends L10n {
   String get chatOpenInDefaultApp => 'Open in default app';
 
   @override
-  String get chatDownloadsFolderHint => 'Downloads/DSH-Go folder';
+  String get chatDownloadsFolderHint => 'Downloads/DeepSleep folder';
 
   @override
   String chatSavedToDownloadsPath(String path) {
@@ -5139,7 +5139,7 @@ class L10nEn extends L10n {
   String get commonOpenWith => 'Open in another app';
 
   @override
-  String get commonOpenInWeb => 'Open in DSH Web';
+  String get commonOpenInWeb => 'Open in DeepSleep Web';
 
   @override
   String get commonUntitledChat => 'Untitled chat';
@@ -5550,7 +5550,7 @@ class L10nEn extends L10n {
 
   @override
   String get companionMemoryUnsupportedHint =>
-      'It isn\'t available over the DSH Remote relay, or this host\'s dsh-go bridge is older.';
+      'It isn\'t available over the DSH Remote relay, or this host\'s DeepSleep bridge is older.';
 
   @override
   String get companionMemoryLoadFailed => 'Couldn\'t load';
@@ -5616,7 +5616,7 @@ class L10nEn extends L10n {
   String get companionModeFull => 'Full';
 
   @override
-  String get companionModeFullHint => 'DSH on the host, with tools and phone control';
+  String get companionModeFullHint => 'DeepSleep on the host, with tools and phone control';
 
   @override
   String get companionLightNoKey => 'Light mode needs a DeepSeek API key. Add one in Settings and we can talk.';
@@ -6437,7 +6437,7 @@ class L10nEn extends L10n {
   String get engineAccountFinishInBrowser => 'Finish sign-in in your browser';
 
   @override
-  String get engineAccountReturnToDsh => 'Return to DSH Go after signing in';
+  String get engineAccountReturnToDsh => 'Return to DeepSleep after signing in';
 
   @override
   String get engineAccountFinishingSignIn => 'Finishing sign-in';
@@ -6470,7 +6470,7 @@ class L10nEn extends L10n {
   String get engineAccountUsageFact => 'Usage is charged to your account balance';
 
   @override
-  String get engineAccountBrowserFact => 'Sign in with your browser. DSH never sees your password';
+  String get engineAccountBrowserFact => 'Sign in with your browser. DeepSleep never sees your password';
 
   @override
   String get engineAccountCredentialsFact => 'Sign-in credentials stay on this phone';
@@ -6560,7 +6560,7 @@ class L10nEn extends L10n {
   String get engineGeneralMissing => 'This host has no general settings';
 
   @override
-  String get engineSettingsVersionRequired => 'Requires DSH 0.2.1 or later';
+  String get engineSettingsVersionRequired => 'Requires DeepSleep 0.2.1 or later';
 
   @override
   String get engineGeneralWebDisplay => 'Web display';
@@ -7023,7 +7023,7 @@ class L10nEn extends L10n {
   String get engineProviderNoModels => 'No models yet';
 
   @override
-  String get engineProviderWebConfigured => 'Configured in DSH Web. You can view or delete it here';
+  String get engineProviderWebConfigured => 'Configured in DeepSleep Web. You can view or delete it here';
 
   @override
   String get engineProviderDelete => 'Delete provider';
@@ -7697,7 +7697,7 @@ class L10nEn extends L10n {
   String get featuresPresetMinimalDescription => 'Terminal and image viewing only, for testing and comparison';
 
   @override
-  String get featuresPresetCreatorDescription => 'Have the agent write plugins to customize DSH';
+  String get featuresPresetCreatorDescription => 'Have the agent write plugins to customize DeepSleep';
 
   @override
   String featuresHostUnreachable(String name) {
@@ -7752,7 +7752,7 @@ class L10nEn extends L10n {
   }
 
   @override
-  String get featuresJobOutputSubject => 'DSH job output';
+  String get featuresJobOutputSubject => 'DeepSleep job output';
 
   @override
   String get featuresJobOutputReadFailed => 'Couldn’t read output';
@@ -8631,7 +8631,7 @@ class L10nEn extends L10n {
 
   @override
   String get featuresExportRemoteHint =>
-      'Logs aren’t available over DSH Remote. Export them from DSH Web on your computer.';
+      'Logs aren’t available over DSH Remote. Export them from DeepSleep Web on your computer.';
 
   @override
   String get featuresExportShareHint => 'Attach to feedback or send to yourself';
@@ -8640,7 +8640,7 @@ class L10nEn extends L10n {
   String get featuresExportSaveDownloads => 'Save to Downloads';
 
   @override
-  String get featuresExportDownloadsHint => 'Save in Downloads/DSH-Go';
+  String get featuresExportDownloadsHint => 'Save in Downloads/DeepSleep';
 
   @override
   String get featuresExportContents => 'All records and attachments from this chat and its subagents';
@@ -8957,7 +8957,7 @@ class L10nEn extends L10n {
 
   @override
   String get harmonyNotificationSettingsFailed =>
-      'Couldn’t open system settings. Turn on notifications in Settings → Notifications & status bar → DSH Go.';
+      'Couldn’t open system settings. Turn on notifications in Settings → Notifications & status bar → DeepSleep.';
 
   @override
   String get harmonySearchUnavailable => 'This isn\'t available in this version';
@@ -9102,7 +9102,7 @@ class L10nEn extends L10n {
   String get harmonyLiveBlockedTitle => 'The system isn\'t allowing progress notifications';
 
   @override
-  String get harmonyLiveBlockedText => 'Turn on notifications for DSH Go in system settings';
+  String get harmonyLiveBlockedText => 'Turn on notifications for DeepSleep in system settings';
 
   @override
   String get harmonyAlertsOffTitle => 'Alert notifications are off';
@@ -9224,7 +9224,7 @@ class L10nEn extends L10n {
 
   @override
   String harmonySafeRepairPrompt(String what) {
-    return 'My DSH has a problem in normal mode ($what). It\'s in Safe mode now, on the default configuration that comes with the app, and my own configuration is untouched. Find the cause, and tell me what you\'d change before changing it.';
+    return 'My DeepSleep has a problem in normal mode ($what). It\'s in Safe mode now, on the default configuration that comes with the app, and my own configuration is untouched. Find the cause, and tell me what you\'d change before changing it.';
   }
 
   @override
@@ -9370,7 +9370,7 @@ class L10nEn extends L10n {
 
   @override
   String get hubSettingsStorageDenied =>
-      'Storage access wasn’t granted. Allow “All files access” for DSH Go in system settings, then try again.';
+      'Storage access wasn’t granted. Allow “All files access” for DeepSleep in system settings, then try again.';
 
   @override
   String get hubSettingsRestartRequired => 'Takes effect after restarting the engine';
@@ -9424,7 +9424,7 @@ class L10nEn extends L10n {
   String get hubSettingsWebPhoneLayout => 'Web phone layout';
 
   @override
-  String get hubSettingsWebPhoneLayoutHint => 'Adapt DSH Web to phone screens';
+  String get hubSettingsWebPhoneLayoutHint => 'Adapt DeepSleep Web to phone screens';
 
   @override
   String get hubSettingsEngineExtensions => 'Engine and extensions';
@@ -9496,7 +9496,7 @@ class L10nEn extends L10n {
   String get hubPluginInstalledVersion => 'Installed version';
 
   @override
-  String get hubPluginRequiresDsh => 'Requires DSH';
+  String get hubPluginRequiresDsh => 'Requires DeepSleep';
 
   @override
   String get hubPluginPackageName => 'Package name';
@@ -9532,7 +9532,7 @@ class L10nEn extends L10n {
   String get hubPluginRetryInstall => 'Retry install';
 
   @override
-  String get hubPluginOfficial => 'Official DSH';
+  String get hubPluginOfficial => 'Official DeepSleep';
 
   @override
   String get hubPluginNotLoaded => 'Couldn’t load';
@@ -9709,7 +9709,7 @@ class L10nEn extends L10n {
   String get hubGroupHosts => 'Hosts';
 
   @override
-  String get hubGroupHelp => 'Help and about';
+  String get hubGroupHelp => 'Diagnostics';
 
   @override
   String get hubPersonalization => 'Personalization';
@@ -9733,7 +9733,7 @@ class L10nEn extends L10n {
   String get hubInterfaceHome => 'Home';
 
   @override
-  String get hubInterfaceWebHint => 'DSH\'s own web app';
+  String get hubInterfaceWebHint => 'DeepSleep\'s own web app';
 
   @override
   String get hubInterfaceOpenWeb => 'Open the web app';
@@ -9763,10 +9763,10 @@ class L10nEn extends L10n {
   String get hubTableTintNoneHint => 'Grid lines only, the lightest';
 
   @override
-  String get hubAbout => 'About DSH Go';
+  String get hubAbout => 'About DeepSleep';
 
   @override
-  String get hubAboutAuthor => 'Original author of DSH Go';
+  String get hubAboutAuthor => 'Original author of DeepSleep';
 
   @override
   String get hubAboutBilibili => 'Bilibili profile';
@@ -9846,10 +9846,87 @@ class L10nEn extends L10n {
   String get hubQuickPanelItemsNone => 'Nothing chosen: a left swipe won\'t open it';
 
   @override
+  String get hubDeepSeekImport => 'Import DeepSeek app chats';
+
+  @override
+  String get hubDeepSeekImportHint =>
+      'Export your data in the DeepSeek app (Settings → Export data) and choose the deepseek_data-…zip here. Every conversation becomes a session with its own title; the history stays on this phone and goes to the model with the first message you send here.';
+
+  @override
+  String get hubDeepSeekImportPick => 'Choose the export (.zip)';
+
+  @override
+  String get hubDeepSeekImportParsing => 'Reading the archive…';
+
+  @override
+  String get hubDeepSeekImportCreating => 'Creating sessions…';
+
+  @override
+  String get hubDeepSeekImportCancel => 'Cancel';
+
+  @override
+  String get hubDeepSeekImportNoHost => 'Connect to an engine first.';
+
+  @override
+  String get hubDeepSeekImportBadZip => 'That is not an export made by the DeepSeek app.';
+
+  @override
+  String get hubDeepSeekImportNoChatsZip => 'That archive holds no conversation.';
+
+  @override
+  String get hubDeepSeekImportUnreadable => 'That file cannot be read.';
+
+  @override
+  String get hubDeepSeekImportSummary => 'Import finished';
+
+  @override
+  String get hubDeepSeekImportCancelled => 'Cancelled';
+
+  @override
+  String get hubDeepSeekImportImportedSection => 'Imported chats';
+
+  @override
+  String get hubDeepSeekImportNone => 'No chat imported yet.';
+
+  @override
+  String get hubDeepSeekImportCarryNote =>
+      'The first message you send here carries that history to the model as context; after that the session behaves like any other.';
+
+  @override
+  String get hubDeepSeekImportFailed => 'Some sessions could not be created:';
+
+  @override
+  String get hubDeepSeekImportMessages => 'messages';
+
+  @override
+  String get hubDeepSeekRecordTitle => 'Chat record';
+
+  @override
+  String get hubDeepSeekRecordThinking => 'Thinking';
+
+  @override
+  String get hubDeepSeekRecordSources => 'Sources';
+
+  @override
+  String get hubDeepSeekRecordAttachments => 'Attachments';
+
+  @override
+  String get hubDeepSeekRecordStopped => 'This answer was cut off';
+
+  @override
+  String get hubDeepSeekRecordYou => 'Me';
+
+  @override
+  String get hubDeepSeekRecordDeepSeek => 'DeepSeek';
+
+  @override
+  String get hubDeepSeekRecordEmpty => 'This conversation has nothing to show';
+
+  @override
   String get iosSaveToFiles => 'Save to Files';
 
   @override
-  String get iosFilesFolderHint => 'DSH Go folder in the Files app';
+  String get iosFilesFolderHint => 'DeepSleep folder in the Files app';
 
   @override
   String get iosSavingToFiles => 'Saving to Files…';
@@ -9862,7 +9939,7 @@ class L10nEn extends L10n {
 
   @override
   String get iosNotificationSettingsFailed =>
-      'Couldn’t open system settings. Turn on notifications in Settings → DSH Go → Notifications.';
+      'Couldn’t open system settings. Turn on notifications in Settings → DeepSleep → Notifications.';
 
   @override
   String get iosVoiceSystemHint => 'Use the system’s speech recognition';
@@ -9872,11 +9949,11 @@ class L10nEn extends L10n {
 
   @override
   String get iosPluginsPermissionLocalThirdParty =>
-      'Plugins run with DSH’s permissions: they can read and write files, run commands, and read API keys. They aren’t restricted by the workspace sandbox. Provided by a third party and not reviewed by DSH.';
+      'Plugins run with DeepSleep’s permissions: they can read and write files, run commands, and read API keys. They aren’t restricted by the workspace sandbox. Provided by a third party and not reviewed by DeepSleep.';
 
   @override
   String get iosPluginsPermissionLocalTrusted =>
-      'Plugins run with DSH’s permissions: they can read and write files, run commands, and read API keys. They aren’t restricted by the workspace sandbox. Only install plugins you trust.';
+      'Plugins run with DeepSleep’s permissions: they can read and write files, run commands, and read API keys. They aren’t restricted by the workspace sandbox. Only install plugins you trust.';
 
   @override
   String get iosIconChanged => 'Icon changed';
@@ -10329,7 +10406,7 @@ class L10nEn extends L10n {
 
   @override
   String get iconShortcutNote =>
-      'Android doesn’t let an app use any picture as its icon, so this adds a separate shortcut that opens DSH Go. Some home screens put a small badge on its corner.';
+      'Android doesn’t let an app use any picture as its icon, so this adds a separate shortcut that opens DeepSleep. Some home screens put a small badge on its corner.';
 
   @override
   String get iconShortcutAdded => 'Added to your home screen';
@@ -10338,7 +10415,7 @@ class L10nEn extends L10n {
   String get iconShortcutConfirm => 'Confirm in the dialog that appears';
 
   @override
-  String get iconShortcutNoDialog => 'No dialog? Allow DSH Go to create home screen shortcuts in system settings.';
+  String get iconShortcutNoDialog => 'No dialog? Allow DeepSleep to create home screen shortcuts in system settings.';
 
   @override
   String get iconShortcutSettings => 'Settings';
@@ -10548,16 +10625,16 @@ class L10nEn extends L10n {
   String get liveChipFailed => 'Failed';
 
   @override
-  String get livePublicRunning => 'DSH is working';
+  String get livePublicRunning => 'DeepSleep is working';
 
   @override
-  String get livePublicWaiting => 'DSH is waiting for you';
+  String get livePublicWaiting => 'DeepSleep is waiting for you';
 
   @override
-  String get livePublicDone => 'DSH is done';
+  String get livePublicDone => 'DeepSleep is done';
 
   @override
-  String get livePublicFailed => 'DSH ran into an error';
+  String get livePublicFailed => 'DeepSleep ran into an error';
 
   @override
   String get liveSettingsTitle => 'Live activity';
@@ -10567,7 +10644,7 @@ class L10nEn extends L10n {
 
   @override
   String get liveSettingsSubtitle =>
-      'While DSH works, waits on you or controls the phone: in the status bar chip and on the lock screen, and in the island on phones that have one';
+      'While DeepSleep works, waits on you or controls the phone: in the status bar chip and on the lock screen, and in the island on phones that have one';
 
   @override
   String get liveSettingsFooter =>
@@ -10577,11 +10654,11 @@ class L10nEn extends L10n {
   String get liveUnsupported => 'This phone\'s system doesn\'t support live activities yet';
 
   @override
-  String get liveBlockedTitle => 'Live activities are off for DSH Go';
+  String get liveBlockedTitle => 'Live activities are off for DeepSleep';
 
   @override
   String get liveBlockedText =>
-      'Turn on live activities for DSH Go in system settings (some phones call it “Show on Live Alerts”)';
+      'Turn on live activities for DeepSleep in system settings (some phones call it “Show on Live Alerts”)';
 
   @override
   String get localeTitle => 'Language';
@@ -10596,7 +10673,7 @@ class L10nEn extends L10n {
   String get localeEn => 'English';
 
   @override
-  String get localEnvChooseTitle => 'Where should DSH run?';
+  String get localEnvChooseTitle => 'Where should DeepSleep run?';
 
   @override
   String get localEnvChooseMessage => 'You can change this later in Settings';
@@ -10617,10 +10694,10 @@ class L10nEn extends L10n {
   }
 
   @override
-  String get localEnvRemoteDetail => 'Use DSH on your computer or server';
+  String get localEnvRemoteDetail => 'Use DeepSleep on your computer or server';
 
   @override
-  String get localEnvUnavailable => 'DSH can\'t run on this device yet';
+  String get localEnvUnavailable => 'DeepSleep can\'t run on this device yet';
 
   @override
   String get localEnvUnsupported => 'Not supported';
@@ -10632,7 +10709,7 @@ class L10nEn extends L10n {
   String get localEnvInstallTitle => 'Install on this phone';
 
   @override
-  String get localEnvInstallMessage => 'Run DSH right on this phone';
+  String get localEnvInstallMessage => 'Run DeepSleep right on this phone';
 
   @override
   String localEnvFactStorage(int storage) {
@@ -10673,7 +10750,7 @@ class L10nEn extends L10n {
   String get localEnvPhoneNeedsRuntime => 'Available after installing on this phone';
 
   @override
-  String get localEnvSignInNeedsRuntime => 'Needs DSH on this phone';
+  String get localEnvSignInNeedsRuntime => 'Needs DeepSleep on this phone';
 
   @override
   String get localEnvSignInInstallFirst => 'Install it to sign in';
@@ -10721,7 +10798,7 @@ class L10nEn extends L10n {
   String get marketInstallRefused => 'This engine can\'t install market plugins';
 
   @override
-  String get localEnvChooseUseTitle => 'How will you use dsh-Go?';
+  String get localEnvChooseUseTitle => 'How will you use DeepSleep?';
 
   @override
   String get localEnvTavernTitle => 'Chat with characters';
@@ -10733,7 +10810,7 @@ class L10nEn extends L10n {
   String get marketSectionOfficial => 'Official';
 
   @override
-  String get marketSectionAdapted => 'Made for DSH Go';
+  String get marketSectionAdapted => 'Made for DeepSleep';
 
   @override
   String get marketSectionAll => 'All';
@@ -10751,7 +10828,7 @@ class L10nEn extends L10n {
   String get marketTierOfficial => 'Official';
 
   @override
-  String get marketTierAdapted => 'Made for DSH Go';
+  String get marketTierAdapted => 'Made for DeepSleep';
 
   @override
   String get marketRiskMedium => 'Medium risk';
@@ -10798,10 +10875,11 @@ class L10nEn extends L10n {
   String get marketFlagObfuscatedBody => 'Has large minified or obfuscated files; hard to tell what they do';
 
   @override
-  String get marketFlagNotAdapted => 'Not made for DSH Go';
+  String get marketFlagNotAdapted => 'Not made for DeepSleep';
 
   @override
-  String get marketFlagNotAdaptedBody => 'Declares no DSH Go native protocol, so it has no native screens in the app';
+  String get marketFlagNotAdaptedBody =>
+      'Declares no DeepSleep native protocol, so it has no native screens in the app';
 
   @override
   String get marketFlagOtherBody => 'Another trait the automatic checks reported';
@@ -10837,11 +10915,11 @@ class L10nEn extends L10n {
   String get marketPinnedVersion => 'Pinned version';
 
   @override
-  String get marketRequiresApp => 'Requires DSH Go';
+  String get marketRequiresApp => 'Requires DeepSleep';
 
   @override
   String marketNeedsApp(String version) {
-    return 'Needs DSH Go $version or later';
+    return 'Needs DeepSleep $version or later';
   }
 
   @override
@@ -11479,7 +11557,7 @@ class L10nEn extends L10n {
   String get modeWork => 'Work';
 
   @override
-  String get modeWorkSubtitle => 'Get things done with DSH';
+  String get modeWorkSubtitle => 'Get things done with DeepSleep';
 
   @override
   String get modeCompanionShort => 'Companion';
@@ -11642,7 +11720,7 @@ class L10nEn extends L10n {
   String get phoneDiagnosticsSave => 'Save to Downloads';
 
   @override
-  String get phoneDiagnosticsSaveHint => 'Save in Downloads/DSH-Go';
+  String get phoneDiagnosticsSaveHint => 'Save in Downloads/DeepSleep';
 
   @override
   String get phoneDiagnosticsNote =>
@@ -11688,7 +11766,7 @@ class L10nEn extends L10n {
   String get phoneEngineLogs => 'Logs';
 
   @override
-  String get phoneEngineAutoStart => 'Start when DSH Go opens';
+  String get phoneEngineAutoStart => 'Start when DeepSleep opens';
 
   @override
   String get phoneEngineKeepAlive => 'Background running';
@@ -11785,7 +11863,7 @@ class L10nEn extends L10n {
   String get phoneEngineError => 'Something went wrong';
 
   @override
-  String get phoneEngineRuntimeCorrupt => 'The bundled runtime is damaged. Reinstall DSH.';
+  String get phoneEngineRuntimeCorrupt => 'The bundled runtime is damaged. Reinstall DeepSleep.';
 
   @override
   String get phoneEngineExited => 'The engine quit unexpectedly';
@@ -11794,16 +11872,16 @@ class L10nEn extends L10n {
   String get phoneEngineRuntimeMissing => 'The runtime isn’t installed yet';
 
   @override
-  String get phoneEngineSafeUnsupported => 'This runtime doesn’t support Safe mode. Update DSH.';
+  String get phoneEngineSafeUnsupported => 'This runtime doesn’t support Safe mode. Update DeepSleep.';
 
   @override
-  String get phoneEngineRuntimeIncomplete => 'The bundled runtime is incomplete. Reinstall DSH.';
+  String get phoneEngineRuntimeIncomplete => 'The bundled runtime is incomplete. Reinstall DeepSleep.';
 
   @override
   String get phoneLogEmpty => 'No logs yet';
 
   @override
-  String get phoneLogShareTitle => 'DSH engine logs';
+  String get phoneLogShareTitle => 'DeepSleep engine logs';
 
   @override
   String get phoneLogCopyAll => 'Copy all';
@@ -11893,7 +11971,7 @@ class L10nEn extends L10n {
   String get phoneActionLogEmpty => 'No actions yet';
 
   @override
-  String get phoneActionLogEmptyHint => 'Every step DSH takes on your phone appears here';
+  String get phoneActionLogEmptyHint => 'Every step DeepSleep takes on your phone appears here';
 
   @override
   String get phoneAppRuleDeny => 'Hands off';
@@ -11965,7 +12043,7 @@ class L10nEn extends L10n {
 
   @override
   String get phoneAlwaysAllowWarning =>
-      'Once on, DSH can send content to these apps without asking. Sent content can’t be taken back.';
+      'Once on, DeepSleep can send content to these apps without asking. Sent content can’t be taken back.';
 
   @override
   String get phoneAlwaysAllowConfirm => 'Turn on';
@@ -12002,7 +12080,7 @@ class L10nEn extends L10n {
 
   @override
   String get phoneDndShizukuPermissionFailed =>
-      'Permission not granted. Allow DSH Go in Shizuku’s “Application management”.';
+      'Permission not granted. Allow DeepSleep in Shizuku’s “Application management”.';
 
   @override
   String get phoneDndPairedConnect => 'Paired. Tap “Connect”.';
@@ -12108,11 +12186,11 @@ class L10nEn extends L10n {
 
   @override
   String get phoneDndRootConnected =>
-      'Root is connected. If it drops, choose it here again; DSH Go asks for root on its own only with “Keep root channel” enabled under More settings.';
+      'Root is connected. If it drops, choose it here again; DeepSleep asks for root on its own only with “Keep root channel” enabled under More settings.';
 
   @override
   String get phoneDndRootConnectedKept =>
-      'Root is connected. If it drops, DSH Go asks your root manager again on its own.';
+      'Root is connected. If it drops, DeepSleep asks your root manager again on its own.';
 
   @override
   String get phoneDndRootRetry => 'Ask for root again';
@@ -12128,10 +12206,10 @@ class L10nEn extends L10n {
       'Open Shizuku and follow “Start via Wireless debugging” (requires Wi-Fi). This page refreshes when you return.';
 
   @override
-  String get phoneDndGrantShizukuHint => 'Shizuku is running. Allow DSH Go to use it next.';
+  String get phoneDndGrantShizukuHint => 'Shizuku is running. Allow DeepSleep to use it next.';
 
   @override
-  String get phoneDndGrantShizuku => 'Allow DSH Go';
+  String get phoneDndGrantShizuku => 'Allow DeepSleep';
 
   @override
   String get phoneDndShizukuAllSet => 'Shizuku is running and authorized. Connect the background screen next.';
@@ -12143,7 +12221,7 @@ class L10nEn extends L10n {
   String get phoneDndShizukuRunning => 'Shizuku running';
 
   @override
-  String get phoneDndShizukuGranted => 'DSH Go allowed';
+  String get phoneDndShizukuGranted => 'DeepSleep allowed';
 
   @override
   String get phoneDndShizukuCompatibility =>
@@ -12167,7 +12245,7 @@ class L10nEn extends L10n {
       'Turn on “Wireless debugging” in Developer options while connected to Wi-Fi. Developer options is usually in “System” or “Additional settings”.';
 
   @override
-  String get phoneDndStartPairingStep => 'Return here and tap “Start pairing”. DSH sends a notification.';
+  String get phoneDndStartPairingStep => 'Return here and tap “Start pairing”. DeepSleep sends a notification.';
 
   @override
   String get phoneDndGetPairingCodeStep =>
@@ -12175,7 +12253,7 @@ class L10nEn extends L10n {
 
   @override
   String get phoneDndEnterPairingCodeStep =>
-      'Pull down notifications and enter the code in DSH’s notification. Once paired, tap “Connect”.';
+      'Pull down notifications and enter the code in DeepSleep’s notification. Once paired, tap “Connect”.';
 
   @override
   String get phoneDndStartPairing => 'Start pairing';
@@ -12254,10 +12332,10 @@ class L10nEn extends L10n {
   String get phoneDisabled => 'Off';
 
   @override
-  String get phoneOpenAccessibilityFailed => 'Can’t open settings. Find DSH in Settings → Accessibility.';
+  String get phoneOpenAccessibilityFailed => 'Can’t open settings. Find DeepSleep in Settings → Accessibility.';
 
   @override
-  String get phoneOpenAppInfoFailed => 'Can’t open app info. Find DSH Go in Settings → Apps.';
+  String get phoneOpenAppInfoFailed => 'Can’t open app info. Find DeepSleep in Settings → Apps.';
 
   @override
   String get phoneStopFailed => 'Couldn’t stop. Tap “Stop” on the floating bar or notification.';
@@ -12374,7 +12452,7 @@ class L10nEn extends L10n {
   String get phoneControlReadScreen => 'Read current screen';
 
   @override
-  String get phoneControlReadScreenHint => 'See what DSH reads, without sending it to the model';
+  String get phoneControlReadScreenHint => 'See what DeepSleep reads, without sending it to the model';
 
   @override
   String get phoneControlEnableAccessibilityFirst => 'Turn on the accessibility service first';
@@ -12466,7 +12544,7 @@ class L10nEn extends L10n {
 
   @override
   String get phoneDisclosureIntro =>
-      'DSH reads the screen and taps like you do to get things done. Before turning it on, here’s what to know:';
+      'DeepSleep reads the screen and taps like you do to get things done. Before turning it on, here’s what to know:';
 
   @override
   String get phoneDisclosureRestartNote => 'The engine will restart, interrupting any reply in progress';
@@ -12503,13 +12581,13 @@ class L10nEn extends L10n {
 
   @override
   String get phoneRestrictedTryAccessibility =>
-      'First try turning on DSH in “Accessibility”. When “Restricted setting” appears, tap “OK”. The option below appears only after this step.';
+      'First try turning on DeepSleep in “Accessibility”. When “Restricted setting” appears, tap “OK”. The option below appears only after this step.';
 
   @override
   String get phoneRestrictedOpenInfoStep => 'Return here and tap “Open app info”.';
 
   @override
-  String get phoneRestrictedBackAccessibility => 'Return to “Accessibility” and turn on DSH.';
+  String get phoneRestrictedBackAccessibility => 'Return to “Accessibility” and turn on DeepSleep.';
 
   @override
   String get phoneRestrictedMenuStep =>
@@ -12517,18 +12595,18 @@ class L10nEn extends L10n {
 
   @override
   String get phoneRestrictedTryOverlay =>
-      'First try turning on DSH Go in floating window settings. When “Restricted setting” appears, tap “OK”. The option below appears only after this step.';
+      'First try turning on DeepSleep in floating window settings. When “Restricted setting” appears, tap “OK”. The option below appears only after this step.';
 
   @override
-  String get phoneRestrictedBackOverlay => 'Return to floating window settings and turn on DSH Go.';
+  String get phoneRestrictedBackOverlay => 'Return to floating window settings and turn on DeepSleep.';
 
   @override
   String get phoneRestrictedHuaweiOverlay =>
-      'HarmonyOS 4 and earlier usually skip this step. Turn on DSH Go directly in floating window settings.';
+      'HarmonyOS 4 and earlier usually skip this step. Turn on DeepSleep directly in floating window settings.';
 
   @override
   String get phoneRestrictedHuaweiAccessibility =>
-      'HarmonyOS 4 and earlier usually skip this step. Turn on DSH directly in “Accessibility”.';
+      'HarmonyOS 4 and earlier usually skip this step. Turn on DeepSleep directly in “Accessibility”.';
 
   @override
   String get phoneRestrictedVivoNote =>
@@ -12539,7 +12617,7 @@ class L10nEn extends L10n {
 
   @override
   String get phoneRestrictedOppoNote =>
-      'ColorOS may hide this option. Use the built-in Files app to find DSH’s installer and install over the existing app (no need to uninstall; chats and settings stay). Then turn on accessibility.';
+      'ColorOS may hide this option. Use the built-in Files app to find DeepSleep’s installer and install over the existing app (no need to uninstall; chats and settings stay). Then turn on accessibility.';
 
   @override
   String get phoneRestrictedHuaweiNote =>
@@ -12648,13 +12726,13 @@ class L10nEn extends L10n {
   String get phoneFailureNoSpaceHint => 'Free up some space and try again';
 
   @override
-  String get phoneFailureStartup => 'DSH couldn’t start';
+  String get phoneFailureStartup => 'DeepSleep couldn’t start';
 
   @override
-  String get phoneFailureCrashedEarly => 'DSH crashed soon after starting';
+  String get phoneFailureCrashedEarly => 'DeepSleep crashed soon after starting';
 
   @override
-  String get phoneFailureCrashedLate => 'DSH crashed while running';
+  String get phoneFailureCrashedLate => 'DeepSleep crashed while running';
 
   @override
   String get phoneFailureFatal => 'The engine reported a fatal error';
@@ -12717,7 +12795,7 @@ class L10nEn extends L10n {
       'The configuration operation finished, but the engine has not stopped or restarted. Wait for it to stop before starting it again.';
 
   @override
-  String get phoneSafeRestoreIntro => 'DSH will restore the last working configuration:';
+  String get phoneSafeRestoreIntro => 'DeepSleep will restore the last working configuration:';
 
   @override
   String get phoneSafeRestoreSettings => '• Restore settings to that version (save current settings as a backup)';
@@ -12849,7 +12927,7 @@ class L10nEn extends L10n {
 
   @override
   String phoneAppRulesLoosenTitle(String app) {
-    return 'Let DSH operate “$app”?';
+    return 'Let DeepSleep operate “$app”?';
   }
 
   @override
@@ -12925,7 +13003,7 @@ class L10nEn extends L10n {
 
   @override
   String phoneControlRemoteHint(String host) {
-    return 'DSH on “$host” can’t control this phone. Switch to “This phone” to use it.';
+    return 'DeepSleep on “$host” can’t control this phone. Switch to “This phone” to use it.';
   }
 
   @override
@@ -12950,7 +13028,7 @@ class L10nEn extends L10n {
 
   @override
   String phoneSafeRestoreAt(String when) {
-    return 'DSH will restore the working configuration from $when:';
+    return 'DeepSleep will restore the working configuration from $when:';
   }
 
   @override
@@ -12996,7 +13074,7 @@ class L10nEn extends L10n {
 
   @override
   String get phoneAppRulesLoosenBody =>
-      'Banking and payment apps detect automation and may restrict sign-in or freeze your account. By default, DSH won’t enter passwords or pay.';
+      'Banking and payment apps detect automation and may restrict sign-in or freeze your account. By default, DeepSleep won’t enter passwords or pay.';
 
   @override
   String get phoneAppRulesSkipStepsBody =>
@@ -13044,7 +13122,7 @@ class L10nEn extends L10n {
   String get phoneControlEnabledPending => 'On · Takes effect when the engine starts';
 
   @override
-  String get phoneReturnAfterDone => 'Back to DSH Go when done';
+  String get phoneReturnAfterDone => 'Back to DeepSleep when done';
 
   @override
   String get phoneReturnAfterDoneHint => 'Closes the bar, opens the chat';
@@ -13281,7 +13359,7 @@ class L10nEn extends L10n {
   String get phoneSelfCheckSaving => 'Saving…';
 
   @override
-  String get phoneSelfCheckSaved => 'Report saved to Downloads/DSH-Go.';
+  String get phoneSelfCheckSaved => 'Report saved to Downloads/DeepSleep.';
 
   @override
   String get phoneSelfCheckSaveFailed => 'Could not save the report.';
@@ -13589,15 +13667,15 @@ class L10nEn extends L10n {
 
   @override
   String get phoneBackgroundGuideBody =>
-      'When a step needs your decision, a DSH Go card appears. If the card is unavailable, the app tries a notification or returns here. Allow phone-control notifications and pop-up alerts in system settings.';
+      'When a step needs your decision, a DeepSleep card appears. If the card is unavailable, the app tries a notification or returns here. Allow phone-control notifications and pop-up alerts in system settings.';
 
   @override
   String get phoneBackgroundOemHint =>
-      'In the system permissions for DSH Go, check “Display pop-up windows while running in the background”, if available. Allowing it can help the app return automatically. Menu names vary by system version.';
+      'In the system permissions for DeepSleep, check “Display pop-up windows while running in the background”, if available. Allowing it can help the app return automatically. Menu names vary by system version.';
 
   @override
   String get phoneBackgroundReturnHint =>
-      'If the app does not return when a task finishes, tap “Task complete · View result”. If system notifications or background windows are blocked, you may need to open DSH Go yourself.';
+      'If the app does not return when a task finishes, tap “Task complete · View result”. If system notifications or background windows are blocked, you may need to open DeepSleep yourself.';
 
   @override
   String get phoneBackgroundGotIt => 'Got it';
@@ -13610,7 +13688,7 @@ class L10nEn extends L10n {
 
   @override
   String get phonePrivilegedUpgrade =>
-      'This app build does not support that privileged channel. Update DSH Go to use it.';
+      'This app build does not support that privileged channel. Update DeepSleep to use it.';
 
   @override
   String get phonePrivilegedSui => 'Sui';
@@ -13645,11 +13723,11 @@ class L10nEn extends L10n {
   String get phonePrivilegedSuggested => 'Suggested';
 
   @override
-  String get phonePrivilegedRootRiskTitle => 'Give DSH Go root access?';
+  String get phonePrivilegedRootRiskTitle => 'Give DeepSleep root access?';
 
   @override
   String get phonePrivilegedRootRiskBody =>
-      'Your root manager (Magisk, KernelSU or APatch) will ask you. If you allow it, DSH Go runs its own background service as root. It asks again on its own after a disconnect or restart only with “Keep root channel” on.';
+      'Your root manager (Magisk, KernelSU or APatch) will ask you. If you allow it, DeepSleep runs its own background service as root. It asks again on its own after a disconnect or restart only with “Keep root channel” on.';
 
   @override
   String phoneKeepTitle(String mode) {
@@ -13665,15 +13743,15 @@ class L10nEn extends L10n {
 
   @override
   String get phoneKeepRootDescription =>
-      'After a drop, an app restart or a reboot, DSH Go asks your root manager again by itself. The manager still decides.';
+      'After a drop, an app restart or a reboot, DeepSleep asks your root manager again by itself. The manager still decides.';
 
   @override
   String get phoneKeepSharedDescription =>
-      'After a drop, an app restart or a reboot, DSH Go reconnects with the permission it already has. It never asks for permission.';
+      'After a drop, an app restart or a reboot, DeepSleep reconnects with the permission it already has. It never asks for permission.';
 
   @override
   String get phoneKeepAdbDescription =>
-      'After a drop, an app restart or a reboot, DSH Go reconnects over Wi‑Fi with the existing pairing. With the permission from “Restore accessibility automatically”, it also tries once to turn on wireless debugging.';
+      'After a drop, an app restart or a reboot, DeepSleep reconnects over Wi‑Fi with the existing pairing. With the permission from “Restore accessibility automatically”, it also tries once to turn on wireless debugging.';
 
   @override
   String get phoneKeepRestoring => 'Reconnecting';
@@ -13801,7 +13879,7 @@ class L10nEn extends L10n {
   String get phoneSkillUnavailable => 'Skill drafts are unavailable. Check the local engine state and try again.';
 
   @override
-  String get phoneModeTitle => 'How DSH confirms';
+  String get phoneModeTitle => 'How DeepSleep confirms';
 
   @override
   String get phoneModeMessage => 'You can change this in Settings anytime';
@@ -13823,7 +13901,7 @@ class L10nEn extends L10n {
 
   @override
   String get phoneModeAutoNote =>
-      'System settings and permission pages, passwords and verification codes, and DSH Go itself stay with you. Banking and payment apps are off limits by default; you can change that in Settings.';
+      'System settings and permission pages, passwords and verification codes, and DeepSleep itself stay with you. Banking and payment apps are off limits by default; you can change that in Settings.';
 
   @override
   String get phoneModeAutoUnlockNote =>
@@ -13842,7 +13920,7 @@ class L10nEn extends L10n {
   String get phoneYoursSecrets => 'Passwords and verification codes';
 
   @override
-  String get phoneYoursOwnApp => 'DSH Go itself';
+  String get phoneYoursOwnApp => 'DeepSleep itself';
 
   @override
   String get phoneYoursDenyList => 'Apps set to Hands off in App rules, banking and payment by default';
@@ -13866,10 +13944,10 @@ class L10nEn extends L10n {
   String get phoneUnlockSecretsHint => 'Fill in passwords, verification and payment codes';
 
   @override
-  String get phoneUnlockOwnApp => 'DSH Go itself';
+  String get phoneUnlockOwnApp => 'DeepSleep itself';
 
   @override
-  String get phoneUnlockOwnAppHint => 'Tap and type inside DSH Go';
+  String get phoneUnlockOwnAppHint => 'Tap and type inside DeepSleep';
 
   @override
   String get phoneUnlockBusy => 'Can’t turn on while a task is running';
@@ -13902,7 +13980,7 @@ class L10nEn extends L10n {
   String get phoneUnlockConfirmSecretsTitle => 'Let AI fill in passwords and codes?';
 
   @override
-  String get phoneUnlockConfirmOwnAppTitle => 'Let AI operate DSH Go itself?';
+  String get phoneUnlockConfirmOwnAppTitle => 'Let AI operate DeepSleep itself?';
 
   @override
   String get phoneUnlockCanTitle => 'Once on, AI can';
@@ -13948,10 +14026,10 @@ class L10nEn extends L10n {
   String get phoneUnlockSecretsRisk2 => 'It could complete a payment or transfer you didn’t intend';
 
   @override
-  String get phoneUnlockOwnAppCan1 => 'Tap and type inside DSH Go, including changing settings';
+  String get phoneUnlockOwnAppCan1 => 'Tap and type inside DeepSleep, including changing settings';
 
   @override
-  String get phoneUnlockOwnAppCan2 => 'Read conversations and settings on DSH Go’s screens';
+  String get phoneUnlockOwnAppCan2 => 'Read conversations and settings on DeepSleep’s screens';
 
   @override
   String get phoneUnlockOwnAppRisk1 =>
@@ -13968,7 +14046,7 @@ class L10nEn extends L10n {
 
   @override
   String get phoneUnlockDisclaimer3 =>
-      'Any resulting loss to your accounts, money, data or device is yours to bear. DSH Go and its developers accept no liability.';
+      'Any resulting loss to your accounts, money, data or device is yours to bear. DeepSleep and its developers accept no liability.';
 
   @override
   String get phoneUnlockDisclaimer4 => 'Turn it on only when you need it, and off when you’re done.';
@@ -14471,7 +14549,7 @@ class L10nEn extends L10n {
   String get pluginsFileWriteFailed => 'Couldn’t write the file';
 
   @override
-  String get pluginsProfileTitle => 'DSH Go settings';
+  String get pluginsProfileTitle => 'DeepSleep settings';
 
   @override
   String get pluginsGistTokenInvalid => 'GitHub token is invalid or lacks Gist permission';
@@ -14506,7 +14584,7 @@ class L10nEn extends L10n {
   String get pluginsReadingPlugins => 'Reading plugins…';
 
   @override
-  String get pluginsDshOfficial => 'DSH official';
+  String get pluginsDshOfficial => 'DeepSleep official';
 
   @override
   String get pluginsOfficialToggleOnly =>
@@ -14519,7 +14597,7 @@ class L10nEn extends L10n {
   String get pluginsNoThirdParty => 'No third-party plugins yet';
 
   @override
-  String get pluginsPluginsDescription => 'Add tools, memory, and models to DSH';
+  String get pluginsPluginsDescription => 'Add tools, memory, and models to DeepSleep';
 
   @override
   String get pluginsBrowseMarket => 'Browse plugins';
@@ -14591,7 +14669,7 @@ class L10nEn extends L10n {
 
   @override
   String pluginsInstalledRemoteRestart(String name, String host) {
-    return 'Installed “$name”. Restart DSH on $host to apply.';
+    return 'Installed “$name”. Restart DeepSleep on $host to apply.';
   }
 
   @override
@@ -14626,7 +14704,7 @@ class L10nEn extends L10n {
 
   @override
   String pluginsBuildScriptWarning(String host) {
-    return 'Scripts run with DSH’s permissions on $host and can read and write files and access the internet. Only allow this if you trust the plugin.';
+    return 'Scripts run with DeepSleep’s permissions on $host and can read and write files and access the internet. Only allow this if you trust the plugin.';
   }
 
   @override
@@ -14671,7 +14749,7 @@ class L10nEn extends L10n {
   String get pluginsThatComputer => 'That computer';
 
   @override
-  String get pluginsCommandAfterInstall => 'After installing, restart DSH on that computer, then refresh here';
+  String get pluginsCommandAfterInstall => 'After installing, restart DeepSleep on that computer, then refresh here';
 
   @override
   String get pluginsError => 'Error';
@@ -14783,14 +14861,14 @@ class L10nEn extends L10n {
   String get pluginsMissingFiles => 'Plugin files are missing. Reinstall to fix.';
 
   @override
-  String get pluginsNotDshPlugin => 'Not a DSH plugin, can’t load';
+  String get pluginsNotDshPlugin => 'Not a DeepSleep plugin, can’t load';
 
   @override
-  String get pluginsIncompatible => 'Incompatible with this DSH version, not loaded';
+  String get pluginsIncompatible => 'Incompatible with this DeepSleep version, not loaded';
 
   @override
   String pluginsRequiresDshVersion(String requiredVersion, String currentVersion) {
-    return 'Requires DSH $requiredVersion, currently $currentVersion, not loaded';
+    return 'Requires DeepSleep $requiredVersion, currently $currentVersion, not loaded';
   }
 
   @override
@@ -15069,7 +15147,7 @@ class L10nEn extends L10n {
 
   @override
   String get pluginsNotificationSettingsFailed =>
-      'Couldn’t open system settings. Turn on notifications in Settings → Apps → DSH Go → Notifications.';
+      'Couldn’t open system settings. Turn on notifications in Settings → Apps → DeepSleep → Notifications.';
 
   @override
   String get pluginsSystemNotificationsOff => 'System notifications are off';
@@ -15266,7 +15344,7 @@ class L10nEn extends L10n {
 
   @override
   String pluginsRemoteRestartToApply(String host) {
-    return 'Restart DSH on $host to apply';
+    return 'Restart DeepSleep on $host to apply';
   }
 
   @override
@@ -15347,7 +15425,7 @@ class L10nEn extends L10n {
   String get pluginsShareOpenFailed => 'Couldn’t open this share code';
 
   @override
-  String get pluginsPluginShareTitle => 'DSH Go plugin';
+  String get pluginsPluginShareTitle => 'DeepSleep plugin';
 
   @override
   String get pluginsShareSheetOpenFailed => 'Couldn’t open sharing';
@@ -15399,7 +15477,7 @@ class L10nEn extends L10n {
 
   @override
   String pluginsUninstalledRestartRemote(String title, String host) {
-    return 'Uninstalled “$title”. Restart DSH on $host to finish removing it.';
+    return 'Uninstalled “$title”. Restart DeepSleep on $host to finish removing it.';
   }
 
   @override
@@ -15413,7 +15491,7 @@ class L10nEn extends L10n {
 
   @override
   String pluginsEnabledRestartRemote(String host) {
-    return 'Enabled. Restart DSH on $host to apply.';
+    return 'Enabled. Restart DeepSleep on $host to apply.';
   }
 
   @override
@@ -15421,7 +15499,7 @@ class L10nEn extends L10n {
 
   @override
   String pluginsDisabledRestartRemote(String host) {
-    return 'Disabled. Restart DSH on $host to apply.';
+    return 'Disabled. Restart DeepSleep on $host to apply.';
   }
 
   @override
@@ -15431,19 +15509,19 @@ class L10nEn extends L10n {
 
   @override
   String get pluginsPermissionLocalThirdParty =>
-      'Plugins run with DSH’s permissions: they can read and write files, run commands, and read API keys and phone storage you’ve granted access to. They aren’t restricted by the workspace sandbox. Provided by a third party and not reviewed by DSH.';
+      'Plugins run with DeepSleep’s permissions: they can read and write files, run commands, and read API keys and phone storage you’ve granted access to. They aren’t restricted by the workspace sandbox. Provided by a third party and not reviewed by DeepSleep.';
 
   @override
   String get pluginsPermissionLocalTrusted =>
-      'Plugins run with DSH’s permissions: they can read and write files, run commands, and read API keys and phone storage you’ve granted access to. They aren’t restricted by the workspace sandbox. Only install plugins you trust.';
+      'Plugins run with DeepSleep’s permissions: they can read and write files, run commands, and read API keys and phone storage you’ve granted access to. They aren’t restricted by the workspace sandbox. Only install plugins you trust.';
 
   @override
   String get pluginsPermissionRemoteThirdParty =>
-      'Plugins run with DSH’s permissions: they can read and write files, run commands, and read API keys. They aren’t restricted by the workspace sandbox. Provided by a third party and not reviewed by DSH.';
+      'Plugins run with DeepSleep’s permissions: they can read and write files, run commands, and read API keys. They aren’t restricted by the workspace sandbox. Provided by a third party and not reviewed by DeepSleep.';
 
   @override
   String get pluginsPermissionRemoteTrusted =>
-      'Plugins run with DSH’s permissions: they can read and write files, run commands, and read API keys. They aren’t restricted by the workspace sandbox. Only install plugins you trust.';
+      'Plugins run with DeepSleep’s permissions: they can read and write files, run commands, and read API keys. They aren’t restricted by the workspace sandbox. Only install plugins you trust.';
 
   @override
   String pluginsSelectedQrCount(int count) {
@@ -15624,7 +15702,7 @@ class L10nEn extends L10n {
 
   @override
   String plugslotsIssueNeedsApp(String version) {
-    return 'Needs DSH Go $version or later';
+    return 'Needs DeepSleep $version or later';
   }
 
   @override
@@ -15784,7 +15862,7 @@ class L10nEn extends L10n {
   String get plugslotsPickerFailed => 'Could not share the files with this plugin. Try again';
 
   @override
-  String get plugslotsWebPlacesTitle => 'In DSH Web';
+  String get plugslotsWebPlacesTitle => 'In DeepSleep Web';
 
   @override
   String get plugslotsPlaceBesideComposer => 'Beside the composer';
@@ -16004,17 +16082,17 @@ class L10nEn extends L10n {
 
   @override
   String get remoteManagedHelp =>
-      'Start or reuse app-managed DSH. A live instance that cannot be reused is never replaced automatically.';
+      'Start or reuse app-managed DeepSleep. A live instance that cannot be reused is never replaced automatically.';
 
   @override
   String get remoteAttachOnlyHelp =>
-      'Forward only to a fixed port on remote 127.0.0.1. Never start, stop or restart DSH.';
+      'Forward only to a fixed port on remote 127.0.0.1. Never start, stop or restart DeepSleep.';
 
   @override
-  String get remoteDshPort => 'Remote DSH port';
+  String get remoteDshPort => 'Remote DeepSleep port';
 
   @override
-  String get remoteDshToken => 'DSH launch token';
+  String get remoteDshToken => 'DeepSleep launch token';
 
   @override
   String get remoteDshTokenHelp =>
@@ -16022,7 +16100,7 @@ class L10nEn extends L10n {
 
   @override
   String get remoteAttachWorkingDirectoryHelp =>
-      'Existing instances are not probed for a home directory. Use a remote absolute path, or leave empty for DSH’s default.';
+      'Existing instances are not probed for a home directory. Use a remote absolute path, or leave empty for DeepSleep’s default.';
 
   @override
   String get remoteSshCompression => 'SSH compression';
@@ -16032,21 +16110,21 @@ class L10nEn extends L10n {
       'On by default. Negotiate compression after authentication; use uncompressed transport if unsupported.';
 
   @override
-  String get remoteRestartManaged => 'Restart managed DSH';
+  String get remoteRestartManaged => 'Restart managed DeepSleep';
 
   @override
   String get remoteRestartManagedWarning =>
-      'This stops the remote DSH recorded by the app and starts it again. Other clients and active chats may be interrupted. Continue only after checking nobody else is using it. Normal connection tests never do this.';
+      'This stops the remote DeepSleep recorded by the app and starts it again. Other clients and active chats may be interrupted. Continue only after checking nobody else is using it. Normal connection tests never do this.';
 
   @override
   String get remoteErrSharedInstance =>
-      'Remote managed DSH is still running, but its start command differs or its launch log is missing. To protect shared use, it was not restarted. Check the settings, use Attach only, or explicitly choose Restart managed DSH in Edit host.';
+      'Remote managed DeepSleep is still running, but its start command differs or its launch log is missing. To protect shared use, it was not restarted. Check the settings, use Attach only, or explicitly choose Restart managed DeepSleep in Edit host.';
 
   @override
-  String get remoteErrAttachSettings => 'Enter a valid remote DSH port and launch token';
+  String get remoteErrAttachSettings => 'Enter a valid remote DeepSleep port and launch token';
 
   @override
-  String get remoteDshAttached => 'Connected to existing DSH';
+  String get remoteDshAttached => 'Connected to existing DeepSleep';
 
   @override
   String get remoteStartupSection => 'On launch';
@@ -16064,7 +16142,7 @@ class L10nEn extends L10n {
   String get remoteStepVerifyHostKey => 'Verify host fingerprint';
 
   @override
-  String get remoteStepStartDsh => 'Start DSH';
+  String get remoteStepStartDsh => 'Start DeepSleep';
 
   @override
   String get remoteStepTunnel => 'Create tunnel';
@@ -16122,10 +16200,10 @@ class L10nEn extends L10n {
   String get remoteErrHostNotOwned => 'Host isn’t in your DSH Remote account';
 
   @override
-  String get remoteErrUpdateNeeded => 'Version mismatch. Update DSH Go and the host’s remote plugin';
+  String get remoteErrUpdateNeeded => 'Version mismatch. Update DeepSleep and the host’s remote plugin';
 
   @override
-  String get remoteErrVersionIncompatible => 'Update DSH or the remote plugin on the host';
+  String get remoteErrVersionIncompatible => 'Update DeepSleep or the remote plugin on the host';
 
   @override
   String get remoteErrSignInTimeout => 'Sign-in timed out';
@@ -16162,11 +16240,11 @@ class L10nEn extends L10n {
 
   @override
   String remoteBootstrapReusePort(int port) {
-    return 'Using running DSH (port $port)';
+    return 'Using running DeepSleep (port $port)';
   }
 
   @override
-  String get remoteBootstrapStarting => 'Starting remote DSH…';
+  String get remoteBootstrapStarting => 'Starting remote DeepSleep…';
 
   @override
   String remoteErrCommandNotFound(String command) {
@@ -16181,13 +16259,13 @@ class L10nEn extends L10n {
   String get remoteStartCommandExample => 'Example start command: ~/.nvm/versions/node/v22.0.0/bin/dsh web';
 
   @override
-  String get remoteErrDshStartTimeout => 'Remote DSH took too long to start';
+  String get remoteErrDshStartTimeout => 'Remote DeepSleep took too long to start';
 
   @override
-  String get remoteErrDshExited => 'Remote DSH exited right after starting';
+  String get remoteErrDshExited => 'Remote DeepSleep exited right after starting';
 
   @override
-  String get remoteErrDshStart => 'Couldn’t start remote DSH';
+  String get remoteErrDshStart => 'Couldn’t start remote DeepSleep';
 
   @override
   String remoteExitCode(int code) {
@@ -16207,32 +16285,32 @@ class L10nEn extends L10n {
   String get remoteHostTrustCancelled => 'Host trust cancelled';
 
   @override
-  String get remoteCheckingDsh => 'Checking remote DSH…';
+  String get remoteCheckingDsh => 'Checking remote DeepSleep…';
 
   @override
-  String get remoteErrDshPort => 'Can’t reach the remote DSH port';
+  String get remoteErrDshPort => 'Can’t reach the remote DeepSleep port';
 
   @override
-  String get remoteDshReused => 'Using DSH already running on the host';
+  String get remoteDshReused => 'Using DeepSleep already running on the host';
 
   @override
-  String get remoteDshStarted => 'Started DSH on the host';
+  String get remoteDshStarted => 'Started DeepSleep on the host';
 
   @override
   String get remoteErrDshTokenRejected =>
-      'Remote DSH rejected the token; it was not restarted. Check the token, or explicitly restart the managed instance in Edit host.';
+      'Remote DeepSleep rejected the token; it was not restarted. Check the token, or explicitly restart the managed instance in Edit host.';
 
   @override
-  String get remoteErrDshSignIn => 'Couldn’t sign in to remote DSH';
+  String get remoteErrDshSignIn => 'Couldn’t sign in to remote DeepSleep';
 
   @override
-  String get remoteErrDshTunnel => 'Couldn’t connect to DSH through the tunnel';
+  String get remoteErrDshTunnel => 'Couldn’t connect to DeepSleep through the tunnel';
 
   @override
-  String get remoteErrDshSignInExpired => 'Remote DSH sign-in expired';
+  String get remoteErrDshSignInExpired => 'Remote DeepSleep sign-in expired';
 
   @override
-  String get remoteErrDshStopped => 'Remote DSH stopped running';
+  String get remoteErrDshStopped => 'Remote DeepSleep stopped running';
 
   @override
   String get remoteErrSshDisconnected => 'SSH disconnected';
@@ -16802,7 +16880,7 @@ class L10nEn extends L10n {
   }
 
   @override
-  String get remoteHostKeyChangeWarning => 'DSH will refuse to connect if the fingerprint changes.';
+  String get remoteHostKeyChangeWarning => 'DeepSleep will refuse to connect if the fingerprint changes.';
 
   @override
   String get remoteHostKeyTrustAgain => 'Trust again';
@@ -16819,7 +16897,7 @@ class L10nEn extends L10n {
   String get remoteSwitchHost => 'Switch host';
 
   @override
-  String get remoteThisPhoneDsh => 'DSH on this phone';
+  String get remoteThisPhoneDsh => 'DeepSleep on this phone';
 
   @override
   String get remoteRemoteLabel => 'Remote';
@@ -16874,13 +16952,13 @@ class L10nEn extends L10n {
   String get remoteConsole => 'Remote console';
 
   @override
-  String get remoteHostsIntro => 'Keep using DSH from your computer or server on your phone';
+  String get remoteHostsIntro => 'Keep using DeepSleep from your computer or server on your phone';
 
   @override
   String get remoteSshHosts => 'SSH hosts';
 
   @override
-  String get remoteSshRequirements => 'Host needs SSH enabled and DSH installed';
+  String get remoteSshRequirements => 'Host needs SSH enabled and DeepSleep installed';
 
   @override
   String get remoteAddSshHost => 'Add SSH host';
@@ -16963,14 +17041,14 @@ class L10nEn extends L10n {
   String get remoteNoHosts => 'No hosts yet';
 
   @override
-  String get remoteRelaySetupHelp => 'Install the remote plugin in the host’s DSH and sign in';
+  String get remoteRelaySetupHelp => 'Install the remote plugin in the host’s DeepSleep and sign in';
 
   @override
   String get remoteRelaySignOutTitle => 'Sign out of DSH Remote?';
 
   @override
   String get remoteRelaySignOutBody =>
-      'This phone will be removed from your account. DSH and chats on the host stay. You can sign in again anytime.';
+      'This phone will be removed from your account. DeepSleep and chats on the host stay. You can sign in again anytime.';
 
   @override
   String get remoteRelaySignInTitle => 'Sign in to DSH Remote';
@@ -17027,7 +17105,7 @@ class L10nEn extends L10n {
 
   @override
   String get remoteDeleteHostBody =>
-      'This host’s settings and the password and private key saved on this phone will be deleted. DSH and chats on the host stay.';
+      'This host’s settings and the password and private key saved on this phone will be deleted. DeepSleep and chats on the host stay.';
 
   @override
   String remoteErrReadKey(String error) {
@@ -17044,7 +17122,7 @@ class L10nEn extends L10n {
   String get remoteEditHost => 'Edit host';
 
   @override
-  String get remoteSshHostIntro => 'Connect to DSH on your computer or server';
+  String get remoteSshHostIntro => 'Connect to DeepSleep on your computer or server';
 
   @override
   String get remoteHostBasicInfo => 'Basic information';
@@ -17124,7 +17202,7 @@ class L10nEn extends L10n {
   String get remoteTestConnection => 'Test';
 
   @override
-  String get remoteHostedUpdateRequired => 'Update DSH to open this link';
+  String get remoteHostedUpdateRequired => 'Update DeepSleep to open this link';
 
   @override
   String get remoteHostedCannotOpen => 'Can’t open this link';
@@ -17476,12 +17554,12 @@ class L10nEn extends L10n {
 
   @override
   String remoteHostKeyVerifyCommand(String command) {
-    return 'Run $command on that host to see the same fingerprint. DSH will refuse to connect if it changes.';
+    return 'Run $command on that host to see the same fingerprint. DeepSleep will refuse to connect if it changes.';
   }
 
   @override
   String remoteSshInstallCommand(String command) {
-    return 'DSH not installed? Run $command on the host.';
+    return 'DeepSleep not installed? Run $command on the host.';
   }
 
   @override
@@ -17658,7 +17736,7 @@ class L10nEn extends L10n {
 
   @override
   String get remotePairNeedsDeepSeekBody =>
-      'Pairing needs the DeepSeek account signed in on DSH Go. Only its account ID goes along, to label this phone; no password, cookie or token.';
+      'Pairing needs the DeepSeek account signed in on DeepSleep. Only its account ID goes along, to label this phone; no password, cookie or token.';
 
   @override
   String get remotePairScanHint => 'Point the camera at the pairing code the Remote plugin shows on your computer';
@@ -17756,7 +17834,7 @@ class L10nEn extends L10n {
 
   @override
   String remotePairOtherServerBody(String server) {
-    return 'This code is from $server, not the Remote server DSH Go uses now. Switch to it and continue? Each server keeps its own sign-in.';
+    return 'This code is from $server, not the Remote server DeepSleep uses now. Switch to it and continue? Each server keeps its own sign-in.';
   }
 
   @override
@@ -17766,7 +17844,7 @@ class L10nEn extends L10n {
   String get remotePairScanAgain => 'Scan again';
 
   @override
-  String get remotePairErrInvalidCode => 'That isn’t a DSH Go pairing code';
+  String get remotePairErrInvalidCode => 'That isn’t a DeepSleep pairing code';
 
   @override
   String get remotePairErrOtherServer => 'This code is from another Remote server';
@@ -17869,7 +17947,7 @@ class L10nEn extends L10n {
 
   @override
   String get riskPetOverlayBody =>
-      'Turn on “Display over other apps” for DSH Go in system settings so your pet can appear outside the app.';
+      'Turn on “Display over other apps” for DeepSleep in system settings so your pet can appear outside the app.';
 
   @override
   String get riskPetOverlayAction => 'Open settings';
@@ -17885,19 +17963,19 @@ class L10nEn extends L10n {
 
   @override
   String askAiAboutApp(String question) {
-    return 'About the DSH Go app: $question';
+    return 'About the DeepSleep app: $question';
   }
 
   @override
   String askAiWithGuide(String question) {
-    return 'About the DSH Go app: $question\nPlease answer from the attached guide.';
+    return 'About the DeepSleep app: $question\nPlease answer from the attached guide.';
   }
 
   @override
-  String get askAiNoGuide => 'This host doesn’t have the DSH Go guide, so answers may be off';
+  String get askAiNoGuide => 'This host doesn’t have the DeepSleep guide, so answers may be off';
 
   @override
-  String get askAiQuestionOverview => 'What can DSH Go do, and where should I start?';
+  String get askAiQuestionOverview => 'What can DeepSleep do, and where should I start?';
 
   @override
   String get askAiQuestionPhoneControl => 'How does phone control work, and what are the risks?';
@@ -18024,7 +18102,7 @@ class L10nEn extends L10n {
   String get searchKwDnd => 'dnd,shizuku,sui,root,adb,background';
 
   @override
-  String get searchKwEngine => 'engine,runtime,start,stop,restart,DSH';
+  String get searchKwEngine => 'engine,runtime,start,stop,restart,DeepSleep';
 
   @override
   String get searchKwBackground => 'keep alive,background activity,battery optimization,autostart,killed';
@@ -19093,7 +19171,7 @@ class L10nEn extends L10n {
   String get shellSeatIsland => 'Embedded Web';
 
   @override
-  String get shellSeatWeb => 'Open in DSH Web';
+  String get shellSeatWeb => 'Open in DeepSleep Web';
 
   @override
   String get shellPlugins => 'Plugins';
@@ -19305,7 +19383,7 @@ class L10nEn extends L10n {
   String get shellConfigSlotName => 'Invalid slot name format';
 
   @override
-  String get shellConfigUnknownSlot => 'This slot isn’t in DSH yet, kept for later';
+  String get shellConfigUnknownSlot => 'This slot isn’t in DeepSleep yet, kept for later';
 
   @override
   String get shellConfigUnseatableSlot => 'Plugins aren’t supported here';
@@ -19396,7 +19474,7 @@ class L10nEn extends L10n {
 
   @override
   String shellSkillInstallPrompt(String skill) {
-    return 'Install the DSH Go interface skill $skill on this host:';
+    return 'Install the DeepSleep interface skill $skill on this host:';
   }
 
   @override
@@ -19594,7 +19672,7 @@ class L10nEn extends L10n {
 
   @override
   String get speechAccountUnusable =>
-      'Your signed-in account can\'t pay for DeepSeek speech here: the DSH you\'re connected to is older (updating fixes it), or you\'re going through DSH Remote. Add a DeepSeek API key in Settings to use it';
+      'Your signed-in account can\'t pay for DeepSeek speech here: the DeepSleep you\'re connected to is older (updating fixes it), or you\'re going through DSH Remote. Add a DeepSeek API key in Settings to use it';
 
   @override
   String get speechSignIn =>
@@ -19767,7 +19845,7 @@ class L10nEn extends L10n {
 
   @override
   String get speechCallEndNoRecognizerSignedIn =>
-      'A call needs a way to recognize speech. Your signed-in account can\'t pay for DeepSeek speech here (the DSH you\'re connected to is older, or you\'re going through DSH Remote): add a DeepSeek API key in Settings, or download the voice model in Settings › Voice';
+      'A call needs a way to recognize speech. Your signed-in account can\'t pay for DeepSeek speech here (the DeepSleep you\'re connected to is older, or you\'re going through DSH Remote): add a DeepSeek API key in Settings, or download the voice model in Settings › Voice';
 
   @override
   String get speechCallEndNoRecognizer =>
@@ -19891,16 +19969,16 @@ class L10nEn extends L10n {
     String _temp0 = intl.Intl.pluralLogic(
       hours,
       locale: localeName,
-      other: 'I’ve kept you company in DSH Go for $hours hours now~',
-      one: 'I’ve kept you company in DSH Go for an hour now~',
-      zero: 'I’ve kept you company in DSH Go for half an hour now~',
+      other: 'I’ve kept you company in DeepSleep for $hours hours now~',
+      one: 'I’ve kept you company in DeepSleep for an hour now~',
+      zero: 'I’ve kept you company in DeepSleep for half an hour now~',
     );
     return '$_temp0';
   }
 
   @override
   String get starPromptBody =>
-      'DSH Go is free and open source. If it’s made your phone a little nicer to use, please give it a Star — it means so much to this little whale!';
+      'DeepSleep is free and open source. If it’s made your phone a little nicer to use, please give it a Star — it means so much to this little whale!';
 
   @override
   String get starPromptPlea => 'Pretty please~ It really matters!!';
@@ -19915,7 +19993,7 @@ class L10nEn extends L10n {
   String get starPromptLater => 'Maybe later';
 
   @override
-  String get starSettingsTitle => 'Star DSH Go on GitHub';
+  String get starSettingsTitle => 'Star DeepSleep on GitHub';
 
   @override
   String get hubStartPage => 'Start page';
@@ -19946,7 +20024,7 @@ class L10nEn extends L10n {
       'The startup token arrived, but the local service port did not become ready. Check the logs.';
 
   @override
-  String get stateDiagnosticsSubject => 'DSH Go diagnostics bundle';
+  String get stateDiagnosticsSubject => 'DeepSleep diagnostics bundle';
 
   @override
   String get stateStoragePermission => 'No storage permission to save to Downloads';
@@ -20228,7 +20306,7 @@ class L10nEn extends L10n {
   String get statePrivateKeyTooLarge => 'File is too large to be a private key';
 
   @override
-  String get stateBotTeamBusy => 'Another DSH is using this team';
+  String get stateBotTeamBusy => 'Another DeepSleep is using this team';
 
   @override
   String get stateBotOperationFailed => 'Couldn’t finish. Try again.';
@@ -20362,7 +20440,7 @@ class L10nEn extends L10n {
   String get stateAllFeatures => 'All features';
 
   @override
-  String get stateCommandFeaturesDescription => 'Access every feature in DSH Web';
+  String get stateCommandFeaturesDescription => 'Access every feature in DeepSleep Web';
 
   @override
   String get stateCompactLabel => 'Compact';
@@ -20518,7 +20596,7 @@ class L10nEn extends L10n {
   String get stateInventoryConditional => 'Conditional';
 
   @override
-  String get stateBundleBuiltIn => 'Built into DSH';
+  String get stateBundleBuiltIn => 'Built into DeepSleep';
 
   @override
   String get stateBundleHeadless => 'Headless';
@@ -20590,7 +20668,7 @@ class L10nEn extends L10n {
   String get stateRegistryMirror => 'npmmirror mirror';
 
   @override
-  String get statePluginIncompatible => 'This plugin doesn’t support the current DSH version.';
+  String get statePluginIncompatible => 'This plugin doesn’t support the current DeepSleep version.';
 
   @override
   String get statePluginInstallCancelled => 'Installation cancelled';
@@ -20599,7 +20677,7 @@ class L10nEn extends L10n {
   String get statePluginNoChanges => 'Nothing was changed';
 
   @override
-  String get statePluginIncompatibleTitle => 'Incompatible with this DSH';
+  String get statePluginIncompatibleTitle => 'Incompatible with this DeepSleep';
 
   @override
   String get statePluginNetworkFailed => 'Can’t connect';
@@ -20668,7 +20746,7 @@ class L10nEn extends L10n {
   String get statePluginUninstallFirst => 'Uninstall before switching versions';
 
   @override
-  String get statePluginInvalid => 'Not a DSH plugin';
+  String get statePluginInvalid => 'Not a DeepSleep plugin';
 
   @override
   String get statePluginNoEntry => 'This package has no plugin entry. Installation rolled back.';
@@ -21142,12 +21220,12 @@ class L10nEn extends L10n {
 
   @override
   String statePluginRuntimeIncompatible(String version) {
-    return 'This plugin doesn’t support the current DSH version ($version).';
+    return 'This plugin doesn’t support the current DeepSleep version ($version).';
   }
 
   @override
   String statePluginRequiredVersion(String wanted, String current) {
-    return 'This plugin requires DSH $wanted. Current version: $current.';
+    return 'This plugin requires DeepSleep $wanted. Current version: $current.';
   }
 
   @override
@@ -21198,7 +21276,7 @@ class L10nEn extends L10n {
 
   @override
   String stateSafeRepairPrompt(String what) {
-    return 'My DSH has a problem in normal mode ($what). Follow the Safe mode instructions to find the cause. Fix the web configuration using reversible changes, verify startup with dsh-app-plugins trial, then tell me what changed.';
+    return 'My DeepSleep has a problem in normal mode ($what). Follow the Safe mode instructions to find the cause. Fix the web configuration using reversible changes, verify startup with dsh-app-plugins trial, then tell me what changed.';
   }
 
   @override
@@ -21275,7 +21353,7 @@ class L10nEn extends L10n {
   String get systemActionsWaitingEngine => 'On, waiting for the local engine';
 
   @override
-  String get systemActionsOffScreen => 'On, works once you\'re back in DSH Go';
+  String get systemActionsOffScreen => 'On, works once you\'re back in DeepSleep';
 
   @override
   String get systemActionsConnecting => 'Connecting';
@@ -21296,11 +21374,11 @@ class L10nEn extends L10n {
   String get systemActionsRemoteHint => 'System actions only work in the local engine\'s chats';
 
   @override
-  String get systemActionsOnScreenTitle => 'Only works with DSH Go on screen';
+  String get systemActionsOnScreenTitle => 'Only works with DeepSleep on screen';
 
   @override
   String get systemActionsOnScreenBody =>
-      'The system doesn\'t let background apps do these. After the AI opens another app, it can\'t go on until you\'re back in DSH Go.';
+      'The system doesn\'t let background apps do these. After the AI opens another app, it can\'t go on until you\'re back in DeepSleep.';
 
   @override
   String get systemActionsCanTitle => 'What it can do';
@@ -21407,7 +21485,7 @@ class L10nEn extends L10n {
 
   @override
   String get systemActionsDisclosureWhenBody =>
-      'Only when a chat calls for it and DSH Go is on screen. It asks each time by default, and not in chats with full access.';
+      'Only when a chat calls for it and DeepSleep is on screen. It asks each time by default, and not in chats with full access.';
 
   @override
   String get systemActionsDisclosureWhoTitle => 'Who gets what';
@@ -21433,7 +21511,7 @@ class L10nEn extends L10n {
 
   @override
   String get systemActionsHandoffNote =>
-      'When you\'re done, come back to DSH Go and press Continue. That only says you confirmed; the AI can\'t see what happened in other apps.';
+      'When you\'re done, come back to DeepSleep and press Continue. That only says you confirmed; the AI can\'t see what happened in other apps.';
 
   @override
   String get systemActionsHandoffFailed => 'That didn\'t count. If the prompt is still here, press it again';
@@ -21463,7 +21541,7 @@ class L10nEn extends L10n {
   String get systemActionsResultUnsupported => 'HarmonyOS doesn\'t support this action. Nothing ran.';
 
   @override
-  String get systemActionsResultOffScreen => 'DSH Go wasn\'t on screen. Nothing ran.';
+  String get systemActionsResultOffScreen => 'DeepSleep wasn\'t on screen. Nothing ran.';
 
   @override
   String get systemActionsResultUnavailable =>
@@ -22630,7 +22708,7 @@ class L10nEn extends L10n {
   }
 
   @override
-  String get tavernStorybookMadeWith => 'Written in the DSH Go tavern';
+  String get tavernStorybookMadeWith => 'Written in the DeepSleep tavern';
 
   @override
   String get tavernStorybookContents => 'Contents';
@@ -25490,7 +25568,7 @@ class L10nEn extends L10n {
 
   @override
   String get updateSettingsOpenFailedMessage =>
-      'Allow “Install unknown apps” in Settings → Apps → DSH Go, then return to install.';
+      'Allow “Install unknown apps” in Settings → Apps → DeepSleep, then return to install.';
 
   @override
   String get updateInstallCancelled => 'Installation cancelled';
@@ -25510,10 +25588,10 @@ class L10nEn extends L10n {
 
   @override
   String get updateSignatureMismatchMessage =>
-      'The DSH Go on your phone has a different signature (usually a test build). Uninstall it before installing this version. Uninstalling erases your chats, Linux environment, and settings.';
+      'The DeepSleep on your phone has a different signature (usually a test build). Uninstall it before installing this version. Uninstalling erases your chats, Linux environment, and settings.';
 
   @override
-  String get updateWrongPackage => 'This isn’t a DSH package';
+  String get updateWrongPackage => 'This isn’t a DeepSleep package';
 
   @override
   String get updateWrongPackageMessage => 'The wrong file was downloaded and deleted. Try again later.';
@@ -25522,7 +25600,7 @@ class L10nEn extends L10n {
   String get updateDowngradeBlocked => 'Can’t install an older version';
 
   @override
-  String get updateDowngradeBlockedMessage => 'The DSH on your phone is newer than this package.';
+  String get updateDowngradeBlockedMessage => 'The DeepSleep on your phone is newer than this package.';
 
   @override
   String get updateIncompatible => 'Incompatible with this phone';
@@ -25575,7 +25653,7 @@ class L10nEn extends L10n {
   String get updateNoReleaseNotes => 'No release notes for this version.';
 
   @override
-  String get updateInstallKeepsData => 'DSH Go closes to install. Your chats and settings stay.';
+  String get updateInstallKeepsData => 'DeepSleep closes to install. Your chats and settings stay.';
 
   @override
   String get updateNoCompatiblePackage => 'No package for this phone';
@@ -25610,7 +25688,7 @@ class L10nEn extends L10n {
   String get updateReadyToInstall => 'Verified and ready to install.';
 
   @override
-  String get updateAllowInstall => 'Allow DSH Go to install apps';
+  String get updateAllowInstall => 'Allow DeepSleep to install apps';
 
   @override
   String get updateAllowInstallMessage =>
@@ -25639,7 +25717,7 @@ class L10nEn extends L10n {
 
   @override
   String get updateExportApkMessage =>
-      'Copies the package downloaded and verified now into Downloads/DSH-Go, so you can sign it yourself (MT Manager and the like) and install that.\n\nA package you signed has a different signature from ours: in-app updates then always report a signature mismatch, and every later version has to be signed and installed by hand.\n\nIf the system simply blocks the install (Xiaomi and other vendors), try Shizuku or on-device ADB under Installation route first; that needs no signing.';
+      'Copies the package downloaded and verified now into Downloads/DeepSleep, so you can sign it yourself (MT Manager and the like) and install that.\n\nA package you signed has a different signature from ours: in-app updates then always report a signature mismatch, and every later version has to be signed and installed by hand.\n\nIf the system simply blocks the install (Xiaomi and other vendors), try Shizuku or on-device ADB under Installation route first; that needs no signing.';
 
   @override
   String updateExportApkDone(String path) {
@@ -25684,17 +25762,17 @@ class L10nEn extends L10n {
   String get usageStatsTitle => 'Send anonymous usage stats';
 
   @override
-  String get usageStatsSection => 'Improve DSH Go';
+  String get usageStatsSection => 'Improve DeepSleep';
 
   @override
   String get usageStatsFooter =>
-      'This switch controls dsh-go’s own statistics: feature counts (tavern messages, companion room visits and voice calls included), the token counts model replies report, versions, phone maker and model, and system version. It includes no chats, character cards, files or accounts, and does not control Google ML Kit SDK statistics.';
+      'This switch controls DeepSleep’s own statistics: feature counts (tavern messages, companion room visits and voice calls included), the token counts model replies report, versions, phone maker and model, and system version. It includes no chats, character cards, files or accounts, and does not control Google ML Kit SDK statistics.';
 
   @override
   String get usageNoticeBody => 'No chats or personal info.\nTurn off anytime.';
 
   @override
-  String get usageUpgradeNotice => 'New: anonymous usage stats, to help improve DSH Go.\nNo chats or personal info.';
+  String get usageUpgradeNotice => 'New: anonymous usage stats, to help improve DeepSleep.\nNo chats or personal info.';
 
   @override
   String get usageUpgradeLearn => 'Learn more';
@@ -25839,7 +25917,7 @@ class L10nEn extends L10n {
   String get viewBalanceNoAlert => 'Off';
 
   @override
-  String get viewBalanceBannerHidden => 'Balance alert hidden until DSH Go restarts';
+  String get viewBalanceBannerHidden => 'Balance alert hidden until DeepSleep restarts';
 
   @override
   String get viewBalanceTurnOff => 'Turn off';
@@ -26425,7 +26503,7 @@ class L10nEn extends L10n {
   String get viewTipFolderNewChat => 'Long-press a folder in the sidebar to start a chat inside it';
 
   @override
-  String get viewTipSwitchHost => 'Tap the host name at the sidebar\'s foot to switch to DSH on your computer';
+  String get viewTipSwitchHost => 'Tap the host name at the sidebar\'s foot to switch to DeepSleep on your computer';
 
   @override
   String get viewTipPasteImage => 'Screenshots and stickers from your keyboard can go straight into the composer';
@@ -26452,7 +26530,7 @@ class L10nEn extends L10n {
   String get viewTipKeyboard => 'With a keyboard: Ctrl+Enter sends, Esc twice stops';
 
   @override
-  String get viewTipShareIn => 'Share text or images to DSH Go from another app to start a new chat with them';
+  String get viewTipShareIn => 'Share text or images to DeepSleep from another app to start a new chat with them';
 
   @override
   String get viewTipShareSelect => 'When sharing a chat, long-press and slide to pick several messages at once';
@@ -26693,7 +26771,7 @@ class L10nEn extends L10n {
 
   @override
   String viewContinueHeader(String value) {
-    return '> Shared DSH Go chat · $value\n';
+    return '> Shared DeepSleep chat · $value\n';
   }
 
   @override
@@ -26748,7 +26826,7 @@ class L10nEn extends L10n {
 
   @override
   String viewShareLinkText(String first, String second) {
-    return '“$first” · DSH Go chat\n$second';
+    return '“$first” · DeepSleep chat\n$second';
   }
 
   @override
@@ -26767,7 +26845,7 @@ class L10nEn extends L10n {
   }
 
   @override
-  String get viewShareFileHint => 'Replay and continue in DSH Go';
+  String get viewShareFileHint => 'Replay and continue in DeepSleep';
 
   @override
   String get viewShareWebHint => 'Opens in any browser, even offline';
@@ -26895,10 +26973,10 @@ class L10nEn extends L10n {
   String get viewShareProjectQr => 'Project QR code';
 
   @override
-  String get viewShareBrandLine => 'DSH on your phone · Scan to get it';
+  String get viewShareBrandLine => 'DeepSleep on your phone · Scan to get it';
 
   @override
-  String get viewShareBrandLineNoQr => 'DSH on your phone';
+  String get viewShareBrandLineNoQr => 'DeepSleep on your phone';
 
   @override
   String viewShareSteps(int count) {
@@ -26941,7 +27019,7 @@ class L10nEn extends L10n {
 
   @override
   String viewSharePluginTitle(String value) {
-    return 'DSH plugin “$value”';
+    return 'DeepSleep plugin “$value”';
   }
 
   @override
@@ -27203,7 +27281,7 @@ class L10nEn extends L10n {
 
   @override
   String viewUiDialectWebOnly(String kind) {
-    return '$kind · View in DSH Web';
+    return '$kind · View in DeepSleep Web';
   }
 
   @override
@@ -27237,10 +27315,10 @@ class L10nEn extends L10n {
   String get viewUiDialectKindOther => 'This part';
 
   @override
-  String get viewUiDialectInvalid => 'This block shows in DSH Web';
+  String get viewUiDialectInvalid => 'This block shows in DeepSleep Web';
 
   @override
-  String get viewUiDialectNote => 'Shown in DSH Web';
+  String get viewUiDialectNote => 'Shown in DeepSleep Web';
 
   @override
   String get voiceSettingsTitle => 'Voice';
@@ -27616,13 +27694,13 @@ class L10nEn extends L10n {
   String get searchKwWallpaper => 'background,background image,chat background,custom background,backdrop,blur,photo';
 
   @override
-  String get webTitle => 'DSH Web';
+  String get webTitle => 'DeepSleep Web';
 
   @override
   String get webSshAppOnly => 'SSH tunnel links only open in the app';
 
   @override
-  String get webRelayUnavailable => 'DSH Web isn’t available through DSH Remote. Open it on that computer.';
+  String get webRelayUnavailable => 'DeepSleep Web isn’t available through DSH Remote. Open it on that computer.';
 
   @override
   String get webSshHost => 'SSH host';
@@ -27646,10 +27724,10 @@ class L10nEn extends L10n {
   String get webEngineProblem => 'The engine ran into a problem';
 
   @override
-  String get webStartingSoon => 'DSH Web will be ready in a moment';
+  String get webStartingSoon => 'DeepSleep Web will be ready in a moment';
 
   @override
-  String get webStartToOpen => 'Start this phone’s engine to open DSH Web';
+  String get webStartToOpen => 'Start this phone’s engine to open DeepSleep Web';
 
   @override
   String get webRestart => 'Restart';
@@ -27673,16 +27751,16 @@ class L10nEn extends L10n {
   String get webSwitchHost => 'Switch host';
 
   @override
-  String get webAttachmentTooLarge => 'Attachment is too large for DSH Web';
+  String get webAttachmentTooLarge => 'Attachment is too large for DeepSleep Web';
 
   @override
   String get webTextCopied => 'Text copied. Paste it into the input box.';
 
   @override
-  String get webAttachmentFailed => 'Couldn’t add attachments to DSH Web';
+  String get webAttachmentFailed => 'Couldn’t add attachments to DeepSleep Web';
 
   @override
-  String get webHostUnavailable => 'DSH Web isn’t available on this host';
+  String get webHostUnavailable => 'DeepSleep Web isn’t available on this host';
 
   @override
   String get webChatGone => 'This chat is gone';
@@ -27712,10 +27790,10 @@ class L10nEn extends L10n {
   String get webCheckConnection => 'Check your network or engine status and try again';
 
   @override
-  String get webTargetSessionMissing => 'Couldn’t find this chat in DSH Web. You’re on the home page.';
+  String get webTargetSessionMissing => 'Couldn’t find this chat in DeepSleep Web. You’re on the home page.';
 
   @override
-  String get webTargetNotLoaded => 'DSH Web hasn’t finished loading';
+  String get webTargetNotLoaded => 'DeepSleep Web hasn’t finished loading';
 
   @override
   String get webTargetSettingsMissing => 'Couldn’t find these settings. You may need to sign in or enable the plugin.';
@@ -27724,20 +27802,20 @@ class L10nEn extends L10n {
   String get webTargetPluginMissing => 'Couldn’t find this plugin. It may be missing from this profile.';
 
   @override
-  String get webTargetSidebarFailed => 'Couldn’t open the sidebar. Open this chat in DSH Web and try again.';
+  String get webTargetSidebarFailed => 'Couldn’t open the sidebar. Open this chat in DeepSleep Web and try again.';
 
   @override
   String get webTargetCordisMissing => 'Couldn’t find the Cordis panel. The plugin may have been removed.';
 
   @override
-  String get webTargetNewChatFailed => 'Couldn’t start a chat. You’re on the DSH Web home page.';
+  String get webTargetNewChatFailed => 'Couldn’t start a chat. You’re on the DeepSleep Web home page.';
 
   @override
-  String get webTargetPageFailed => 'Couldn’t open this page. You’re on the DSH Web home page.';
+  String get webTargetPageFailed => 'Couldn’t open this page. You’re on the DeepSleep Web home page.';
 
   @override
   String webConnectHostFirst(String name) {
-    return 'Connect to “$name” to open DSH Web';
+    return 'Connect to “$name” to open DeepSleep Web';
   }
 
   @override
@@ -27829,7 +27907,7 @@ class L10nEn extends L10n {
 
   @override
   String workshopMinApp(String version) {
-    return 'Needs DSH Go $version or later.';
+    return 'Needs DeepSleep $version or later.';
   }
 
   @override

@@ -441,7 +441,7 @@
     }
   },
   "shellConfigSlotName": "slot 名格式不对",
-  "shellConfigUnknownSlot": "当前 DSH 没有这个 slot，先保留",
+  "shellConfigUnknownSlot": "当前 DeepSleep 没有这个 slot，先保留",
   "shellConfigUnseatableSlot": "这个位置不放插件",
   "shellConfigPackageName": "包名格式不对",
   "shellConfigActionNoun": "动作",
@@ -496,7 +496,7 @@
   "shellJsonStringNewline": "字符串里不能直接换行",
   "shellJsonControlCharacter": "字符串里有控制字符",
   "shellJsonBadNumber": "数字格式不对",
-  "shellSkillInstallPrompt": "请在这台主机上安装 DSH Go 的界面技能 {skill}：",
+  "shellSkillInstallPrompt": "请在这台主机上安装 DeepSleep 的界面技能 {skill}：",
   "@shellSkillInstallPrompt": {
     "placeholders": {
       "skill": {
