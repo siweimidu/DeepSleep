@@ -285,5 +285,7 @@
   "shellDetailsMessages": "Messages",
   "shellDetailsPinned": "Pinned",
   "shellDetailsCopyId": "Copy ID",
-  "shellDetailsCopied": "Copied"
+  "shellDetailsCopied": "Copied",
+  "shellSortAscending": "Oldest first",
+  "shellSortDescending": "Newest first"
 }

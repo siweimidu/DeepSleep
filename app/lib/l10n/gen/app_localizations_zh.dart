@@ -27447,4 +27447,95 @@ class L10nZh extends L10n {
   String stateDrawerMonthYear(int year, int month) {
     return '$year年$month月';
   }
+
+  @override
+  String get hubDeepSeekImport => '导入 DeepSeek APP 端聊天记录';
+
+  @override
+  String get hubDeepSeekImportHint =>
+      '在 DeepSeek App 里「设置 → 数据导出」拿到 deepseek_data-…zip，选进来即可。每个对话都会变成一个会话，标题照旧，历史记录留在本机；第一次在这里发言时会把那段历史一起带给模型。';
+
+  @override
+  String get hubDeepSeekImportPick => '选择导出文件（.zip）';
+
+  @override
+  String get hubDeepSeekImportParsing => '正在读取压缩包…';
+
+  @override
+  String get hubDeepSeekImportCreating => '正在创建会话…';
+
+  @override
+  String get hubDeepSeekImportCancel => '取消';
+
+  @override
+  String get hubDeepSeekImportNoHost => '先连上引擎再导入。';
+
+  @override
+  String get hubDeepSeekImportBadZip => '这不是 DeepSeek App 导出的压缩包。';
+
+  @override
+  String get hubDeepSeekImportNoChatsZip => '这个压缩包里没有对话。';
+
+  @override
+  String get hubDeepSeekImportUnreadable => '读不了这个文件。';
+
+  @override
+  String get hubDeepSeekImportSummary => '导入完成';
+
+  @override
+  String get hubDeepSeekImportCancelled => '已取消';
+
+  @override
+  String get hubDeepSeekImportImportedSection => '已导入的对话';
+
+  @override
+  String get hubDeepSeekImportNone => '还没有导入过对话。';
+
+  @override
+  String get hubDeepSeekImportCarryNote => '接着聊时，第一次发言会把这段历史作为上下文一起发给模型，之后照常在会话里聊。';
+
+  @override
+  String get hubDeepSeekImportFailed => '有会话没能创建：';
+
+  @override
+  String get hubDeepSeekImportMessages => '条消息';
+
+  @override
+  String get hubDeepSeekRecordTitle => '聊天记录';
+
+  @override
+  String get hubDeepSeekRecordThinking => '思考';
+
+  @override
+  String get hubDeepSeekRecordSources => '参考';
+
+  @override
+  String get hubDeepSeekRecordAttachments => '附件';
+
+  @override
+  String get hubDeepSeekRecordStopped => '这条没有说完';
+
+  @override
+  String get hubDeepSeekRecordYou => '我';
+
+  @override
+  String get hubDeepSeekRecordDeepSeek => 'DeepSeek';
+
+  @override
+  String get hubDeepSeekRecordEmpty => '这段对话没有可显示的内容';
+
+  @override
+  String get hubDeepSeekImportSkipped => '已存在，跳过：';
+
+  @override
+  String get hubDeepSeekImportWhere => '导入的会话就在对话列表里；第一次在这里发言时会把那段历史一起带给模型。';
+
+  @override
+  String get hubDeepSeekRecordOpen => '查看';
+
+  @override
+  String get shellSortAscending => '正序（旧→新）';
+
+  @override
+  String get shellSortDescending => '倒序（新→旧）';
 }

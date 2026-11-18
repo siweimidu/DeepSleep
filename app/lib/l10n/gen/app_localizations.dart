@@ -50191,6 +50191,186 @@ abstract class L10n {
   /// In zh, this message translates to:
   /// **'{year}年{month}月'**
   String stateDrawerMonthYear(int year, int month);
+
+  /// No description provided for @hubDeepSeekImport.
+  ///
+  /// In zh, this message translates to:
+  /// **'导入 DeepSeek APP 端聊天记录'**
+  String get hubDeepSeekImport;
+
+  /// No description provided for @hubDeepSeekImportHint.
+  ///
+  /// In zh, this message translates to:
+  /// **'在 DeepSeek App 里「设置 → 数据导出」拿到 deepseek_data-…zip，选进来即可。每个对话都会变成一个会话，标题照旧，历史记录留在本机；第一次在这里发言时会把那段历史一起带给模型。'**
+  String get hubDeepSeekImportHint;
+
+  /// No description provided for @hubDeepSeekImportPick.
+  ///
+  /// In zh, this message translates to:
+  /// **'选择导出文件（.zip）'**
+  String get hubDeepSeekImportPick;
+
+  /// No description provided for @hubDeepSeekImportParsing.
+  ///
+  /// In zh, this message translates to:
+  /// **'正在读取压缩包…'**
+  String get hubDeepSeekImportParsing;
+
+  /// No description provided for @hubDeepSeekImportCreating.
+  ///
+  /// In zh, this message translates to:
+  /// **'正在创建会话…'**
+  String get hubDeepSeekImportCreating;
+
+  /// No description provided for @hubDeepSeekImportCancel.
+  ///
+  /// In zh, this message translates to:
+  /// **'取消'**
+  String get hubDeepSeekImportCancel;
+
+  /// No description provided for @hubDeepSeekImportNoHost.
+  ///
+  /// In zh, this message translates to:
+  /// **'先连上引擎再导入。'**
+  String get hubDeepSeekImportNoHost;
+
+  /// No description provided for @hubDeepSeekImportBadZip.
+  ///
+  /// In zh, this message translates to:
+  /// **'这不是 DeepSeek App 导出的压缩包。'**
+  String get hubDeepSeekImportBadZip;
+
+  /// No description provided for @hubDeepSeekImportNoChatsZip.
+  ///
+  /// In zh, this message translates to:
+  /// **'这个压缩包里没有对话。'**
+  String get hubDeepSeekImportNoChatsZip;
+
+  /// No description provided for @hubDeepSeekImportUnreadable.
+  ///
+  /// In zh, this message translates to:
+  /// **'读不了这个文件。'**
+  String get hubDeepSeekImportUnreadable;
+
+  /// No description provided for @hubDeepSeekImportSummary.
+  ///
+  /// In zh, this message translates to:
+  /// **'导入完成'**
+  String get hubDeepSeekImportSummary;
+
+  /// No description provided for @hubDeepSeekImportCancelled.
+  ///
+  /// In zh, this message translates to:
+  /// **'已取消'**
+  String get hubDeepSeekImportCancelled;
+
+  /// No description provided for @hubDeepSeekImportImportedSection.
+  ///
+  /// In zh, this message translates to:
+  /// **'已导入的对话'**
+  String get hubDeepSeekImportImportedSection;
+
+  /// No description provided for @hubDeepSeekImportNone.
+  ///
+  /// In zh, this message translates to:
+  /// **'还没有导入过对话。'**
+  String get hubDeepSeekImportNone;
+
+  /// No description provided for @hubDeepSeekImportCarryNote.
+  ///
+  /// In zh, this message translates to:
+  /// **'接着聊时，第一次发言会把这段历史作为上下文一起发给模型，之后照常在会话里聊。'**
+  String get hubDeepSeekImportCarryNote;
+
+  /// No description provided for @hubDeepSeekImportFailed.
+  ///
+  /// In zh, this message translates to:
+  /// **'有会话没能创建：'**
+  String get hubDeepSeekImportFailed;
+
+  /// No description provided for @hubDeepSeekImportMessages.
+  ///
+  /// In zh, this message translates to:
+  /// **'条消息'**
+  String get hubDeepSeekImportMessages;
+
+  /// No description provided for @hubDeepSeekRecordTitle.
+  ///
+  /// In zh, this message translates to:
+  /// **'聊天记录'**
+  String get hubDeepSeekRecordTitle;
+
+  /// No description provided for @hubDeepSeekRecordThinking.
+  ///
+  /// In zh, this message translates to:
+  /// **'思考'**
+  String get hubDeepSeekRecordThinking;
+
+  /// No description provided for @hubDeepSeekRecordSources.
+  ///
+  /// In zh, this message translates to:
+  /// **'参考'**
+  String get hubDeepSeekRecordSources;
+
+  /// No description provided for @hubDeepSeekRecordAttachments.
+  ///
+  /// In zh, this message translates to:
+  /// **'附件'**
+  String get hubDeepSeekRecordAttachments;
+
+  /// No description provided for @hubDeepSeekRecordStopped.
+  ///
+  /// In zh, this message translates to:
+  /// **'这条没有说完'**
+  String get hubDeepSeekRecordStopped;
+
+  /// No description provided for @hubDeepSeekRecordYou.
+  ///
+  /// In zh, this message translates to:
+  /// **'我'**
+  String get hubDeepSeekRecordYou;
+
+  /// No description provided for @hubDeepSeekRecordDeepSeek.
+  ///
+  /// In zh, this message translates to:
+  /// **'DeepSeek'**
+  String get hubDeepSeekRecordDeepSeek;
+
+  /// No description provided for @hubDeepSeekRecordEmpty.
+  ///
+  /// In zh, this message translates to:
+  /// **'这段对话没有可显示的内容'**
+  String get hubDeepSeekRecordEmpty;
+
+  /// No description provided for @hubDeepSeekImportSkipped.
+  ///
+  /// In zh, this message translates to:
+  /// **'已存在，跳过：'**
+  String get hubDeepSeekImportSkipped;
+
+  /// No description provided for @hubDeepSeekImportWhere.
+  ///
+  /// In zh, this message translates to:
+  /// **'导入的会话就在对话列表里；第一次在这里发言时会把那段历史一起带给模型。'**
+  String get hubDeepSeekImportWhere;
+
+  /// No description provided for @hubDeepSeekRecordOpen.
+  ///
+  /// In zh, this message translates to:
+  /// **'查看'**
+  String get hubDeepSeekRecordOpen;
+
+  /// No description provided for @shellSortAscending.
+  ///
+  /// In zh, this message translates to:
+  /// **'正序（旧→新）'**
+  String get shellSortAscending;
+
+  /// No description provided for @shellSortDescending.
+  ///
+  /// In zh, this message translates to:
+  /// **'倒序（新→旧）'**
+  String get shellSortDescending;
 }
 
 class _L10nDelegate extends LocalizationsDelegate<L10n> {

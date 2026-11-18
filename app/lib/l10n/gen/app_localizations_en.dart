@@ -28913,4 +28913,97 @@ class L10nEn extends L10n {
   String stateDrawerMonthYear(int year, int month) {
     return '$year-$month';
   }
+
+  @override
+  String get hubDeepSeekImport => 'Import DeepSeek app chats';
+
+  @override
+  String get hubDeepSeekImportHint =>
+      'Export your data in the DeepSeek app (Settings → Export data) and choose the deepseek_data-…zip here. Every conversation becomes a session with its own title; the history stays on this phone and goes to the model with the first message you send here.';
+
+  @override
+  String get hubDeepSeekImportPick => 'Choose the export (.zip)';
+
+  @override
+  String get hubDeepSeekImportParsing => 'Reading the archive…';
+
+  @override
+  String get hubDeepSeekImportCreating => 'Creating sessions…';
+
+  @override
+  String get hubDeepSeekImportCancel => 'Cancel';
+
+  @override
+  String get hubDeepSeekImportNoHost => 'Connect to an engine first.';
+
+  @override
+  String get hubDeepSeekImportBadZip => 'That is not an export made by the DeepSeek app.';
+
+  @override
+  String get hubDeepSeekImportNoChatsZip => 'That archive holds no conversation.';
+
+  @override
+  String get hubDeepSeekImportUnreadable => 'That file cannot be read.';
+
+  @override
+  String get hubDeepSeekImportSummary => 'Import finished';
+
+  @override
+  String get hubDeepSeekImportCancelled => 'Cancelled';
+
+  @override
+  String get hubDeepSeekImportImportedSection => 'Imported chats';
+
+  @override
+  String get hubDeepSeekImportNone => 'No chat imported yet.';
+
+  @override
+  String get hubDeepSeekImportCarryNote =>
+      'The first message you send here carries that history to the model as context; after that the session behaves like any other.';
+
+  @override
+  String get hubDeepSeekImportFailed => 'Some sessions could not be created:';
+
+  @override
+  String get hubDeepSeekImportMessages => 'messages';
+
+  @override
+  String get hubDeepSeekRecordTitle => 'Chat record';
+
+  @override
+  String get hubDeepSeekRecordThinking => 'Thinking';
+
+  @override
+  String get hubDeepSeekRecordSources => 'Sources';
+
+  @override
+  String get hubDeepSeekRecordAttachments => 'Attachments';
+
+  @override
+  String get hubDeepSeekRecordStopped => 'This answer was cut off';
+
+  @override
+  String get hubDeepSeekRecordYou => 'Me';
+
+  @override
+  String get hubDeepSeekRecordDeepSeek => 'DeepSeek';
+
+  @override
+  String get hubDeepSeekRecordEmpty => 'This conversation has nothing to show';
+
+  @override
+  String get hubDeepSeekImportSkipped => 'Already here, skipped:';
+
+  @override
+  String get hubDeepSeekImportWhere =>
+      'The imported sessions are in the chat list; the first message you send there carries their history.';
+
+  @override
+  String get hubDeepSeekRecordOpen => 'Open';
+
+  @override
+  String get shellSortAscending => 'Oldest first';
+
+  @override
+  String get shellSortDescending => 'Newest first';
 }

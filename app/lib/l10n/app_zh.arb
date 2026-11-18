@@ -16840,5 +16840,35 @@
         "type": "int"
       }
     }
-  }
+  },
+  "hubDeepSeekImport": "导入 DeepSeek APP 端聊天记录",
+  "hubDeepSeekImportHint": "在 DeepSeek App 里「设置 → 数据导出」拿到 deepseek_data-…zip，选进来即可。每个对话都会变成一个会话，标题照旧，历史记录留在本机；第一次在这里发言时会把那段历史一起带给模型。",
+  "hubDeepSeekImportPick": "选择导出文件（.zip）",
+  "hubDeepSeekImportParsing": "正在读取压缩包…",
+  "hubDeepSeekImportCreating": "正在创建会话…",
+  "hubDeepSeekImportCancel": "取消",
+  "hubDeepSeekImportNoHost": "先连上引擎再导入。",
+  "hubDeepSeekImportBadZip": "这不是 DeepSeek App 导出的压缩包。",
+  "hubDeepSeekImportNoChatsZip": "这个压缩包里没有对话。",
+  "hubDeepSeekImportUnreadable": "读不了这个文件。",
+  "hubDeepSeekImportSummary": "导入完成",
+  "hubDeepSeekImportCancelled": "已取消",
+  "hubDeepSeekImportImportedSection": "已导入的对话",
+  "hubDeepSeekImportNone": "还没有导入过对话。",
+  "hubDeepSeekImportCarryNote": "接着聊时，第一次发言会把这段历史作为上下文一起发给模型，之后照常在会话里聊。",
+  "hubDeepSeekImportFailed": "有会话没能创建：",
+  "hubDeepSeekImportMessages": "条消息",
+  "hubDeepSeekRecordTitle": "聊天记录",
+  "hubDeepSeekRecordThinking": "思考",
+  "hubDeepSeekRecordSources": "参考",
+  "hubDeepSeekRecordAttachments": "附件",
+  "hubDeepSeekRecordStopped": "这条没有说完",
+  "hubDeepSeekRecordYou": "我",
+  "hubDeepSeekRecordDeepSeek": "DeepSeek",
+  "hubDeepSeekRecordEmpty": "这段对话没有可显示的内容",
+  "hubDeepSeekImportSkipped": "已存在，跳过：",
+  "hubDeepSeekImportWhere": "导入的会话就在对话列表里；第一次在这里发言时会把那段历史一起带给模型。",
+  "hubDeepSeekRecordOpen": "查看",
+  "shellSortAscending": "正序（旧→新）",
+  "shellSortDescending": "倒序（新→旧）"
 }

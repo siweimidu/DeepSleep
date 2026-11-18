@@ -613,5 +613,7 @@
   "shellDetailsMessages": "消息数",
   "shellDetailsPinned": "置顶",
   "shellDetailsCopyId": "复制 ID",
-  "shellDetailsCopied": "已复制"
+  "shellDetailsCopied": "已复制",
+  "shellSortAscending": "正序（旧→新）",
+  "shellSortDescending": "倒序（新→旧）"
 }
